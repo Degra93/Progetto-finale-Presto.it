@@ -14,7 +14,7 @@
       
                 <form action="/login" method="POST" style="width: 23rem;">
                     @csrf
-                  <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
+                  <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login</h3>
       
                   <div class="form-outline mb-4">
                     <input type="email" name="email" id="email" class="form-control form-control-lg" />
