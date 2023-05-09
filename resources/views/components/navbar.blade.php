@@ -9,10 +9,13 @@
           <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
           <a class="nav-link text-white" href="#">Chi siamo</a>
           <a class="nav-link text-white" href="#">Annunci</a>
-          @auth
-          <a class="nav-link text-white" href="#">{{ auth()->user()->name }}</a>
+
+       
+          @guest
+          <a class="nav-link text-white" href="{{route('login')}}">Login</a>
           
           @else
+        
           <a class="nav-link text-white" href="#">Inserisci Annunci</a>
           <ul>
             <li class="nav-item dropdown">
