@@ -1,43 +1,42 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark " data-bs-theme="dark">
-    <div class="container-fluid ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-0" data-bs-theme="dark">
+    <div class="container-fluid">
       <a class="navbar-brand text-white" href="#">Quick</a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav ">
+      <div class="collapse navbar-collapse d-flex justify-content-end mx-0" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex align-items-center">
           <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
           <a class="nav-link text-white" href="#">Chi siamo</a>
           <a class="nav-link text-white" href="#">Annunci</a>
 
-       
+
           @guest
           <a class="nav-link text-white" href="{{route('login')}}">Login</a>
-          
+
           @else
-        
+
           <a class="nav-link text-white" href="#">Inserisci Annunci</a>
-          <ul>
+          <ul class="navbar-nav d-flex align-items-center">
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{ auth()->user()->name }}
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <form action="/logout" method="post">
                 @csrf
-                <button class="btn btn-primary" type="submit">Logout</button>
+                <button class="btn btn-sm btn-primary ms-5" type="submit">Logout</button>
                 </form>
                </li>
-             
+
             </ul>
           </li>
           </ul>
-          
+
           @endguest
         </div>
       </div>
     </div>
   </nav>
 
-  
