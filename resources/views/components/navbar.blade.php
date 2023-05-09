@@ -11,7 +11,7 @@
           <a class="nav-link text-white" href="#">Annunci</a>
           @auth
           <a class="nav-link text-white" href="#">{{ auth()->user()->name }}</a>
-          <button type="submit">Crea annuncio</button>
+          <a href="">inserisci annuncio</a>
           @else
             <a class="nav-link text-white" href="{{route('login')}}">Login</a>
           @endauth
