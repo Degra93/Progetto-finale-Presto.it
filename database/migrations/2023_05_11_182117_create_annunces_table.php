@@ -14,12 +14,15 @@ return new class extends Migration
         Schema::create('annunces', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->text('body');
             $table->decimal('price', 8, 2);
-
-
+            
             $table->timestamps();
             
+            
+
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
@@ -29,5 +32,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('annunces');
+        
+
     }
 };

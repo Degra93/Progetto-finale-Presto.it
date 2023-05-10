@@ -12,6 +12,16 @@
           @enderror
         </div>
   
+        <div class="mb-3">
+          <label for="category">Categoria</label>
+          <select wire:model.lazy='category_id'  class="form-control">
+            <option value="">Scegli</option>
+          
+          @foreach($categories as $category)
+          <option value="{{$category->id}}">{{$category->name}}</option>
+          @endforeach
+        </select>
+      </div>
       
         <div class="mb-3 col-12">
           <label for="body">Testo</label>

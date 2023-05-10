@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Annunce;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class AnnunceController extends Controller
 {
@@ -20,6 +21,7 @@ class AnnunceController extends Controller
      */
     public function create()
     {
+
         return view('annunce.annunce-create');
     }
 
@@ -28,8 +30,7 @@ class AnnunceController extends Controller
      */
     public function store(Request $request)
     {
-        Annunce::create($request->all());
-        return redirect()->route('annunce.annunceList');
+        
     }
 
     // ->with(['success'=>'categoria creato']);

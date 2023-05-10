@@ -9,6 +9,10 @@ class Annunce extends Model
 {
     use HasFactory;
 
-    protected $fillable =['title','body','price'];
+    protected $fillable =['title','body','price','category_id'];
     
+    public function category()
+ {
+    return $this->belongsTo(Category::class);
+ }
 }
