@@ -50,10 +50,6 @@
         </div>
     
       </form>
-      @if(session()->has('success'))
-      <div class="col-12 mt-5 alert alert-success">
-          {{session('success')}}
-      </div>
-      @endif
+      <x-success/>
     </div>
 
