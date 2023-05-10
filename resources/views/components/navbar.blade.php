@@ -16,7 +16,7 @@
           
           @else
         
-          <a class="nav-link text-white" href="#">Inserisci Annunci</a>
+          <a class="nav-link text-white" href="{{route('annunce.create')}}">Inserisci Annunci</a>
           <ul>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
