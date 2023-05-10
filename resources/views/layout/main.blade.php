@@ -16,7 +16,7 @@
     <body>
 
     {{$slot}}
-
+    <x-footer/>
     @livewireScripts
     </body>
 </html>
