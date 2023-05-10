@@ -14,18 +14,21 @@
                     <li>
                         <a class="nav-link text-white" href="#">Annunci</a>
                     </li>
-                    <li>
-                        <a class="nav-link text-white" href="#">Inserisci Annunci</a>
-                    </li>
+                   
                 </ul>
 
                 @guest
                 <a class="nav-link text-white" href="{{route('login')}}">Login</a>
 
                 @else
-
+                
 
                 <ul class="navbar-nav">
+                  <li>
+                    <a class="nav-link text-white" href="{{route('annunce.create')}}">Inserisci Annuncio</a>
+                    
+                </li>
+                  
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ auth()->user()->name }}
