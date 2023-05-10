@@ -12,7 +12,7 @@
                 <span class="h1 fw-bold mb-0">ANNUNCIO CREATE E' QUI</span>
               </div>
       
-              <livewire:create-annunce />
+              <livewire:create-announcement />
             </div>
             <div class="col-sm-6 px-0 d-none d-sm-block">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp"

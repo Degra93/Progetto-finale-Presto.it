@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
+
     use HasFactory;
     protected $fillable = ['name'];
 
-    public function articles(){
-        return $this->hasMany(Annunce::class);
+    public function announcements(){
+        return $this->hasMany(Announcement::class);
     }
 }
+ 

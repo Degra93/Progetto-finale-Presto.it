@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\AnnunceController;
+use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/',[PageController::class, 'homepage'])->name('home');
+Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement'])->middleware('auth')->name('announcement.create');
 
+Route::get('/', function () {
+    return view('homepage');
+});
 
-
-Route::resource('annunce',AnnunceController::class);

@@ -11,18 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('annunces', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
+        Schema::table('announcements', function (Blueprint $table) {
+            //
             $table->unsignedBigInteger('category_id')->nullable();
-            $table->text('body');
-            $table->decimal('price', 8, 2);
-            
-            $table->timestamps();
-            
-            
 
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('SET NULL');
         });
     }
 
@@ -31,8 +24,10 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('annunces');
-        
-
+        Schema::table('announcements', function (Blueprint $table) {
+            //
+            $table->dropForeign(['category_id']);
+            $table->dropColumn(['category_id']);
+        });
     }
 };

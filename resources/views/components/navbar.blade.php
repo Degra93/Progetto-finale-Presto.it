@@ -25,7 +25,7 @@
 
                 <ul class="navbar-nav">
                   <li>
-                    <a class="nav-link text-white" href="{{route('annunce.create')}}">Inserisci Annuncio</a>
+                    <a class="nav-link text-white" href="{{route('announcement.create')}}">Inserisci Annuncio</a>
                     
                 </li>
                   
