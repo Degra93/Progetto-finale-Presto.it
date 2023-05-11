@@ -1,5 +1,5 @@
 <x-main>
-<div class="container">
+<div class="container padding-login">
     <section class="vh-100">
         <div class="container-fluid">
           <div class="row">
