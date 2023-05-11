@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/',[PageController::class, 'homepage'])->name('homepage');
+
 Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement'])->middleware('auth')->name('announcement.create');
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/categoria/{category}',[PageController::class, 'categoryShow'])->name('categoryShow');
+
+Route::get('/dettail/annuncio/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcement.show');
+
+
+Route::get('/annuncio', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
 

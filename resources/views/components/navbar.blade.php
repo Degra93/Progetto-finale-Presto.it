@@ -8,11 +8,22 @@
             <div class="navbar-nav">
                 <ul class="navbar-nav">
                     <li>
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="{{route('homepagephp ')}}">Home</a>
                     </li>
                         <a class="nav-link text-white" href="#">Chi siamo</a>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                            <ul class="dropdown-menu" aria-labelledby="catDrop">
+                                @foreach ($categories as $category )
+                                    <li>
+                                        <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                    </li>
+                       
                     <li>
-                        <a class="nav-link text-white" href="#">Annunci</a>
+                        <a class="nav-link text-white" href="{{route('announcement.index')}}">Annunci</a>
                     </li>
                    
                 </ul>
