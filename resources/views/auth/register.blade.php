@@ -1,7 +1,7 @@
 <x-main>
 
     <div class="container">
-        <x-main>
+     
             <div class="container">
                 <section class="vh-100">
                     <div class="container-fluid">
@@ -70,7 +70,7 @@
                     </div>
                   </section>
             </div>
-            </x-main>
+        
     </div>
 </x-main>
 
