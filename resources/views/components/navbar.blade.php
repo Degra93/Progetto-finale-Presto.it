@@ -23,25 +23,25 @@
                                 @endforeach
                             </ul>
                     </li>
-                       
+
                     <li>
                         <a class="nav-link text-white" href="{{route('announcement.index')}}">Annunci</a>
                     </li>
-                   
+
                 </ul>
 
                 @guest
                 <a class="nav-link text-white" href="{{route('login')}}">Login</a>
 
                 @else
-                
+
 
                 <ul class="navbar-nav">
                   <li>
                     <a class="nav-link text-white" href="{{route('announcement.create')}}">Inserisci Annuncio</a>
-                    
+
                 </li>
-                  
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ auth()->user()->name }}
@@ -65,16 +65,16 @@
 </nav> --}}
 
 {{-- Nav da aggiungere il Logo --}}
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+{{-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Aliexpress 4.0 perche e' fallito 4 volte con noi</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
     </div>
-</nav>
-  
+</nav> --}}
+
 {{-- Nav categoria ecc ecc da sistemare con classi css --}}
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom p-0 " data-bs-theme="dark">
     <div class="container-fluid">
@@ -95,36 +95,36 @@
                     <li>
                         <a class="nav-link active text-white" aria-current="page" href="{{route('homepage')}}">Home</a>
                     </li>
-                        
-                    
+
+
                     <li>
                         <a class="nav-link text-white" href="{{route('announcement.index')}}">Annunci</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-white" href="#">Chi siamo</a>
                     </li>
-                   
+
                 </ul>
 
-               
+
             </div>
 
 
             <div class="navbar-nav  ">
-                
+
 
                 @guest
                 <a class="nav-link text-white" href="{{route('login')}}">Login</a>
 
                 @else
-                
+
 
                 <ul class="navbar-nav">
                   <li>
                     <a class="nav-link text-white" href="{{route('announcement.create')}}">Inserisci Annuncio</a>
-                    
+
                 </li>
-                  
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ auth()->user()->name }}
@@ -148,7 +148,7 @@
 </nav>
 
 {{-- Nav di matteo --}}
-<nav class="navbar navbar-expand-lg navbar-light bg-light opacity-75 ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top opacity-75 ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,11 +159,20 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+          {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
