@@ -46,9 +46,9 @@
 {{-- section delle due foto inferiori aggiungere scritta --}}
 <section class="container-fluid">
     <div class="row">
-        <div class="col-6"><img src="https://picsum.photos/1000/300" alt="">
+        <div class="col-6"><img src="https://picsum.photos/800/300" alt="">
         <h2>Scritta</h2></div>
-        <div class="col-6"><img src="https://picsum.photos/1000/301" alt="">
+        <div class="col-6"><img src="https://picsum.photos/800/301" alt="">
         <h2>Scritta</h2></div>
     </div>
 </section>
