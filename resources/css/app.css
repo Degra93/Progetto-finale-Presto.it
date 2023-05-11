@@ -67,3 +67,31 @@ ul, ol {
     visibility: hidden;
     transition: .22s ease;
 }
+/* login */
+.padding-login{
+    padding-bottom: 100px;
+}
+@media (min-width: 1025px){
+.padding-login{
+    padding-bottom: 150px;
+}
+}
+@media (max-width: 768px){
+    .padding-login{
+        padding-bottom: 200px;
+    }
+    }
+/* register
+    .padding-register{
+        padding-bottom: 100px;
+    }
+    @media (min-width: 1025px){
+    .padding-register{
+        padding-bottom: 150px;
+    }
+    }
+    @media (max-width: 768px){
+        .padding-register{
+            padding-bottom: 200px;
+        }
+        } */
