@@ -8,7 +8,7 @@
             <div class="navbar-nav">
                 <ul class="navbar-nav">
                     <li>
-                        <a class="nav-link active text-white" aria-current="page" href="{{route('homepagephp ')}}">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="{{route('homepage')}}">Home</a>
                     </li>
                         <a class="nav-link text-white" href="#">Chi siamo</a>
                     <li class="nav-item dropdown">
