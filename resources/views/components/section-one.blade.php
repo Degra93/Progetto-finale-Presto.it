@@ -4,12 +4,12 @@
     <div class="row">
         @foreach ($categories as $category)
         <div class="col-12 col-md-2 my-4">
-            <div class="card shadow" style="width :8rem ;">
+            <div class="card shadow" style="width :12rem ;">
             <img src="https://picsum.photos/100" alt="Random img" class="cart-img-top p-3 rounded">
-            <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item"><h3>{{$category->name}}</h3></a>
+            <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item"><h3 class="fw-lighter">{{$category->name}}</h3></a>
             </div>
         </div>
-            
+
         @endforeach
     </div>
 </section>
@@ -18,7 +18,7 @@
 
 
 {{-- section degli annunci fare modifiche css --}}
-<section class="container">
+<section class="container m-3">
     <div class="col-12">
         <h2>Annunci In prima vista!</h2>
     </div>
@@ -37,18 +37,20 @@
             </div>
             </div>
         </div>
-            
+
         @endforeach
     </div>
 
 </section>
 
 {{-- section delle due foto inferiori aggiungere scritta --}}
-<section class="container-fluid">
+<section class="container">
     <div class="row">
-        <div class="col-6"><img src="https://picsum.photos/800/300" alt="">
+        <div class="col-4"><img src="https://picsum.photos/300/300" alt="">
         <h2>Scritta</h2></div>
-        <div class="col-6"><img src="https://picsum.photos/800/301" alt="">
+        <div class="col-4"><img src="https://picsum.photos/300/300" alt="">
+        <h2>Scritta</h2></div>
+        <div class="col-4"><img src="https://picsum.photos/300/300" alt="">
         <h2>Scritta</h2></div>
     </div>
 </section>

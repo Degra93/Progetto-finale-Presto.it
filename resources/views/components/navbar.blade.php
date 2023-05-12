@@ -76,7 +76,7 @@
 </nav> --}}
 
 {{-- Nav categoria ecc ecc da sistemare con classi css --}}
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom p-0 " data-bs-theme="dark">
+{{-- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom p-0 " data-bs-theme="dark">
     <div class="container-fluid">
         <a class="nav-link text-white dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
         <ul class="dropdown-menu" aria-labelledby="catDrop">
@@ -145,20 +145,60 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> --}}
 
 {{-- Nav di matteo --}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="{{route('homepage')}}">
+            <img src="{{URL::asset('img/icons8-cash-app-144.png')}}" alt="" height="40"><span class="text-muted fw-bold nav-brand">ShopyPro</span>
+            <a class="nav-link fw-bold fs-4 text-white" href="#"></a>
+        </a>
+    </div>
+</nav>
+@guest
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top opacity-75 ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="{{route('homepage')}}">
+            <img src="{{URL::asset('img/icons8-cash-app-150.png')}}" alt="" height="40">
+            <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('login')}}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('register')}}">Registrati</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+  </nav>
+
+@else
+<nav class="navbar navbar_custom navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+
+        <a class="nav-link ms-2 p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+        <ul class="dropdown-menu ms-1"  aria-labelledby="catDrop">
+            @foreach ($categories as $category )
+                <li>
+                    <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a>
+                </li>
+            @endforeach
+        </ul>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+
           <a class="nav-link" href="#">
             <i class="fas fa-shopping-cart"></i>
           </a>
@@ -168,25 +208,29 @@
           {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Offerte</a></li>
+              <li><a class="dropdown-item" href="#">Nuovi annunci</a></li>
+
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="{{URL::asset('img/iconaUtente.png')}}" class="rounded-circle" height="22" alt="">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{Auth::user()->name}}
+                <img src="{{URL::asset('img/iconaUtente.png')}}" class="rounded-circle" height="22" alt="">
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{{route('homepage')}}">Home</a></li>
+                <li><a class="dropdown-item" href="{{route('announcement.index')}}">Prodotti</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/logout" onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a></li>
+                <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">
+                @csrf
+                </form>
             </ul>
           </li>
 
         </ul>
+        @endguest
 
       </div>
     </div>
