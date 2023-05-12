@@ -47,4 +47,5 @@
         </div>
       </section>
 </div>
+<x-footer/>
 </x-main>
