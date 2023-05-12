@@ -43,8 +43,8 @@
       
     
       <div class="d-grid">
-        <button class="btn btn-primary btn-lg" type="submit" >Invia</button>
-        <button class="btn btn-light btn-lg" type="reset" >Reset</button>
+        <button class="btn btn-primary btn-lg" type="submit" >Crea annuncio</button>
+        <button class="btn btn-light btn-lg" type="reset" >Azzera</button>
         
         
       </div>

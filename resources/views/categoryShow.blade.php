@@ -1,6 +1,6 @@
 <x-main>
     <x-navbar/>
-    <h1>Aggiungere scritta qui {{$category->name}}</h1>
+    <h1>Annunci presenti per la categoria: {{$category->name}}</h1>
 
     <div class="container">
         <div class="row">
@@ -19,8 +19,8 @@
                 </div>
             </div>
                 @empty
-                <p>non ci sono categorie qui</p>
-                <p>Fallo tu <a href="{{route('announcement.create')}}" class="btn btn-warning">Nuovo annuncio</a></p>
+                <p>Al momento non esistono annunci per questa categoria...</p>
+                <p>Che ne dici di crearne uno tu? <a href="{{route('announcement.create')}}" class="btn btn-warning">Nuovo annuncio</a></p>
             @endforelse
         </div>
     </div>
