@@ -29,6 +29,7 @@ class CreateAnnouncement extends Component
 
     public function store()
     { 
+        $this->validate();
         $category= Category::find($this->category);
         $announcement=$category->announcements()->create([
             'title'=> $this->title,
@@ -46,6 +47,7 @@ class CreateAnnouncement extends Component
             $this->cleanForm();
             session()->flash('success','Articolo creato con successo');
     }
+
 
     public function updated($propertyName){
         $this->validateOnly($propertyName);
