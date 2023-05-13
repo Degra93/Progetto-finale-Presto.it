@@ -99,13 +99,13 @@
 
 
 {{-- section degli annunci fare modifiche css --}}
-<section class="container m-3">
+<section class="container-fluid m-3">
     <div class="col-12">
         <h2>Annunci In prima vista!</h2>
     </div>
     <div class="row">
         @foreach ($announcements as $announcement)
-        <div class="col-12 col-md-4 my-4">
+        <div class="col-12 col-md-3 my-4">
             <div class="card shadow" style="width :18rem ;">
             <img src="https://picsum.photos/200/300" alt="Random img" class="cart-img-top p-3 rounded">
             <div class="card-body">
