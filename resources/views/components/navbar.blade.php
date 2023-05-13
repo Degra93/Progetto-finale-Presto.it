@@ -182,7 +182,7 @@
   </nav>
 
 @else
-<nav class="navbar navbar_custom navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top opacity-75">
     <div class="container-fluid">
 
         <a class="nav-link ms-2 p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>

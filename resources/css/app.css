@@ -96,3 +96,11 @@ ul, ol {
             padding-bottom: 200px;
         }
         } */
+
+    .card-body-bg-img{
+        background-image: url('https://picsum.photos/800/900');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
