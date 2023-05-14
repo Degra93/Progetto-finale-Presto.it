@@ -111,9 +111,9 @@ ul, ol {
         } */
 
     .card-body-bg-img{
-        background-image: url('https://picsum.photos/800/900');
+        background-image: url('https://picsum.photos/1000/1200');
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
         opacity: 0.8;
     }

@@ -148,7 +148,7 @@
 </nav> --}}
 
 {{-- Nav di matteo --}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark h-50">
     <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{URL::asset('img/icons8-cash-app-144.png')}}" alt="" height="40"><span class="text-muted fw-bold nav-brand">ShopyPro</span>

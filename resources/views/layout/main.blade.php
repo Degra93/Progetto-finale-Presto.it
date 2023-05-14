@@ -11,6 +11,7 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        {{-- <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script> --}}
 
         @vite(['resources/css/app.css','resources/js/app.js'])
 
