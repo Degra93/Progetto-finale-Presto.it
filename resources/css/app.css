@@ -68,7 +68,7 @@ ul, ol {
     transition: .22s ease;
 }
 
-/* login */
+/* login
 .padding-login{
     padding-bottom: 100px;
 }
@@ -82,6 +82,19 @@ ul, ol {
         padding-bottom: 200px;
     }
     }
+*/
+/*-------button pgina login--------*/
+.btn-hover {
+    font-weight: 600;
+    transition: background-color 0.1s ease;
+  }
+
+ .btn-hover:hover, .btn-hover:focus  {
+    color:white;
+    background-color: #3a3939;
+    border-color: black;
+}
+
 /* register
     .padding-register{
         padding-bottom: 100px;
