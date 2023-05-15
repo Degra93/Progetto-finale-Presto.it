@@ -1,14 +1,14 @@
 <x-main>
     <x-navbar/>
-    <h1>Annunci presenti per la categoria: {{$category->name}}</h1>
+    <h1 class="text-center">Annunci presenti per la categoria: {{$category->name}}</h1>
 
-    <div class="container">
-        <div class="row">
+    <div class="container ">
+        <div class="row text-center ">
             @forelse ($category->announcements as $announcement)
-            <div class="col-12 col-md-4 my-4">
+            <div class="col-12 col-md-4 pt-4 ps-5 ">
                 <div class="card shadow" style="width :18rem ;">
                 <img src="https://picsum.photos/200/300" alt="Random img" class="cart-img-top p-3 rounded">
-                <div class="card-body">
+                <div class="card-body ">
                     <h5 class="card-title">{{$announcement->title}}</h5>
                     <p class="card-text">{{$announcement->body}}</p>
                     <p class="card-text">{{$announcement->price}}</p>
