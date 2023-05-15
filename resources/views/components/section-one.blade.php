@@ -3,11 +3,11 @@
     <div class="row mt-3">
         <h2 class="display-6 lh-1 fw-bold">Le nostre categorie</h2>
 
-        <div class="splide">
+        <div class="splide" id="first-slider">
             <div class="splide__track">
 
                 <div class="splide__list">
-                    @foreach ($categories as $category)
+                @foreach ($categories as $category)
                     <div class="col-sm-4 splide__slide m-2">
                         <div class="card bg-dark text-white">
                             <div class="card-body card-body-bg-img">
@@ -99,7 +99,7 @@
 
 
 {{-- section degli annunci fare modifiche css --}}
-<section class="container-fluid m-3">
+<section class="container m-3">
     <div class="col-12">
         <h2>Annunci In prima vista!</h2>
     </div>
@@ -121,8 +121,27 @@
 
         @endforeach
     </div>
+    <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
 
-</section>
+            <div class="splide__list">
+                @foreach ($announcements as $announcement)
+                <div class="col-sm-4 splide__slide m-2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body card-body-bg-img" >
+                            <h5 class="card-title">titolo</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quas, dolorem debitis.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                @endforeach
+
+            </div>
+
+        </div>
+      </section>
 
 {{-- section delle due foto inferiori aggiungere scritta --}}
 

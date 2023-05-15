@@ -68,7 +68,7 @@ ul, ol {
     transition: .22s ease;
 }
 
-/* login */
+/* login
 .padding-login{
     padding-bottom: 100px;
 }
@@ -82,6 +82,19 @@ ul, ol {
         padding-bottom: 200px;
     }
     }
+*/
+/*-------button pgina login--------*/
+.btn-hover {
+    font-weight: 600;
+    transition: background-color 0.1s ease;
+  }
+
+ .btn-hover:hover, .btn-hover:focus  {
+    color:white;
+    background-color: #3a3939;
+    border-color: black;
+}
+
 /* register
     .padding-register{
         padding-bottom: 100px;
@@ -96,11 +109,33 @@ ul, ol {
             padding-bottom: 200px;
         }
         } */
-
+    /* slider */
     .card-body-bg-img{
-        background-image: url('https://picsum.photos/800/900');
+        background-image: url('https://picsum.photos/1000/1200');
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
         opacity: 0.8;
     }
+
+    /* navbar */
+    a {
+        font-size:14px;
+        font-weight:700
+      }
+    .superNav {
+        font-size:13px;
+      }
+    .navbar-scrolled{
+        background-color: white;
+        opacity: 0.5;
+    }
+    .form-control {
+        outline:none !important;
+        box-shadow: none !important;
+      }
+    @media screen and (max-width:540px){
+        .centerOnMobile {
+          text-align:center
+        }
+      }
