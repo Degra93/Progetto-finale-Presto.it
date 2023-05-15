@@ -29,5 +29,6 @@ class Announcement extends Model
 
     public static function daRevisionare(){
         return Announcement::where('is_accepted',null)->count();
+        
     }
 }

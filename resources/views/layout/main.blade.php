@@ -17,7 +17,7 @@
 
         @livewireStyles
     </head>
-    <body>
+    <body style="" >
 
     {{$slot}}
 
