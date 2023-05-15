@@ -14,6 +14,7 @@ const splide = new Splide( '#first-slider', {
   breakpoints: {
     1200: { perPage: 2, gap: '1rem' },
     640 : { gap: 0 },
+    
   },
 
 } );

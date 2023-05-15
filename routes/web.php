@@ -29,7 +29,7 @@ Route::get('/dettail/annuncio/{announcement}', [AnnouncementController::class, '
 Route::get('/annuncio', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
 
 // Home revisore
-Route::get('/home/revisore', [RevisorController::class, 'index'])->middleware('auth')->name('revisore.index');
+Route::get('/home/revisore', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisore.index');
 
 // si
 Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'OkAnnuncio'])->name('revisore.OkAnnuncio');
