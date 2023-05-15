@@ -14,6 +14,7 @@ const splide = new Splide( '#first-slider', {
   breakpoints: {
     1200: { perPage: 2, gap: '1rem' },
     640 : { gap: 0 },
+    390 : { perPage: 1},
   },
 
 } );
@@ -48,6 +49,8 @@ splide.mount( { AutoScroll } );
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 120) {
             navE1.classList.add('navbar-scrolled')
+        }else{
+            navE1.classList.remove('navbar-scrolled')
         }
     })
 

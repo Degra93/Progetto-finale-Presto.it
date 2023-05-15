@@ -201,6 +201,9 @@
                     </ul>
                 </li> --}}
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('homepage')}}">Home</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Login</a>
                 </li>
                 <li class="nav-item">
@@ -216,7 +219,10 @@
 @else
 <nav class="navbar navbar-expand-sm sticky-top">
     <div class="container-fluid">
-
+        <a class="navbar-brand" href="{{route('homepage')}}">
+            <img src="{{URL::asset('img/icons8-cash-app-150.png')}}" alt="" height="40">
+            <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
+        </a>
         {{-- <a class="nav-link p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
         <ul class="dropdown-menu"  aria-labelledby="catDrop">
             @foreach ($categories as $category )
@@ -230,16 +236,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('homepage')}}">Home</a>
+            </li>
             {{-- Bottone revisore se ha il revisore dentro: --}}
             @if (Auth::user()->is_revisor)
             <li>
                 <a href="{{route('revisore.index')}}" class="btn btn-warning">Zona Revisori</a>
             </li>
             @endif
-          <a class="nav-link" href="#">
+          {{-- <a class="nav-link" href="#">
             <i class="fas fa-shopping-cart"></i>
-          </a>
-          <li class="nav-item dropdown">
+          </a> --}}
+          {{-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bell"></i>
           {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
