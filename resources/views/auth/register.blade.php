@@ -1,76 +1,42 @@
 <x-main>
-
-    <div class="container">
-     
-            <div class="container">
-                <section class="vh-100">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-sm-6 text-black">
-                  
-                          <div class="px-5 ms-xl-4">
-                            <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
-                            <span class="h1 fw-bold mb-0">Logo</span>
-                          </div>
-                  
-                          <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-                  
-                            <form action="/register" method="POST" style="width: 23rem;">
-                                @csrf
-                              <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign In</h3>
-                  
-                              
-                              <div class="form-outline mb-4">
-                                
-                                <input type="text" name="email" id="email" class="form-control form-control-lg" />
-                                <label class="form-label" for="email">Email address</label>
-                                @error('email')<span class="small text-danger">{{$message}}</span>@enderror
-                                </div>
-                    
-
-                             <div class="form-outline mb-4">
-                                <input type="text" name="name" id="name" class="form-control form-control-lg">
-                                <label for="name" class="form-label">Name</label>
-                                @error('name')<span class="small text-danger">{{$message}}</span>@enderror
-
-                            </div>
-                  
-                              <div class="form-outline mb-4">
-                                <input type="password" name="password" id="password" class="form-control form-control-lg" />
-                                <label class="form-label" for="password">Password</label>
-                                @error('password')<span class="small text-danger">{{$message}}</span>@enderror
-                              </div>
-
-                              <div class="form-outline mb-4">
-                                <label for="password_confirmation">Conferma password</label>
-                                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control form-control-lg">
-                            </div>
-
-
-                            
-                        
-                  
-                              <div class="pt-1 mb-4">
-                                <button class="btn btn-info btn-lg btn-block" type="submit">Sign In</button>
-                              </div>
-                  
-                              
-                  
-                            </form>
-                            
-                  
-                          </div>
-                  
+    <x-navbar/>
+    <section class="my-5">
+        <div class="container my-5">
+            <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">
+                <div class="col-12 col-md-6 text-black">
+                    <form action="/register" method="POST" class="m-5">
+                        @csrf
+                        <h3 class="fw-normal mb-5 text-center text-body">FORM DI REGISTRAZIONE</h3>
+                        <div class="form-outline mb-3">
+                            <input type="text" name="email" id="email" class="form-control" />
+                            <label class="form-label" for="email">Email address</label>
+                            @error('email')<span class="small text-danger">{{$message}}</span>@enderror
                         </div>
-                        <div class="col-sm-6 px-0 d-none d-sm-block">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp"
-                            alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+                        <div class="form-outline mb-3">
+                            <input type="text" name="name" id="name" class="form-control">
+                            <label for="name" class="form-label">Nome</label>
+                            @error('name')<span class="small text-danger">{{$message}}</span>@enderror
                         </div>
-                      </div>
-                    </div>
-                  </section>
+                        <div class="form-outline mb-3">
+                            <input type="password" name="password" id="password" class="form-control" />
+                            <label class="form-label" for="password">Password</label>
+                            @error('password')<span class="small text-danger">{{$message}}</span>@enderror
+                        </div>
+                        <div class="form-outline mb-3">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
+                            <label for="password_confirmation">Conferma password</label>
+                        </div>
+                        <div class="pt-1 mb-5 text-center">
+                            <button class="btn-hover btn btn-warning btn-sm py-2 px-5 " type="submit">Registrati qui</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 p-0 d-none d-sm-block">
+                    <img src="https://picsum.photos/900/700" alt="Login image" class="w-100 h-100" >
+                </div>
             </div>
-        
-    </div>
+        </div>
+    </section>
+    <x-footer/>
 </x-main>
 

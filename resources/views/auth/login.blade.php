@@ -2,9 +2,9 @@
     <x-navbar/>
         <section class="my-5">
             <div class="container my-5">
-                    <div class="row  bg-light border border-3 border-dark border-opacity-25 rounded">
+                    <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">
                         <div class="col-12 col-md-6 text-black">
-                            <form action="/login" method="POST"  class="m-5 " >
+                            <form action="/login" method="POST"  class="m-5" >
                                     @csrf
                                 <h3 class="fw-normal mb-5 text-center text-body">LOGIN FORM</h3>
                                 <div class="form-outline mb-2">
