@@ -11,7 +11,7 @@ class PageController extends Controller
 {
     public function homepage(){
 
-        $announcements = Announcement::orderBy('created_at', 'desc')->take(6)->get();
+        $announcements = Announcement::where('is_accepted',true)->orderBy('created_at', 'desc')->take(6)->get();
     // $announcements = Announcement::latest()->take(6)->get();
     // oppure:
     // $announcements = Announcement::orderBy('created_at', 'desc')->take(6)->get();

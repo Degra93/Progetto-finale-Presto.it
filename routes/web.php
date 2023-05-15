@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,8 +23,16 @@ Route::get('/nuovo/annuncio',[AnnouncementController::class, 'createAnnouncement
 
 Route::get('/categoria/{category}',[PageController::class, 'categoryShow'])->name('categoryShow');
 
-Route::get('/dettail/annuncio/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->middleware('auth')->name('announcement.show');
+Route::get('/dettail/annuncio/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
 
 
 Route::get('/annuncio', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
 
+// Home revisore
+Route::get('/home/revisore', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisore.index');
+
+// si
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'OkAnnuncio'])->name('revisore.OkAnnuncio');
+
+// no
+Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'NoAnnuncio'])->name('revisore.NoAnnuncio');
