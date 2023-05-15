@@ -109,7 +109,7 @@ ul, ol {
             padding-bottom: 200px;
         }
         } */
-
+    /* slider */
     .card-body-bg-img{
         background-image: url('https://picsum.photos/1000/1200');
         background-position: center center;
@@ -117,3 +117,25 @@ ul, ol {
         background-size: auto;
         opacity: 0.8;
     }
+
+    /* navbar */
+    a {
+        font-size:14px;
+        font-weight:700
+      }
+    .superNav {
+        font-size:13px;
+      }
+    .navbar-scrolled{
+        background-color: white;
+        opacity: 0.5;
+    }
+    .form-control {
+        outline:none !important;
+        box-shadow: none !important;
+      }
+    @media screen and (max-width:540px){
+        .centerOnMobile {
+          text-align:center
+        }
+      }

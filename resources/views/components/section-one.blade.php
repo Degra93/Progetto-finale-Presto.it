@@ -120,7 +120,7 @@
         </div>
 
         @endforeach
-    </div> --}}
+    </div>
     <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
 

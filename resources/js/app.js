@@ -7,7 +7,7 @@ const splide = new Splide( '#first-slider', {
   type   : 'loop',
   drag   : 'free',
   focus  : 'center',
-  perPage: 3,
+  perPage: 5,
   autoScroll: {
     speed: 1,
   },
@@ -41,5 +41,14 @@ splide.mount( { AutoScroll } );
             //     perPage: 3,
             //     rewind: true,
             //     } ).mount());
+
+//   navbar
+    const navE1 = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 120) {
+            navE1.classList.add('navbar-scrolled')
+        }
+    })
 
 
