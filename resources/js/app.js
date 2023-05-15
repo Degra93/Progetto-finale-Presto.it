@@ -1,6 +1,6 @@
 import 'bootstrap';
 import 'animate.css';
-// import Splide from '@splidejs/splide';
+
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const splide = new Splide( '#first-slider', {
