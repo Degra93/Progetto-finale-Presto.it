@@ -1,14 +1,14 @@
-<footer class="section footer-classic context-dark bg-image " style="background: #040303;">
+<footer class="container-fluid section footer-classic context-dark bg-image " style="background: #040303;">
     <div class="container ">
       <div class="row row-30 ">
         <div class="col-md-4 col-xl-5 mt-2">
-          <div class="pr-xl-4">
+          <div class="pr-xl-4 text-center">
             <p>Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!</p>
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
           </div>
         </div>
-        <div class="col-md-4 mt-2">
+        <div class="col-md-4 mt-2 text-center">
           <h5>Contatti</h5>
           <dl class="contact-list">
             <dt>Indirizzo:</dt>
@@ -24,7 +24,7 @@
             </dd>
           </dl>
         </div>
-        <div class="col-md-4 col-xl-3 mt-2">
+        <div class="col-md-4 col-xl-3 mt-2 text-center">
           <h5>Links</h5>
          <ul> {{-- class="nav-list"> --}}
             <li class="mt-2"><a href="#">Chi siamo</a></li>
