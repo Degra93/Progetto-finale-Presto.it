@@ -148,16 +148,38 @@
 </nav> --}}
 
 {{-- Nav di matteo --}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+{{-- prima nav --}}
+{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-50">
     <div class="container-fluid justify-content-center">
         <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{URL::asset('img/icons8-cash-app-144.png')}}" alt="" height="40"><span class="text-muted fw-bold nav-brand">ShopyPro</span>
             <a class="nav-link fw-bold fs-4 text-white" href="#"></a>
         </a>
     </div>
-</nav>
+</nav> --}}
+<div class="superNav border-bottom py-2 bg-dark text-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile">
+          <select  class=" border-0 bg-dark text-white">
+            <option value="en-us">EN-US</option>
+          </select>
+
+          <span class="me-3"><strong>info@somedomain.com</strong></span>
+        </div>
+        {{-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none text-end">
+          <span class="me-3"><i class="fa-solid fa-truck text-muted me-1"></i><a class="text-muted" href="#">Shipping</a></span>
+          <span class="me-3"><i class="fa-solid fa-file  text-muted me-2"></i><a class="text-muted" href="#">Policy</a></span>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+
+
+{{-- seconda nav --}}
 @guest
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top opacity-75 ">
+<nav class="navbar navbar-expand-sm sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{URL::asset('img/icons8-cash-app-150.png')}}" alt="" height="40">
@@ -168,16 +190,16 @@
          </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                    <ul class="dropdown-menu" aria-labelledby="catDrop">
+                    <ul class="dropdown-menu    " aria-labelledby="catDrop">
                         @foreach ($categories as $category )
                             <li>
                                 <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a>
                             </li>
                         @endforeach
                     </ul>
-            </li>
+                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Login</a>
                 </li>
@@ -192,17 +214,17 @@
   </nav>
 
 @else
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top opacity-75">
+<nav class="navbar navbar-expand-sm sticky-top">
     <div class="container-fluid">
 
-        <a class="nav-link ms-2 p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-        <ul class="dropdown-menu ms-1"  aria-labelledby="catDrop">
+        {{-- <a class="nav-link p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+        <ul class="dropdown-menu"  aria-labelledby="catDrop">
             @foreach ($categories as $category )
                 <li>
                     <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a>
                 </li>
             @endforeach
-        </ul>
+        </ul> --}}
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -221,7 +243,17 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bell"></i>
           {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
-            </a>
+           </a>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+            <ul class="dropdown-menu    " aria-labelledby="catDrop">
+                @foreach ($categories as $category )
+                    <li>
+                        <a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </li>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Offerte</a></li>
               <li><a class="dropdown-item" href="#">Nuovi annunci</a></li>
@@ -250,3 +282,7 @@
       </div>
     </div>
   </nav>
+
+
+
+
