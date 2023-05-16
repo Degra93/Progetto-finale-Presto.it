@@ -47,7 +47,7 @@ splide.mount( { AutoScroll } );
     const navE1 = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 120) {
+        if (window.scrollY >= 40) {
             navE1.classList.add('navbar-scrolled')
         }else{
             navE1.classList.remove('navbar-scrolled')
