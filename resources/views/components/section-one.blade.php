@@ -99,7 +99,7 @@
 
 
 {{-- section degli annunci fare modifiche css --}}
-<section class="container m-3">
+<section class="container ">
     <div class="col-12">
         <h2>Annunci In prima vista!</h2>
     </div>
