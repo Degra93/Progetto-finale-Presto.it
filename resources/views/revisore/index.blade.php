@@ -2,7 +2,7 @@
     <div class="spacer"></div>
 <h1>
     {{$announceToCheck ? 'Da Revisionare' : 'Nulla da Revisionare'}}
-</h1> --}}
+</h1>
 
 
 @forelse ($announceToCheck as $announceToCheck)
