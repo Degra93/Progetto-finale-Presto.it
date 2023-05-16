@@ -1,5 +1,5 @@
 <x-main>
-    <x-navbar/>
+    <div class="spacer"></div>
     <h1 class="text-center">Annunci presenti per la categoria: {{$category->name}}</h1>
 
     <div class="container ">

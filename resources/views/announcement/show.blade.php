@@ -1,6 +1,7 @@
 <x-main>
-
+    <div class="spacer"></div>
     <h1>Annuncio {{$announcement->title}}</h1>
+
 
     <div class="container">
         <div class="col-12">
