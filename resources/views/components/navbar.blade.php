@@ -190,7 +190,11 @@
          </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                {{-- <li class="nav-item dropdown">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('homepage')}}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
                     <ul class="dropdown-menu    " aria-labelledby="catDrop">
                         @foreach ($categories as $category )
@@ -199,9 +203,6 @@
                             </li>
                         @endforeach
                     </ul>
-                </li> --}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('homepage')}}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Login</a>
@@ -239,6 +240,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('homepage')}}">Home</a>
             </li>
+            <li><a class="nav-link" href="{{route('announcement.index')}}">Prodotti</a></li>
             {{-- Bottone revisore se ha il revisore dentro: --}}
             @if (Auth::user()->is_revisor)
             <li>
@@ -275,8 +277,8 @@
                 <img src="{{URL::asset('img/iconaUtente.png')}}" class="rounded-circle" height="22" alt="">
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="{{route('homepage')}}">Home</a></li>
-                <li><a class="dropdown-item" href="{{route('announcement.index')}}">Prodotti</a></li>
+
+
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/logout" onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a></li>
                 <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">
