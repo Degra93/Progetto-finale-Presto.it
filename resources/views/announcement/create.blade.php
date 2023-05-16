@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">
                     <div class="col-12 col-md-6 text-black">
-                        <h3 class="fw-normal mt-5 text-center text-body">CREA UN NUOVO ANNUNCIO</h3>
+                        <h3 class="fw-normal text-center mt-5 ">CREA UN NUOVO ANNUNCIO</h3>
                         <livewire:create-announcement />
                     </div>
                     <div class="col-sm-6 px-0 d-none d-sm-block">

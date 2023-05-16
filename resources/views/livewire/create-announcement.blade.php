@@ -1,54 +1,50 @@
-<div class="spacer"></div>
+
 <div class="container py-4">
-
+    <x-success/>
     <form wire:submit.prevent="store" enctype="multipart/form-data">
-
         @csrf
 
-      <div class="mb-3">
-        <label class="form-label">Titolo</label>
+      <div class="mb-2">
         <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
+        <label class="form-label">Titolo</label>
         @error('title')
             <span class="small text-danger">{{$message}}</span>
         @enderror
       </div>
 
-      <div class="mb-3">
-        <label for="category">Categoria</label>
+      <div class="mb-2">
         <select wire:model.lazy='category'  class="form-control">
-          <option value="">Scegli</option>
+            <option value="">Scegli</option>
+            @foreach($categories as $category)
+            <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+        </select>
+        <label for="category" class="my-1 me-3">Categoria</label>
+      </div>
 
-        @foreach($categories as $category)
-        <option value="{{$category->id}}">{{$category->name}}</option>
-        @endforeach
-      </select>
-    </div>
-
-      <div class="mb-3 col-12">
-        <label for="body">Testo</label>
-        <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="5"  >{{old('body')}}</textarea>
+      <div class="mb-2">
+        <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="2"  >{{old('body')}}</textarea>
+        <label class="my-1 me-3" for="body">Testo</label>
         @error('body')
             <span class="small text-danger">{{$message}}</span>
         @enderror
       </div>
 
-      <div class="mb-3">
-        <label class="form-label">Prezzo</label>
+      <div class="mb-2">
         <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
+        <label class="form-label">Prezzo</label>
         @error('price')
             <span class="small text-danger">{{$message}}</span>
         @enderror
       </div>
 
-
-
-
-      <div class="d-grid">
-        <button class="btn btn-primary btn-lg" type="submit" >Crea annuncio</button>
-        <button class="btn btn-light btn-lg" type="reset" >Azzera</button>
-
-
+      <div class="pt-1  text-center">
+            <div class="d-flex justify-content-center">
+                <button class="btn-hover btn btn-warning btn-sm py-2 px-2 d-block mb-3" type="submit">Crea annuncio</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn-hover btn btn-danger btn-sm py-2 px-3 d-block" type="reset">Azzera</button>
+            </div>
       </div>
-
     </form>
 </div>
