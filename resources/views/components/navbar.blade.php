@@ -181,7 +181,7 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
-                <img src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
+                <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
