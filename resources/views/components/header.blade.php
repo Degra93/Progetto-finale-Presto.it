@@ -127,7 +127,7 @@
                 <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">Inserisci il tuo annuncio.</h1>
                 <p class="lead text-white">Vendi senza obblighi o preoccupazione.</p>
                 <div class=" d-flex mt-3 mb-1">
-                    <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="#" role="button">Registrati</a>
+                    <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="{{ route('register') }}" role="button">Registrati</a>
                 </div>
             </div>
 

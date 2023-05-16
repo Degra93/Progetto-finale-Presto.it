@@ -121,7 +121,7 @@
 
         @endforeach
     </div>
-    <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
+    {{-- <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
 
             <div class="splide__list">
@@ -141,7 +141,7 @@
             </div>
 
         </div>
-      </section>
+    </section> --}}
 
 {{-- section delle due foto inferiori aggiungere scritta --}}
 
