@@ -1,10 +1,6 @@
 <x-main>
-<div class="spacer"></div>
-    @if(session()->has('message'))
-<div class="alert alert-danger">
-    {{ session('message')}}
-</div>
-@endif
+
+
 
     <x-header/>
     <x-section-One :$announcements />
