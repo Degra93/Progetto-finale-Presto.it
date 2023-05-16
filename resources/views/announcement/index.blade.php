@@ -1,6 +1,7 @@
 <x-main>
-<x-navbar/>
-<div class="container">
+    <div class="spacer"></div>
+
+<div class="container mt-3">
     <div class="col-12">
         <h2>Annunci</h2>
     </div>
@@ -19,7 +20,7 @@
             </div>
             </div>
         </div>
-            
+
         @endforeach
         {{$announcements->links()}}
     </div>

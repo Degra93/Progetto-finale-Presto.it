@@ -151,3 +151,86 @@
 </section>
 @endguest
 
+
+{{-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="left-content">
+                <div class="thumb">
+                    <div class="inner-content">
+                        <h4>Siamo ShopyPro</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="right-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="right-first-image">
+                            <div class="thumb">
+                                <div class="inner-content">
+                                    <h4>lorem</h4>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="right-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="right-first-image">
+                            <div class="thumb">
+                                <div class="inner-content">
+                                    <h4>lorem</h4>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="right-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="right-first-image">
+                            <div class="thumb">
+                                <div class="inner-content">
+                                    <h4>lorem</h4>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="right-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="right-first-image">
+                            <div class="thumb">
+                                <div class="inner-content">
+                                    <h4>lorem</h4>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}

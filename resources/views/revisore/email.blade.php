@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -15,14 +14,16 @@
 
         @vite(['resources/css/app.css','resources/js/app.js'])
 
-        @livewireStyles
+       
     </head>
     <body>
-        <x-navbar />
+       
+        <p>
+            l'utente {{$user['name']}} ti ha contattato per diventare revisore: Email: {{$user['email']}}
 
-    {{$slot}}
-
-
-    @livewireScripts
+        </p>
+    <h2>Se vuoi renderlo Revisore clicca sotto:</h2>
+    <a href="{{route('make.revisor',compact('user'))}}" class="btn btn-danger">Rendi revisore</a>
+   
     </body>
 </html>

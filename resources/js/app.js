@@ -1,6 +1,17 @@
 import 'bootstrap';
 import 'animate.css';
-// import Splide from '@splidejs/splide';
+
+//   navbar
+const navE1 = document.querySelector('.navbar');
+
+window.addEventListener('scroll', function(){
+    if (window.scrollY >= 40) {
+        navE1.classList.add('navbar-scrolled')
+    }else{
+        navE1.classList.remove('navbar-scrolled')
+    }
+})
+
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const splide = new Splide( '#first-slider', {
@@ -18,9 +29,8 @@ const splide = new Splide( '#first-slider', {
   },
 
 } );
-
 splide.mount( { AutoScroll } );
-            new Splide("#second-slider").mount();
+//             new Splide("#second-slider").mount();
 
 
             // var splide = new Splide('#second-slider', {
@@ -43,15 +53,6 @@ splide.mount( { AutoScroll } );
             //     rewind: true,
             //     } ).mount());
 
-//   navbar
-    const navE1 = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY >= 120) {
-            navE1.classList.add('navbar-scrolled')
-        }else{
-            navE1.classList.remove('navbar-scrolled')
-        }
-    })
 
 

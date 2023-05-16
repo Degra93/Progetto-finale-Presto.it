@@ -19,6 +19,6 @@ class IsRevisor
         if (Auth::check() && Auth::user()->is_revisor){
             return $next($request);
         }
-        return redirect('/')->with('access.denied', 'Attenzione! Zona riservata Rev.');
+        return redirect('/')->with('message', 'Attenzione! Zona riservata Rev.');
     }
 }
