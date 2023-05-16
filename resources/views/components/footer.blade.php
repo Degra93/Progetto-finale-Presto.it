@@ -6,6 +6,9 @@
             <p>Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!</p>
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+
+            <h5>Vuoi lavorare con noi?</h5>
+            <a class="btn btn-danger" href="{{route('ask.revisor')}}">Diventa Revisore</a>
           </div>
         </div>
         <div class="col-md-4 mt-2 text-center">
@@ -31,6 +34,7 @@
             <li class="mt-2"><a href="#">Annunci</a></li>
             <li class="mt-2"><a href="#">Blog</a></li>
             <li class="mt-2"><a href="#">Contatti</a></li>
+            
           </ul>
         </div>
       </div>

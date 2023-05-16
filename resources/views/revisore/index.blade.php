@@ -23,13 +23,13 @@
             
         </div>
         <div class="col-12 col-md-6 ">
-            <form action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+            <form onsubmit="return confirm('Sei sicuro di voler accettare questo annuncio?')" action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                 @csrf @method('PATCH')
                 <button class="submit btn btn-primary ">Accetta</button>    
             </form>
         </div>
         <div class="col-12 col-md-6">
-            <form action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+            <form onsubmit="return confirm('Sei sicuro di voler cancellare questo annuncio?')" action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
             @csrf @method('PATCH')
             
             <button class="submit btn btn-danger ">Rifiuta</button>    
