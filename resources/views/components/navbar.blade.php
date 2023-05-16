@@ -194,6 +194,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
+                    
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
@@ -248,6 +249,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
+                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea Annuncio</a></li>
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     {{-- Bottone revisore se ha il revisore dentro: --}}
 
