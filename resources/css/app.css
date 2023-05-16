@@ -1,5 +1,6 @@
 @import 'bootstrap';
-.bg-custom{
+
+.bg-custom {
     background-color: rgba(0, 0, 0, 0.880);
     opacity: 0.9;
 }
@@ -10,21 +11,27 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
-    }
+}
 
-    @media (min-width: 1025px) {
+@media (min-width: 1025px) {
     .h-custom-2 {
-    height: 100%;
+        height: 100%;
     }
-    }
- /* footer */
- .context-dark, .bg-gray-dark, .bg-primary {
+}
+
+/* footer */
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
     color: #ffffff;
 }
+
 .nav-list li {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -36,7 +43,8 @@
     visibility: visible;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -52,9 +60,11 @@ ul, ol {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .social-container .col {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .nav-list li a:before {
     content: "\f14f";
     font: 400 21px/1 "Material Design Icons";
@@ -87,10 +97,11 @@ ul, ol {
 .btn-hover {
     font-weight: 600;
     transition: background-color 0.1s ease;
-  }
+}
 
- .btn-hover:hover, .btn-hover:focus  {
-    color:white;
+.btn-hover:hover,
+.btn-hover:focus {
+    color: white;
     background-color: #3a3939;
     border-color: black;
 }
@@ -109,33 +120,53 @@ ul, ol {
             padding-bottom: 200px;
         }
         } */
-    /* slider */
-    .card-body-bg-img{
-        background-image: url('https://picsum.photos/1000/1200');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: auto;
-        opacity: 0.8;
-    }
+/* slider */
+.card-body-bg-img {
+    background-image: url('https://picsum.photos/1000/1200');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.8;
+}
 
-    /* navbar */
-    a {
-        font-size:14px;
-        font-weight:700
-      }
-    .superNav {
-        font-size:13px;
-      }
-    .navbar-scrolled{
-        background-color: rgba(255, 255, 255, 0.1);
-        opacity: 0.8;
+/* navbar */
+a {
+    font-size: 14px;
+    font-weight: 700
+}
+
+.superNav {
+    font-size: 13px;
+}
+
+.navbar {
+    transition: all 0.6s;
+}
+
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: black;
+
+}
+
+.navbar-scrolled {
+    background-color: whitesmoke;
+
+}
+
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form-control {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:540px) {
+    .centerOnMobile {
+        text-align: center
     }
-    .form-control {
-        outline:none !important;
-        box-shadow: none !important;
-      }
-    @media screen and (max-width:540px){
-        .centerOnMobile {
-          text-align:center
-        }
-      }
+}
