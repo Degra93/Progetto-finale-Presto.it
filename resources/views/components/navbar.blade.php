@@ -178,7 +178,7 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -221,7 +221,7 @@
         </div>
     </nav>
 @else
-    <nav class="navbar navbar-expand-sm fixed-top navbar-scroll">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
