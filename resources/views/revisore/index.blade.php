@@ -7,6 +7,8 @@
 </h1> --}}
 
 
+
+<h1 class="my-5 pt-5 text-center">ZONA REVISORE</h1>
 @forelse ($announceToCheck as $announceToCheck) 
 <div class="container text-center border border-warning">
     <div class="row">
@@ -38,6 +40,6 @@
 </div>
 </div>
 @empty
-<h1>Non c'e' nulla da revisionare</h1>
+<h1>NON CI SONO ANNUNCI DA REVISIONARE</h1>
 @endforelse
 </x-main>
