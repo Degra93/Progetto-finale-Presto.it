@@ -1,5 +1,5 @@
 <x-main>
-
+<div class="spacer"></div>
     @if(session()->has('message'))
 <div class="alert alert-danger">
     {{ session('message')}}
