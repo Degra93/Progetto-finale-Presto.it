@@ -1,9 +1,10 @@
+<div class="spacer"></div>
 <div class="container py-4">
-      
+
     <form wire:submit.prevent="store" enctype="multipart/form-data">
 
         @csrf
-        
+
       <div class="mb-3">
         <label class="form-label">Titolo</label>
         <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
@@ -16,13 +17,13 @@
         <label for="category">Categoria</label>
         <select wire:model.lazy='category'  class="form-control">
           <option value="">Scegli</option>
-        
+
         @foreach($categories as $category)
         <option value="{{$category->id}}">{{$category->name}}</option>
         @endforeach
       </select>
     </div>
-    
+
       <div class="mb-3 col-12">
         <label for="body">Testo</label>
         <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="5"  >{{old('body')}}</textarea>
@@ -38,17 +39,17 @@
             <span class="small text-danger">{{$message}}</span>
         @enderror
       </div>
-      
 
-      
-    
+
+
+
       <div class="d-grid">
         <button class="btn btn-primary btn-lg" type="submit" >Crea annuncio</button>
         <button class="btn btn-light btn-lg" type="reset" >Azzera</button>
-        
-        
+
+
       </div>
-  
+
     </form>
     <x-success/>
   </div>

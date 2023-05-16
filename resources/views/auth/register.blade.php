@@ -1,5 +1,6 @@
 <x-main>
-    <x-navbar/>
+    <div class="spacer"></div>
+
     <section class="my-5">
         <div class="container my-5">
             <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">

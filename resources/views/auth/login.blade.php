@@ -1,4 +1,6 @@
 <x-main>
+    <div class="spacer"></div>
+
     <x-navbar/>
         <section class="my-5">
             <div class="container my-5">
