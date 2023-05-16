@@ -181,7 +181,7 @@
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
-                <img src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
+                <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -194,6 +194,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
+                    
+                    <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
@@ -247,6 +249,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
+                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea Annuncio</a></li>
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     {{-- Bottone revisore se ha il revisore dentro: --}}
 

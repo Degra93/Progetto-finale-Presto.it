@@ -6,7 +6,7 @@
 
 
 @forelse ($announceToCheck as $announceToCheck)
-<div class="container text-center border border-warning">
+<div class="container text-center border border-warning bg-white">
     <div class="row">
         <div  class="col-12 text-center">
             <img src="https://picsum.photos/200/300" alt="Random img" class="cart-img-top p-3 rounded">
