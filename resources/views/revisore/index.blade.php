@@ -1,11 +1,13 @@
 <x-main>
 <x-navbar/>
-<h1>
+
+{{-- <h1>
+    questa if non funzionera in quanto vedra che ci saranno sempre announceToCheck disponibile quindi commento
     {{$announceToCheck ? 'Da Revisionare' : 'Nulla da Revisionare'}}
-</h1>
+</h1> --}}
 
 
-@foreach ($announceToCheck as $announceToCheck) 
+@forelse ($announceToCheck as $announceToCheck) 
 <div class="container text-center border border-warning">
     <div class="row">
         <div  class="col-12 text-center">
@@ -34,7 +36,8 @@
     </div>
     <div class="col-12">Ci sono ancora {{App\Models\Announcement::daRevisionare()}} annunci da revisionare</div>
 </div>
-
 </div>
-@endforeach
+@empty
+<h1>Non c'e' nulla da revisionare</h1>
+@endforelse
 </x-main>
