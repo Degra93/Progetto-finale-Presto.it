@@ -36,3 +36,9 @@ Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'OkA
 
 // no
 Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'NoAnnuncio'])->name('revisore.NoAnnuncio');
+
+//richista revisore nel footer
+Route::get('/ask/revisor', [RevisorController::class, 'askRevisor'])->middleware('auth')->name('ask.revisor');
+
+//Funzione rendi revisore tramite mail
+Route::get('became/revisor/{user}',[RevisorController::class,'makeRevisor'])->name('make.revisor');
