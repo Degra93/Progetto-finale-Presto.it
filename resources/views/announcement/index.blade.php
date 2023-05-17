@@ -30,7 +30,7 @@
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
-            <h1 class="mb-5">Explora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+            <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
         </div>
         <div class="row g-4">
             @forelse ($announcements as $announcement)
