@@ -3,7 +3,6 @@
     <x-success/>
     <form wire:submit.prevent="store" enctype="multipart/form-data">
         @csrf
-
       <div class="mb-2">
         <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
         <label class="form-label">Titolo</label>
