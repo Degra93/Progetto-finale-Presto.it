@@ -188,9 +188,15 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+                        <li>
+                            <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
+                                <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Cerca</button>
+                                </form>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>

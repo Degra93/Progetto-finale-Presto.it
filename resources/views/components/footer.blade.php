@@ -30,9 +30,9 @@
         <div class="col-md-4 col-xl-3 mt-2 text-center">
           <h5>Links</h5>
          <ul> {{-- class="nav-list"> --}}
+            <li class="mt-2"><a href="{{ route('homepage') }}">Home</a></li>
+            <li class="mt-2"><a href="{{ route('announcement.index') }}">Annunci</a></li>
             <li class="mt-2"><a href="#">Chi siamo</a></li>
-            <li class="mt-2"><a href="#">Annunci</a></li>
-            <li class="mt-2"><a href="#">Blog</a></li>
             <li class="mt-2"><a href="#">Contatti</a></li>
 
           </ul>
