@@ -42,3 +42,6 @@ Route::get('/ask/revisor', [RevisorController::class, 'askRevisor'])->middleware
 
 //Funzione rendi revisore tramite mail
 Route::get('became/revisor/{user}',[RevisorController::class,'makeRevisor'])->name('make.revisor');
+
+//Ricerca annuncio
+Route::get('/search/annuncio',[PageController::class, 'searchAnnounces'])->name('announcement.search');

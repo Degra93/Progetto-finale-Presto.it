@@ -33,7 +33,7 @@
             <h1 class="mb-5">Explora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
         </div>
         <div class="row g-4">
-            @foreach ($announcements as $announcement)
+            @forelse ($announcements as $announcement)
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
@@ -55,7 +55,9 @@
                     </div>
                 </div>
             </div>
-            @endforeach
+            @empty
+            <h2>Non ci sono annunci nella Ricerca</h2>
+            @endforelse
             {{$announcements->links()}}
         </div>
     </div>
