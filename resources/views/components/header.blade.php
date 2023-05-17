@@ -121,8 +121,8 @@
   </div>
 </section> --}}
 
-@guest
-<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce&quot;);">
+{{-- @guest
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(https://themewagon.github.io/caraft/images/banner-bg.png); background-position: center center;">
     <div class="container ">
         <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
@@ -138,21 +138,27 @@
 </section>
 @else
 
-<section class="pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce&quot;);">
+<section class="pb-5 mt-0 align-items-center d-flex bg-dark opacity-75" style="min-height: 100vh; background-size: cover; background-image: url(https://themewagon.github.io/caraft/images/banner-bg.png);">
     <div class="container ">
         <div class="row align-items-center d-flex justify-content-between">
-            <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
-                <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">Inserisci il tuo annuncio.</h1>
-                <p class="lead text-white">Vendi senza obblighi o preoccupazione.</p>
-                <div class=" d-flex mt-3 mb-1">
-                    <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="{{route('announcement.create')}}" role="button">Crea annuncio</a>
+            <div class="col-12">
+                <div class="col-6 col-md-6 pb-5 order-2 order-sm-2 ">
+                    <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">Inserisci il tuo annuncio.</h1>
+                    <p class="lead text-white">Vendi senza obblighi o preoccupazione.</p>
+                    <div class=" d-flex mt-3 mb-1">
+                        <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="{{route('announcement.create')}}" role="button">Crea annuncio</a>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <img src="{{URL::asset('public/img/img-1.png')}}" alt="shopping" class="img-fluid z-10">
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-@endguest
+@endguest --}}
 
 
 {{-- <div class="container-fluid">
@@ -237,3 +243,137 @@
         </div>
     </div>
 </div> --}}
+
+
+
+
+<header class="py-3">
+    <div class="spacer"></div>
+    <div class="container px-lg-5">
+        <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+            <div class="m-4 m-lg-5">
+                <h1 class="display-5 fw-bold">A warm welcome!</h1>
+                <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
+                <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
+            </div>
+        </div>
+    </div>
+</header>
+{{-- categories slider --}}
+<div class="container">
+    <div class="row mt-3">
+        <h2 class="display-6 lh-1 fw-bold">Le nostre categorie</h2>
+
+        <div class="splide" id="first-slider">
+            <div class="splide__track">
+
+                <div class="splide__list">
+                @foreach ($categories as $category)
+                    <div class="col-sm-4 splide__slide m-2">
+                        <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                            <div class="lc-block pt-5 mt-5 mb-4">
+                                <div editable="rich">
+                                    <h2 class="display-6 lh-1 fw-bold text-center mb-3">{{$category->name}}</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                @endforeach
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Page Content-->
+<section class="pt-4">
+    <div class="container px-lg-5">
+        <!-- Page Features-->
+        <div class="row gx-lg-5">
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="lc-block pt-5 mt-5 mb-4">
+                            <div editable="rich">
+                                <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                            </div>
+                        </div>
+                        <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

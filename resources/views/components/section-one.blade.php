@@ -1,37 +1,9 @@
 {{-- Section delle card categorie fare modifiche css --}}
-<div class="container">
-    <div class="row mt-3">
-        <h2 class="display-6 lh-1 fw-bold">Le nostre categorie</h2>
-
-        <div class="splide" id="first-slider">
-            <div class="splide__track">
-
-                <div class="splide__list">
-                @foreach ($categories as $category)
-                    <div class="col-sm-4 splide__slide m-2">
-                        <div class="card bg-dark text-white">
-                            <div class="card-body card-body-bg-img">
-                                <h5 class="card-title">{{$category->name}}</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quas, dolorem debitis.</p>
-                                <a href="{{route('categoryShow', compact('category'))}}" class="btn btn-primary">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-
-                @endforeach
-
-                </div>
-
-
-            </div>
-        </div>
-
-    </div>
-</div>
 
 
 
-<div class="container">
+
+{{-- <div class="container">
 	<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 		<div class="col">
 			<div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
@@ -75,7 +47,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> --}}
 
 
 {{-- <section class="container-fluid">
@@ -115,19 +87,19 @@
                         <div class="d-flex justify-content-between mb-3">
                             <h5 class="mb-0">{{$announcement->title}}</h5>
                         </div>
-                        
+
                         <p class="text-body mb-3">{{$announcement->body}}</p>
                         <div class="d-flex justify-content-between">
                             <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
                             <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
-                            
+
                         </div>
                         <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
                     </div>
                 </div>
             </div>
             @endforeach
-            
+
         </div>
     </div>
 </div>
