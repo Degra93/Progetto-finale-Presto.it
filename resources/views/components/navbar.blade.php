@@ -188,19 +188,20 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li>
-                            <form action="{{route('announcement.search')}}" method="GET" class="d-flex">
-                                <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Cerca</button>
-                                </form>
-                        </li>
+                    <li>
+                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                        </form>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    
+
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
@@ -227,8 +228,8 @@
         </div>
     </nav>
 @else
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-        <div class="container">
+    <nav class="navbar navbar-expand-xl fixed-top navbar-scroll">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
@@ -247,11 +248,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    @if (Auth::user()->is_revisor)
-                        <li>
-                            <a href="{{ route('revisore.index') }}" class="btn btn-warning">Zona Revisori</a>
-                        </li>
-                    @endif
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
@@ -267,6 +264,7 @@
                 <i class="fas fa-bell"></i>
           {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
                     </a>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
@@ -290,18 +288,32 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
                             <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
-                                alt="">
+                                alt="icona-utente">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
+                            @if (Auth::user()->is_revisor)
+                            <li>
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item">Zona Revisori</a>
+                            </li>
+                            @endif
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="/logout"
+                                    onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
+                            </li>
 
 
-
-                            <li><a class="dropdown-item" href="/logout"
-                                    onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a></li>
                             <form id="form-logout" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         </ul>
+                    </li>
+                    <li>
+                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                        </form>
                     </li>
 
                 </ul>

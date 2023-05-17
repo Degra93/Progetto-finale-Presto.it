@@ -1,5 +1,6 @@
 <x-main>
-        <section class="my-5">
+        <section class="my-3">
+            <div class="spacer"></div>
             <div class="container">
                 <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">
                     <div class="col-12 col-md-6 text-black">
