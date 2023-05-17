@@ -48,7 +48,8 @@
       </div>
 </header> --}}
 
- {{-- il carosello da sistemare  Le due foto a sinistra da sistemare
+ {{-- il carosello da sistemare  Le due foto a sinistra da sistemare--}}
+ {{-- <div class="spacer"></div>
 <header class="container-fluid">
   <div class="row">
     <div class="col-9">
@@ -104,13 +105,14 @@
       <div class="row">
         <div class="col-12"><img src="https://picsum.photos/200" alt=""></div>
         <div class="col-12"><img src="https://picsum.photos/200" alt=""></div>
+        <div class="col-12"><img src="https://picsum.photos/200" alt=""></div>
       </div>
     </div>
   </div>
-</header>
+</header> --}}
 
 {{--Le 4 cose strane --}}
-{{-- <section class="container-fluid py-5 my-5">
+ {{-- <section class="container-fluid py-5 my-5">
   <div class="row">
     <div class="col-3">Qualita product</div>
     <div class="col-3">Free ship</div>
@@ -127,7 +129,7 @@
                 <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">Inserisci il tuo annuncio.</h1>
                 <p class="lead text-white">Vendi senza obblighi o preoccupazione.</p>
                 <div class=" d-flex mt-3 mb-1">
-                    <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="#" role="button">Registrati</a>
+                    <a class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3 " href="{{ route('register') }}" role="button">Registrati</a>
                 </div>
             </div>
 
@@ -135,7 +137,8 @@
     </div>
 </section>
 @else
-<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce&quot;);">
+
+<section class="pb-5 mt-0 align-items-center d-flex bg-dark" style="min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce&quot;);">
     <div class="container ">
         <div class="row align-items-center d-flex justify-content-between">
             <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">

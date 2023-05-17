@@ -13,34 +13,35 @@ use Illuminate\Support\Facades\Artisan;
 
 class RevisorController extends Controller
 {
-    public function index(){
-        $announceToCheck = Announcement::where('is_accepted',null)->get();
+    public function index()
+    {
+        $announceToCheck = Announcement::where('is_accepted', null)->get();
         // $announceToCheck = Announcement::where('is_accepted',null)->first();
-        return view('revisore.index',compact('announceToCheck'));
-
-
-
-
+        return view('revisore.index', compact('announceToCheck'));
     }
 
 
-    public function OkAnnuncio(Announcement $announcement){
+    public function OkAnnuncio(Announcement $announcement)
+    {
         $announcement->setAccepted(true);
-        return redirect()->back()->with('message','Annuncio accettato');
+        return redirect()->back()->with('message', 'Annuncio accettato');
     }
 
-    public function NoAnnuncio(Announcement $announcement){
+    public function NoAnnuncio(Announcement $announcement)
+    {
         $announcement->setAccepted(false);
-        return redirect()->back()->with('message','Annuncio rifiutato');
+        return redirect()->back()->with('message', 'Annuncio rifiutato');
     }
 
-    public function askRevisor(){
+    public function askRevisor()
+    {
         Mail::to('hr@shopypro.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->back()->with('message','Hai chiesto di diventare revisori, attendi conferma!');
+        return redirect()->back()->with('message', 'Hai chiesto di diventare revisori, attendi conferma!');
     }
 
-    public function makeRevisor(User $user){
-        Artisan::call('app:make-user-revisor', ['email'=>$user->email]);
-        return redirect('/')->with('message','Hai reso un untente revisore:');
+    public function makeRevisor(User $user)
+    {
+        Artisan::call('app:make-user-revisor', ['email' => $user->email]);
+        return redirect('/')->with('message', 'Hai reso un utente revisore:');
     }
 }

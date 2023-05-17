@@ -1,4 +1,4 @@
-<footer class="container-fluid section footer-classic context-dark bg-image " style="background: #040303;">
+<footer class=" section footer-classic context-dark bg-image " style="background: #040303;">
     <div class="container ">
       <div class="row row-30 ">
         <div class="col-md-4 col-xl-5 mt-2">
@@ -8,7 +8,7 @@
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
             <h5>Vuoi lavorare con noi?</h5>
-            <a class="btn btn-danger" href="{{route('ask.revisor')}}">Diventa Revisore</a>
+            <a class="btn btn-danger" onclick="return confirm('Sei sicuro di voler accettare questo annuncio?')" href="{{route('ask.revisor')}}">Diventa Revisore</a>
           </div>
         </div>
         <div class="col-md-4 mt-2 text-center">
@@ -30,11 +30,11 @@
         <div class="col-md-4 col-xl-3 mt-2 text-center">
           <h5>Links</h5>
          <ul> {{-- class="nav-list"> --}}
+            <li class="mt-2"><a href="{{ route('homepage') }}">Home</a></li>
+            <li class="mt-2"><a href="{{ route('announcement.index') }}">Annunci</a></li>
             <li class="mt-2"><a href="#">Chi siamo</a></li>
-            <li class="mt-2"><a href="#">Annunci</a></li>
-            <li class="mt-2"><a href="#">Blog</a></li>
             <li class="mt-2"><a href="#">Contatti</a></li>
-            
+
           </ul>
         </div>
       </div>

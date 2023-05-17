@@ -36,6 +36,6 @@
     </div>
 </div>
 @empty
-<h1>Non c'e' nulla da revisionare</h1>
+<h1>NON CI SONO ANNUNCI DA REVISIONARE</h1>
 @endforelse
 </x-main>

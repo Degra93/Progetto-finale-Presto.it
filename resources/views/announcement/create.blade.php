@@ -13,5 +13,4 @@
                 </div>
             </div>
         </section>
-    <x-footer/>
 </x-main>

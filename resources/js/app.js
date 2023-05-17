@@ -5,13 +5,13 @@ import 'animate.css';
 const navE1 = document.querySelector('.navbar');
 
 window.addEventListener('scroll', function(){
-    if (window.scrollY >= 40) {
+    if (window.scrollY >= 53) {
         navE1.classList.add('navbar-scrolled')
     }else{
         navE1.classList.remove('navbar-scrolled')
     }
 })
-
+// slider
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const splide = new Splide( '#first-slider', {
