@@ -244,21 +244,95 @@
     </div>
 </div> --}}
 
+{{-- style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png')" --}}
 
-
-
+{{--
 <header class="py-3">
     <div class="spacer"></div>
     <div class="container px-lg-5">
-        <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-            <div class="m-4 m-lg-5">
-                <h1 class="display-5 fw-bold">A warm welcome!</h1>
-                <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
+        <section class="splide" id="second-slider" aria-label="...">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <div class="lc-block card card-cover h-100 overflow-hidden  rounded-1 shadow-lg" lc-helper="background">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <div class="lc-block pt-5 mt-5 mb-4 text-center">
+                    <div editable="rich">
+                        <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                    </div>
+                </div>
+                <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+            </div>
+        </div>
+      </li>
+      <li class="splide__slide">
+        <div class="lc-block card card-cover h-100 overflow-hidden   rounded-1 shadow-lg" lc-helper="background">
+            <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1">
+                <div class="lc-block pt-5 mt-5 mb-4 text-center">
+                    <div editable="rich">
+                        <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                    </div>
+                </div>
+                <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+            </div>
+        </div>
+      </li>
+      <li class="splide__slide">
+        <div class="lc-block card card-cover h-100 overflow-hidden  rounded-1 shadow-lg" lc-helper="background">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <div class="lc-block pt-5 mt-5 mb-4 text-center">
+                    <div editable="rich">
+                        <h2 class="display-6 lh-1 fw-bold">Annunci rapidi</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odit exercitationem neque voluptatibus, ipsam labore ratione eaque. </p>
+                    </div>
+                </div>
+                <ul class="lc-block d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white " href="#" role="button">Read more</a></ul>
+            </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- Add the progress bar element -->
+  <div class="my-carousel-progress">
+    <div class="my-carousel-progress-bar"></div>
+  </div>
+</section>
+    </div>
+</header> --}}
+
+
+<section class="hero">
+    <div class="spacer"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="copy">
+                    <div class="text-label">
+                        Cambia il tuo business in meglio
+                    </div>
+                    <div class="text-hero-bold">
+                        Il futuro è qui.
+                    </div>
+                    <div class="text-hero-regular">
+                        Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
+                    </div>
+                    <div class="cta">
+                        <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
     </div>
-</header>
+</section>
 {{-- categories slider --}}
 <div class="container">
     <div class="row mt-3">
@@ -270,10 +344,10 @@
                 <div class="splide__list">
                 @foreach ($categories as $category)
                     <div class="col-sm-4 splide__slide m-2">
-                        <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background-image: url('https://images.unsplash.com/photo-1580133748682-099a97d17e6c?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=crop&amp;amp;fm=jpg&amp;amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTV8fGplbGx5JTIwZmlzaHxlbnwwfDB8fHwxNjIxNTA0MDU1&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&amp;amp;h=768'); background-size:cover">
-                            <div class="lc-block pt-5 mt-5 mb-4">
+                        <div class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy" lc-helper="background" style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; " >
+                            <div class="lc-block pt-5 mt-5 mb-5  text-center ">
                                 <div editable="rich">
-                                    <h2 class="display-6 lh-1 fw-bold text-center mb-3">{{$category->name}}</h2>
+                                    <h2 class="display-6 lh-1 fw-bold mb-5">{{$category->name}}</h2>
 
                                 </div>
                             </div>

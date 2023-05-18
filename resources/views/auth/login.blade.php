@@ -10,19 +10,19 @@
                                         @csrf
                                     <h3 class="fw-normal mb-5 text-center text-body">LOGIN FORM</h3>
                                     <div class="form-outline mb-2">
-                                        <input type="email" name="email" id="email" class="form-control form-control-lg" value="{{ old('email') }}"/>
                                         <label class="form-label m-2" for="email">Email address</label>
                                         @error('email')
                                             <span class="small text-danger">{{$message}}</span>
                                         @enderror
+                                        <input type="email" name="email" id="email" class="form-control form-control-lg" value="{{ old('email') }}"/>
                                     </div>
 
                                     <div class="form-outline mb-2">
-                                        <input type="password"name="password" id="password" class="form-control form-control-lg" value="{{ old('password') }}"/>
                                         <label class="form-label m-2" for="password">Password</label>
                                         @error('email')
                                             <span class="small text-danger">{{$message}}</span>
                                         @enderror
+                                        <input type="password"name="password" id="password" class="form-control form-control-lg" value="{{ old('password') }}"/>
                                     </div>
 
                                     <div class="pt-1 mb-5 text-center">
