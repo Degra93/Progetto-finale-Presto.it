@@ -26,7 +26,7 @@
     </div>
 
 </div> --}}
-<div class="container-xxl py-5">
+{{-- <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
@@ -61,7 +61,7 @@
             {{$announcements->links()}}
         </div>
     </div>
-</div>
+</div> --}}
 
 
     <div class="container">
@@ -71,11 +71,12 @@
         </div>
         <div class="row g-4">
             @forelse ($announcements as $announcement)
-            <div class="col-lg-12 col-12 ">
+            <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
                 
                 <article class="postcard light yellow">
-                    <a class="postcard__img_link" href="#">
-                        <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
+                    <a class="postcard__img_link position-relative" href="#">
+                        <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
+                        <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4  ">Prezzo: {{$announcement->price}}</small>
                     </a>
                     <div class="postcard__text t-dark">
                         <h5 class="mb-0">{{$announcement->title}}</h5>
@@ -102,7 +103,7 @@
 </div>
 
 
-    <div class="container-xxl py-5 ">
+{{-- <div class="container-xxl py-5 ">
       <div class="row">
         <div class="col-lg-5">
           <div class="section-heading">
@@ -156,6 +157,6 @@
        
 
       
-    </div>
+</div> --}}
   
 </x-main>
