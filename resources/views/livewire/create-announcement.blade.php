@@ -4,37 +4,37 @@
     <form wire:submit.prevent="store" enctype="multipart/form-data">
         @csrf
       <div class="mb-2">
-        <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
         <label class="form-label">Titolo</label>
         @error('title')
             <span class="small text-danger">{{$message}}</span>
         @enderror
+        <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
       </div>
 
       <div class="mb-2">
+        <label for="category" class="my-1 me-3">Categoria</label>
         <select wire:model.lazy='category'  class="form-control">
             <option value="">Scegli</option>
             @foreach($categories as $category)
             <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select>
-        <label for="category" class="my-1 me-3">Categoria</label>
       </div>
 
       <div class="mb-2">
-        <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="2"  >{{old('body')}}</textarea>
         <label class="my-1 me-3" for="body">Testo</label>
         @error('body')
             <span class="small text-danger">{{$message}}</span>
         @enderror
+        <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="2"  >{{old('body')}}</textarea>
       </div>
 
       <div class="mb-2">
-        <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
         <label class="form-label">Prezzo</label>
         @error('price')
             <span class="small text-danger">{{$message}}</span>
         @enderror
+        <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
       </div>
 
       <div class="pt-1  text-center">

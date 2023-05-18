@@ -8,23 +8,23 @@
                         @csrf
                         <h3 class="fw-normal mb-5 text-center text-body">FORM DI REGISTRAZIONE</h3>
                         <div class="form-outline mb-3">
-                            <input type="text" name="email" id="email" class="form-control" />
                             <label class="form-label" for="email">Email address</label>
                             @error('email')<span class="small text-danger">{{$message}}</span>@enderror
+                            <input type="text" name="email" id="email" class="form-control" />
                         </div>
                         <div class="form-outline mb-3">
-                            <input type="text" name="name" id="name" class="form-control">
                             <label for="name" class="form-label">Nome</label>
                             @error('name')<span class="small text-danger">{{$message}}</span>@enderror
+                            <input type="text" name="name" id="name" class="form-control">
                         </div>
                         <div class="form-outline mb-3">
-                            <input type="password" name="password" id="password" class="form-control" />
                             <label class="form-label" for="password">Password</label>
                             @error('password')<span class="small text-danger">{{$message}}</span>@enderror
+                            <input type="password" name="password" id="password" class="form-control" />
                         </div>
                         <div class="form-outline mb-3">
-                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
                             <label for="password_confirmation">Conferma password</label>
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
                         </div>
                         <div class="pt-1 mb-5 text-center">
                             <button class="btn-hover btn btn-warning btn-sm py-2 px-5 " type="submit">Registrati qui</button>
