@@ -122,7 +122,7 @@
          <div class="col-6 mx-auto m-5 py-5  bg-light text-center rounded">
             <i class="fa-sharp fa-solid fa-face-laugh-wink text-warning fa-5x mb-3"></i>
             <h2 class="text-secondary mb-3">Hai finito di modificare gli annunci. <br/> Grazie!</h2>
-            <a href="{{ route('homepage') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none ">HONE</a>
+            <a href="{{ route('homepage') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none ">HOME</a>
             <a href="{{ route('announcement.create') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none">CREA ANNUNCIO</a>
          </div>
         </div>
