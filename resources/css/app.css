@@ -167,7 +167,7 @@ a {
 } */
 
 .navbar {
-    transition: all 0.7s;
+    transition: all 0.8s;
 }
 
 
@@ -186,6 +186,7 @@ background-color: whitesmoke;
 .navbar-scrolled .dropdown-menu{
     background-color:#fbc257;
 }
+
 
 .navbar-scrolled {
     background-color:#fbc257;
