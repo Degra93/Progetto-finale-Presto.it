@@ -96,6 +96,20 @@ ol {
     }
     }
 */
+
+/*-------lisnsk hover--------*/
+.links-hover{
+    transition: opacity 0.3s ease;
+    transition: text-decoration 0.3s ease;
+}
+
+.links-hover:hover, .links-hover:focus {
+    color:#44484a !important;
+    opacity: 0.55 !important;
+    text-decoration: underline !important;
+}
+
+
 /*-------button pgina login--------*/
 .btn-hover {
     font-weight: 600;
@@ -123,6 +137,7 @@ ol {
             padding-bottom: 200px;
         }
         } */
+
 /* slider */
 .card-body-bg-img {
     background-image: url('https://picsum.photos/1000/1100');
