@@ -231,10 +231,11 @@ section.hero{
     }
 }
 @media (max-width: 576px) {
-    .navbar{
-        background-color: #3a3939;
-        color: white;
+    section.hero{
+        margin: 2rem 0;
+        text-align: center;
     }
+
 }
 
 .card-copy{

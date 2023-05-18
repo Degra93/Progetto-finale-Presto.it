@@ -321,7 +321,7 @@
                     <div class="text-hero-regular">
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
                     </div>
-                    <div class="cta">
+                    <div class="cta mb-sm-2">
                         <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
 
                     </div>
