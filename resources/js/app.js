@@ -1,5 +1,7 @@
 import 'bootstrap';
 import 'animate.css';
+AOS.init();
+
 
 //   navbar
 const navE1 = document.querySelector('.navbar');
