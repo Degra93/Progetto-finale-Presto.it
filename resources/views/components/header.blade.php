@@ -366,7 +366,7 @@
     </div>
 </div>
 <!-- Page Content-->
-<section class="pt-4">
+{{-- <section class="pt-4">
     <div class="container px-lg-5">
         <!-- Page Features-->
         <div class="row gx-lg-5">
@@ -450,4 +450,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}

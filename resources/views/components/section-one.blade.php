@@ -69,7 +69,7 @@
 
 
 
-<div class="container-xxl py-5">
+{{-- <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
@@ -102,7 +102,58 @@
 
         </div>
     </div>
-</div>
+</div> --}}
+
+<div class="container-xxl py-5 ">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
+        <h1 class="mb-5">Explora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+    </div>
+      
+        
+          <div class="row">
+              @forelse ($announcements as $announcement)
+            <div class="col-lg-12 col-12 shadow rounded my-5">
+                <div class="row">
+                  <div class="col-12 col-lg-4 col-sm-6">
+                    <div class="position-relative">
+                      <img src="https://picsum.photos/500/350" class="img-fluid rounded" alt="">
+                  
+                          <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Prezzo: {{$announcement->price}}</small>
+                      
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-8 col-sm-6 ">
+                    
+                      <h4>{{$announcement->title}}</h4>
+                      <span></span>
+                      <div class="main-button">
+                        <a href="about.html">Explore More</a>
+                      </div>
+                      <p class="overflow-y-hidden">{{$announcement->body}}</p>
+                      
+                      <div class="d-flex justify-content-between">
+                          <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
+                          <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                          
+                      </div>
+                      <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
+                      
+                    
+                  </div>
+                </div>
+            </div>
+            
+            @empty
+          <h2>Non ci sono annunci nella Ricerca</h2>
+          @endforelse
+           
+          </div>
+        
+     
+
+    
+  </div>
     {{-- <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
 
