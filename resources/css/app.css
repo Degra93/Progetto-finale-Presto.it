@@ -162,9 +162,9 @@ a {
     font-weight: 700
 }
 
-.superNav {
+/* .superNav {
     font-size: 13px;
-}
+} */
 
 .navbar {
     transition: all 0.7s;
@@ -176,9 +176,14 @@ a {
     color: black;
 
 }
+.navbar-scroll {
+background-color: #fbc257;
+
+}
 
 .navbar-scrolled {
     background-color: whitesmoke;
+    opacity: 0.85;
 
 }
 

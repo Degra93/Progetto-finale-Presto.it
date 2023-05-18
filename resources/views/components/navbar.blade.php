@@ -228,10 +228,10 @@
         </div>
     </nav>
 @else
-    <nav class="navbar navbar-expand-xl fixed-top navbar-scroll">
+    <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
-                <img src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
+                <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
             </a>
             {{-- <a class="nav-link p-3  bg-warning dropdown-toggle" href="#" id="catDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>

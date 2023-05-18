@@ -322,7 +322,7 @@
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
                     </div>
                     <div class="cta mb-sm-2">
-                        <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
+                        <a href="" class="btn-hover btn btn-warning btn-sm py-2 px-5 ">Crea Annuncio</a>
 
                     </div>
                 </div>
