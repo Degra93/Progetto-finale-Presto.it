@@ -31,7 +31,19 @@ const splide = new Splide( '#first-slider', {
 } );
 splide.mount( { AutoScroll } );
 //             new Splide("#second-slider").mount();
+var splide2 = new Splide( '#second-slider' );
+var bar    = splide2.root.querySelector( '.my-carousel-progress-bar' );
 
+
+// Updates the bar width whenever the carousel moves:
+splide2.on( 'mounted move', function () {
+  var end  = splide2.Components.Controller.getEnd() + 1;
+  var rate = Math.min( ( splide2.index + 1 ) / end, 1 );
+  bar.style.width = String( 100 * rate ) + '%';
+} );
+
+
+splide2.mount();
 
             // var splide = new Splide('#second-slider', {
             //     type: 'loop',

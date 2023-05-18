@@ -17,7 +17,7 @@
 
         @livewireStyles
     </head>
-    <body class="bg-secondary bg-gradient bg-opacity-75">
+    <body>
         <x-navbar />
 
     {{$slot}}

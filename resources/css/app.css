@@ -1,5 +1,14 @@
 @import 'bootstrap';
 
+:root{
+    --primary: #fbc257;
+    --primary-light: #fccc73;
+    --dark-brown: #341413;
+    --gray-1: #798092;
+    --gray-2: #e6e6ed;
+    --white: #ffffff;
+}
+
 .spacer{
     height: 60px;
 }
@@ -188,3 +197,60 @@ a {
         text-align: center
     }
 }
+/* header */
+section.hero{
+    margin: 5rem 0;
+}
+.text-label,
+.text-bold,
+.text-hero-regular {
+    margin: 24px 0;
+}
+.text-label {
+    color: var(--primary-light);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+}
+.text-hero-bold {
+    color:  var(--dark-brown);
+    font-size: 64px;
+    font-weight: 900;
+    line-height:74px;
+}
+.text-hero-regular {
+    color: var(--gray-1);
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+@media (min-width: 1399.98px) {
+    .container{
+        width: 84%;
+    }
+}
+@media (max-width: 576px) {
+    .navbar{
+        background-color: #3a3939;
+        color: white;
+    }
+}
+
+.card-copy{
+    background-color: #798092;
+    opacity: 0.7;
+    z-index: 10;
+}
+.my-carousel-progress {
+    background: blanchedalmond;
+  }
+
+
+  .my-carousel-progress-bar {
+    background: rgb(218, 71, 237);
+    opacity: 0.5;
+    height: 10px;
+    transition: all width 1s ease;
+    width: 0;
+  }
