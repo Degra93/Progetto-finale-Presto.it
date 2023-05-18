@@ -311,7 +311,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
-                <div class="copy">
+                <div class="copy" data-aos="fade-up" data-aos-duration="3000">
                     <div class="text-label">
                         Cambia il tuo business in meglio
                     </div>
@@ -327,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="3000">
                 <img class="img-fluid" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>

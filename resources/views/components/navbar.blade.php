@@ -178,7 +178,7 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -268,7 +268,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                        <ul class="dropdown-menu    " aria-labelledby="catDrop">
+                        <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li>
                                     <a href="{{ route('categoryShow', compact('category')) }}"
