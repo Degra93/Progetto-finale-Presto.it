@@ -247,14 +247,14 @@
 
 
 
-<header class="py-3">
+<header class="py-3" style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png')">
     <div class="spacer"></div>
     <div class="container px-lg-5">
-        <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+        <div class="p-5 p-lg-5 bg-dark text-white rounded-3 text-center opacity-75" >
             <div class="m-4 m-lg-5">
-                <h1 class="display-5 fw-bold">A warm welcome!</h1>
-                <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
+                <h1 class="display-5 fw-bold">Compra e vendi subito.</h1>
+                <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil dicta quae laborum doloremque, sit consequuntur quod eveniet voluptatibus, velit maiores impedit dolor ducimus! Dolor aliquid mollitia sunt atque! Accusantium.</p>
+                <a class="btn btn-primary btn-lg" href="{{route('announcement.create')}}">Crea annuncio</a>
             </div>
         </div>
     </div>
