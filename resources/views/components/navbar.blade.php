@@ -268,7 +268,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                        <ul class="dropdown-menu    " aria-labelledby="catDrop">
+                        <ul  class="dropdown-menu dropdown-cat " aria-labelledby="catDrop" >
                             @foreach ($categories as $category)
                                 <li>
                                     <a href="{{ route('categoryShow', compact('category')) }}"
