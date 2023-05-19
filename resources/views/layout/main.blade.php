@@ -20,7 +20,7 @@
 
         @livewireStyles
     </head>
-    <body>
+    <body >
         <x-navbar />
 
     {{$slot}}

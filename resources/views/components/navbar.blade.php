@@ -229,7 +229,7 @@
     </nav>
 @else
     <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll fw-bold">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
@@ -293,12 +293,12 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             @if (Auth::user()->is_revisor)
                             <li>
-                                <a href="{{ route('revisore.index') }}" class="dropdown-item">Zona Revisori</a>
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori</a>
                             </li>
                             @endif
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <a class="dropdown-item" href="/logout"
+                                <a class="dropdown-item fw-bold>" href="/logout"
                                     onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
                             </li>
 

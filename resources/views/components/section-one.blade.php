@@ -144,17 +144,17 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column ">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
 
 
-          <div class="card mb-7 text-body" style="min-height: 400px; " >
+          <div class="card mb-7 text-body " style="min-height: 400px; " >
 
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
 
 
 
 
-              <h4 class="mb-0 text-primary fw-bold ">AUTO</h4>
+              <h4 class="mb-0 text-primary fw-bold  ">AUTO</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
