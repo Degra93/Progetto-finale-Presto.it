@@ -25,7 +25,48 @@
         </div>
     </div> --}}
     
-    <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+            <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
+            <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+        </div>
+        <div class="row g-4">
+            @forelse ($category->announcements as $announcement)
+            <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
+                
+                <article class="postcard light yellow">
+                    <a class="postcard__img_link position-relative" href="#">
+                        <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
+                        <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4  ">Prezzo: {{$announcement->price}}</small>
+                    </a>
+                    <div class="postcard__text t-dark">
+                        <h5 class="mb-0">{{$announcement->title}}</h5>
+                        <div class="postcard__subtitle small">
+                            <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
+                        </div>
+                        <div class="postcard__bar"></div>
+                        <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>   
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                            
+                        </div>                     
+                    </div>
+                    
+                </article>
+
+            </div>
+            @empty
+            <p>Al momento non esistono annunci per questa categoria...</p>
+            <p>Che ne dici di crearne uno tu? <a href="{{route('announcement.create')}}" class="btn btn-warning">Nuovo annuncio</a></p>
+        @endforelse
+        </div>
+    </div>
+</div>
+
+
+
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                 <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
@@ -61,5 +102,5 @@
                
             </div>
         </div>
-    </div>
+    </div> --}}
 </x-main>

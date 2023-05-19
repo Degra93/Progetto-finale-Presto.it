@@ -104,7 +104,122 @@
     </div>
 </div> --}}
 
-<div class="container">
+
+<section class="pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
+
+         
+          <h2 class="mb-4">Categorie piu viste</h2>
+
+          
+          <p class="mb-10 text-gray-500">
+           Vieni alla Scoperta di tantissimi prodotti 
+          </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
+
+          
+          <div class="card mb-7 text-white" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)">
+
+            
+
+        
+            <div class="card-body my-auto text-center text-dark">
+
+              
+              <h4 class="mb-0">Informatica</h4>
+
+             
+              <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/1">
+               Esplora Ora!
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column ">
+
+         
+          <div class="card mb-7 text-body" style="min-height: 400px; " >
+
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
+
+              
+
+             
+              <h4 class="mb-0">AUTO</h4>
+
+              
+              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
+                Esplora Ora!
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4">
+
+        
+          <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
+
+           
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
+
+             
+              <h4 class="mb-0">Casa</h4>
+
+             
+              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/3">
+                Esplora Ora!
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4">
+
+         
+          <div class="card text-white" style="min-height: 400px; ">
+
+
+           
+            <div class="card-body my-auto text-center" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
+
+              
+              <h4 class="mb-0">Salute</h4>
+
+              <!-- Link -->
+              <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/9">
+                Esplora Ora!
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+<div class="container pt-5">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
         <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
         <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
@@ -140,7 +255,47 @@
         @endforelse
     </div>
 </div>
-</div>
+
+<section class="py-5 py-md-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 text-center">
+
+        
+          <h2 class="mb-2">
+            Newsletter
+          </h2>
+
+         
+          <p class="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.
+          </p>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+         
+          
+            <form action="" method="post">
+              <div class="row justify-content-center gx-3">
+                <div class="col">
+                  <label class="visually-hidden" for="mce-EMAIL">Email Address </label>
+                  <input class="form-control" type="email" value="" name="EMAIL">
+                </div>
+                <div class="col-auto">
+                  <input class="btn btn-outline-primary" type="submit" value="Subscribe" name="subscribe" >
+                </div>
+              </div>
+            </form>
+          
+        
+
+        </div>
+      </div>
+    </div>
+</section>
 
 {{-- <div class="container-xxl py-5 ">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -215,5 +370,5 @@
         </div>
     </section> --}}
 
-{{-- section delle due foto inferiori aggiungere scritta --}}
+
 
