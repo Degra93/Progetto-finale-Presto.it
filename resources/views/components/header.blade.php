@@ -311,7 +311,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
-                <div class="copy" data-aos="fade-up" data-aos-duration="3000">
+                <div class="copy">
                     <div class="text-label">
                         Cambia il tuo business in meglio
                     </div>
@@ -322,12 +322,12 @@
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
                     </div>
                     <div class="cta mb-sm-2">
-                        <a href="" class="btn-hover btn btn-warning btn-sm py-2 px-5 ">Crea Annuncio</a>
+                        <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-md-6">
                 <img class="img-fluid" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
