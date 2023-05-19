@@ -1,11 +1,11 @@
 <x-main>
-    <div class="spacer "></div>
+    <div class="spacer container-fluid"></div>
 
-    <div class="spacer" style="background-color: rgb(170, 155, 155)"></div>
+    <div class="spacer container-fluid" style="background-color: rgb(170, 155, 155)"></div>
 
 <div class="container pt-5">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6">
             <div class="row">
               <div class="col-12 py-3">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -31,7 +31,7 @@
                 </div>
               </div>
           
-                <div class="col-12 py-2">
+                <div class="col-12 col-md-6 col-lg-6 py-2">
                     
                     <img src="https://picsum.photos/700/301" class="img-fluid" alt="">
                 </div>
@@ -48,7 +48,7 @@
                 
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6">
             <div class="row">
                 <div class="col-12 bgc">
                     <div class="row">
