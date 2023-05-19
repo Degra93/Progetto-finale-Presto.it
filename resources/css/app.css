@@ -169,12 +169,18 @@ a {
 .navbar {
     transition: all 0.8s;
 }
+.nav-link:hover{
+    color: #fbc257;
+}
 
 
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler .fa-bars {
     color: black;
 
+}
+.navbar-scrolled .nav-link:hover{
+    color: #e6e6ed;
 }
 .navbar-scroll {
 background-color: whitesmoke;
@@ -274,7 +280,7 @@ section.hero{
 .postcard {
   flex-wrap: wrap;
   display: flex;
-  
+
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
   margin: 0 0 2rem 0;
@@ -282,16 +288,16 @@ section.hero{
   position: relative;
   color: #ffffff;
 
-	
+
 	&.light {
 		background-color: #e1e5ea;
 	}
-	
+
 	.t-dark {
 		color: #18151f;
 	}
-	
- 
+
+
 
 
 
@@ -381,17 +387,17 @@ section.hero{
 		.postcard__text {
       padding: 2rem 3.5rem;
     }
-		
+
 		.postcard__text:before {
       content: "";
       position: absolute;
       display: block;
-      
+
       top: -20%;
       height: 130%;
       width: 55px;
     }
-	
+
 	.postcard.light {
 		.postcard__text:before {
 			background: #e1e5ea;

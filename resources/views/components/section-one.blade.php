@@ -110,12 +110,12 @@
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
-         
+
           <h2 class="mb-4">Categorie piu viste</h2>
 
-          
+
           <p class="mb-10 text-gray-500">
-           Vieni alla Scoperta di tantissimi prodotti 
+           Vieni alla Scoperta di tantissimi prodotti
           </p>
 
         </div>
@@ -123,18 +123,18 @@
       <div class="row">
         <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
 
-          
+
           <div class="card mb-7 text-white" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)">
 
-            
 
-        
+
+
             <div class="card-body my-auto text-center text-dark">
 
-              
+
               <h4 class="mb-0 text-primary">INFORMATICA</h4>
 
-             
+
               <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/1">
                Esplora Ora!
               </a>
@@ -146,17 +146,17 @@
         </div>
         <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4  ">
 
-         
+
           <div class="card mb-7 text-body" style="min-height: 400px; " >
 
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
 
-              
 
-             
+
+
               <h4 class="mb-0 text-primary">AUTO</h4>
 
-              
+
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
                 Esplora Ora!
               </a>
@@ -169,16 +169,16 @@
 
         <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4">
 
-        
+
           <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
 
-           
+
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
 
-             
+
               <h4 class="mb-0 text-primary">CASA</h4>
 
-             
+
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/3">
                 Esplora Ora!
               </a>
@@ -190,14 +190,14 @@
         </div>
         <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4">
 
-         
+
           <div class="card text-white" style="min-height: 400px; ">
 
 
-           
+
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
 
-              
+
               <h4 class="mb-0 text-primary">SALUTE</h4>
 
               <!-- Link -->
@@ -227,7 +227,7 @@
     <div class="row g-4">
         @forelse ($announcements as $announcement)
         <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
-            
+
             <article class="postcard light yellow">
                 <a class="postcard__img_link position-relative" href="#">
                     <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
@@ -239,14 +239,14 @@
                         <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
                     </div>
                     <div class="postcard__bar"></div>
-                    <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>   
+                    <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
                     <div class="d-flex justify-content-between">
                         <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
                         <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
-                        
-                    </div>                     
+
+                    </div>
                 </div>
-                
+
             </article>
 
         </div>
@@ -261,12 +261,12 @@
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6 text-center">
 
-        
+
           <h2 class="mb-2">
             Newsletter
           </h2>
 
-         
+
           <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.
           </p>
@@ -276,8 +276,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
 
-         
-          
+
+
             <form action="" method="post">
               <div class="row justify-content-center gx-3">
                 <div class="col">
@@ -289,8 +289,8 @@
                 </div>
               </div>
             </form>
-          
-        
+
+
 
         </div>
       </div>
@@ -302,8 +302,8 @@
         <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
         <h1 class="mb-5">Explora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
     </div>
-      
-        
+
+
           <div class="row">
               @forelse ($announcements as $announcement)
             <div class="col-lg-12 col-12 shadow rounded my-5">
@@ -311,41 +311,41 @@
                   <div class="col-12 col-lg-4 col-sm-6">
                     <div class="position-relative">
                       <img src="https://picsum.photos/500/350" class="img-fluid rounded" alt="">
-                  
+
                           <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">Prezzo: {{$announcement->price}}</small>
-                      
+
                     </div>
                   </div>
                   <div class="col-12 col-lg-8 col-sm-6 ">
-                    
+
                       <h4>{{$announcement->title}}</h4>
                       <span></span>
                       <div class="main-button">
                         <a href="about.html">Explore More</a>
                       </div>
                       <p class="overflow-y-hidden">{{$announcement->body}}</p>
-                      
+
                       <div class="d-flex justify-content-between">
                           <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
                           <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
-                          
+
                       </div>
                       <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
-                      
-                    
+
+
                   </div>
                 </div>
             </div>
-            
+
             @empty
           <h2>Non ci sono annunci nella Ricerca</h2>
           @endforelse
-           
-          </div>
-        
-     
 
-    
+          </div>
+
+
+
+
 </div> --}}
 
     {{-- <section class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
