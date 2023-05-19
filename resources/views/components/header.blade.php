@@ -308,10 +308,10 @@
 
 <section class="hero">
     <div class="spacer"></div>
-    <div class="container-fluid">
+    <div class="container-fluid"  >
         <div class="row">
-            <div class="col-md-6 text-center">
-                <div class="copy">
+            <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
+                <div class="copy" >
                     <div class="text-label">
                         Cambia il tuo business in meglio
                     </div>
@@ -322,13 +322,13 @@
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
                     </div>
                     <div class="cta mb-sm-2">
-                        <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
+                        <a href="{{ route('announcement.create') }}" class="btn btn-primary shadow-none">Crea Annuncio</a>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
+                <img class="img-fluid" data-aos="zoom-in-left" data-aos-duration="3000" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
     </div>

@@ -132,7 +132,7 @@
             <div class="card-body my-auto text-center text-dark">
 
               
-              <h4 class="mb-0">Informatica</h4>
+              <h4 class="mb-0 text-primary">INFORMATICA</h4>
 
              
               <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/1">
@@ -144,7 +144,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column ">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
 
          
           <div class="card mb-7 text-body" style="min-height: 400px; " >
@@ -154,7 +154,7 @@
               
 
              
-              <h4 class="mb-0">AUTO</h4>
+              <h4 class="mb-0 text-primary">AUTO</h4>
 
               
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
@@ -176,7 +176,7 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
 
              
-              <h4 class="mb-0">Casa</h4>
+              <h4 class="mb-0 text-primary">CASA</h4>
 
              
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/3">
@@ -195,13 +195,13 @@
 
 
            
-            <div class="card-body my-auto text-center" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
 
               
-              <h4 class="mb-0">Salute</h4>
+              <h4 class="mb-0 text-primary">SALUTE</h4>
 
               <!-- Link -->
-              <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/9">
+              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/9">
                 Esplora Ora!
               </a>
 
