@@ -193,9 +193,9 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li>
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui"
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
                                 aria-label="Search">
-                            <button class="btn btn-outline-info" type="submit">Cerca</button>
+                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
                         </form>
                     </li>
                     <li class="nav-item">
@@ -310,9 +310,9 @@
                     </li>
                     <li>
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui"
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
                         </form>
                     </li>
 
