@@ -192,6 +192,12 @@ background-color: whitesmoke;
 .navbar-scrolled .dropdown-menu{
     background-color:#fbc257;
 }
+.navbar-scroll .dropdown-menu .dropdown-item:hover{
+    color: #fbc257;
+}
+.navbar-scrolled .dropdown-menu .dropdown-item:hover{
+    color: #fbc257;
+}
 
 
 .navbar-scrolled {
