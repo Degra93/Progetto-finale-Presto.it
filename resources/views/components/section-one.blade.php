@@ -144,7 +144,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4  ">
 
          
           <div class="card mb-7 text-body" style="min-height: 400px; " >
