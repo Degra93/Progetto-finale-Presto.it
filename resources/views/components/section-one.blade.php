@@ -111,7 +111,7 @@
         <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
 
-          <h2 class="mb-4">Categorie piu viste</h2>
+          <h2 class="mb-4 fw-bold ">Categorie piu viste</h2>
 
 
           <p class="mb-10 text-gray-500">
@@ -132,7 +132,7 @@
             <div class="card-body my-auto text-center text-dark">
 
 
-              <h4 class="mb-0 text-primary">INFORMATICA</h4>
+              <h4 class="mb-0 text-primary fw-bold">INFORMATICA</h4>
 
 
               <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/1">
@@ -154,7 +154,7 @@
 
 
 
-              <h4 class="mb-0 text-primary">AUTO</h4>
+              <h4 class="mb-0 text-primary fw-bold ">AUTO</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
@@ -176,7 +176,7 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
 
 
-              <h4 class="mb-0 text-primary">CASA</h4>
+              <h4 class="mb-0 text-primary fw-bold">CASA</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/3">
@@ -198,7 +198,7 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
 
 
-              <h4 class="mb-0 text-primary">SALUTE</h4>
+              <h4 class="mb-0 text-primary fw-bold">SALUTE</h4>
 
               <!-- Link -->
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/9">
@@ -219,19 +219,19 @@
 
 
 
-<div class="container pt-5">
+<div class="container pt-5 ">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-        <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
-        <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+        <h6 class="section-title text-center text-primary text-uppercase ">Nostri Annunci</h6>
+        <h1 class="mb-5 fw-bold">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
     </div>
     <div class="row g-4">
         @forelse ($announcements as $announcement)
         <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
 
-            <article class="postcard light yellow">
+            <article class="postcard light yellow text-center">
                 <a class="postcard__img_link position-relative" href="#">
                     <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
-                    <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4  ">Prezzo: {{$announcement->price}}</small>
+                    <small class="bg-dark fw-bold text-warning rounded">Prezzo: {{$announcement->price}} €</small>
                 </a>
                 <div class="postcard__text t-dark">
                     <h5 class="mb-0">{{$announcement->title}}</h5>
@@ -241,8 +241,8 @@
                     <div class="postcard__bar"></div>
                     <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
                     <div class="d-flex justify-content-between">
-                        <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
-                        <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                        <a class="btn btn-sm btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
+                        <a class="btn btn-sm btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
 
                     </div>
                 </div>
@@ -262,13 +262,13 @@
         <div class="col-12 col-md-8 col-lg-6 text-center">
 
 
-          <h2 class="mb-2">
+          <h2 class="mb-2 text-warning">
             Newsletter
           </h2>
 
 
           <p class="mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.
+            Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.
           </p>
 
         </div>

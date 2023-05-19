@@ -314,20 +314,20 @@
                 <div class="copy" >
                     <div class="text-label">
                         Cambia il tuo business in meglio
-                    </div>
+                    </div><br>
                     <div class="text-hero-bold">
                         Il futuro è qui.
-                    </div>
+                    </div><br>
                     <div class="text-hero-regular">
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
-                    </div>
+                    </div><br>
                     <div class="cta mb-sm-2">
                         <a href="{{ route('announcement.create') }}" class="btn btn-primary shadow-none">Crea Annuncio</a>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 pt-3">
                 <img class="img-fluid" data-aos="zoom-in-left" data-aos-duration="3000" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
@@ -338,7 +338,7 @@
     <div class="row mt-3">
         <h2 class="display-6 lh-1 fw-bold pt-3 text-center mt-3">Le nostre categorie</h2>
 
-        <div class="splide" id="first-slider">
+        <div class="splide pt-5" id="first-slider">
             <div class="splide__track">
 
                 <div class="splide__list">

@@ -66,8 +66,8 @@
 
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <h6 class="section-title text-center text-primary text-uppercase">Nostri Annunci</h6>
-            <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+            <h6 class="section-title text-center text-primary text-uppercase pt-3">Nostri Annunci</h6>
+            <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase ">Annunci</span></h1>
         </div>
         <div class="row g-4">
             @forelse ($announcements as $announcement)
@@ -75,8 +75,8 @@
                 
                 <article class="postcard light yellow">
                     <a class="postcard__img_link position-relative" href="#">
-                        <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
-                        <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4  ">Prezzo: {{$announcement->price}}</small>
+                        <img class="postcard__img pt-4" src="https://picsum.photos/501/501" alt="Image Title" />
+                        <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4   ">Prezzo: {{$announcement->price}}</small>
                     </a>
                     <div class="postcard__text t-dark">
                         <h5 class="mb-0">{{$announcement->title}}</h5>

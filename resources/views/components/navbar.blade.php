@@ -178,7 +178,7 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll fw-bold">
         <div class="container">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -228,7 +228,7 @@
         </div>
     </nav>
 @else
-    <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll">
+    <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll fw-bold">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -312,7 +312,7 @@
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
                             <input type="search" name="searched" class="form-control me-2" placeholder="Ricerca qui"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Cerca</button>
+                            <button class="btn btn-outline-info" type="submit">Cerca</button>
                         </form>
                     </li>
 
