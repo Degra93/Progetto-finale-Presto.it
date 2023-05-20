@@ -322,7 +322,7 @@
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
                     </div><br>
                     <div class="cta mb-sm-2">
-                        <a href="{{ route('announcement.create') }}" class="btn btn-primary shadow-none">Crea Annuncio</a>
+                        <a href="{{ route('announcement.create') }}" class="btn btn-warning shadow-none">Crea Annuncio</a>
 
                     </div>
                 </div>

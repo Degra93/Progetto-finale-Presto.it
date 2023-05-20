@@ -10,7 +10,10 @@
 }
 
 .spacer{
-    height: 60px;
+    height: 70px;
+}
+.spacer-category{
+    height: 230px;
 }
 .bg-custom {
     background-color: rgba(0, 0, 0, 0.880);

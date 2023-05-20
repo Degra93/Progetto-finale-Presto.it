@@ -61,8 +61,10 @@
             <p>Che ne dici di crearne uno tu? <a href="{{route('announcement.create')}}" class="btn btn-warning">Nuovo annuncio</a></p>
         @endforelse
         </div>
+        <div class="spacer-category"></div>
+
     </div>
-</div>
+
 
 
 
