@@ -336,7 +336,7 @@
 {{-- categories slider --}}
 <div class="container">
     <div class="row mt-3">
-        <h2 class="display-6 lh-1 fw-bold pt-3 text-center mt-3">Le nostre categorie</h2>
+        <h2 class="display-6 lh-1 fw-bold pt-3 text-center mt-3">{{__('ui.allAnnoucements')}}</h2>
 
         <div class="splide pt-5" id="first-slider">
             <div class="splide__track">

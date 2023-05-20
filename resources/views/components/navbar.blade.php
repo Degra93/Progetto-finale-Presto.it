@@ -215,6 +215,7 @@
                             @endforeach
                         </ul>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
                     </li>
@@ -248,7 +249,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+                    <li>
+                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
+                        </form>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
@@ -263,7 +270,8 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bell"></i>
           {{-- <span class="badge rounded-pill badge-notification bg-danger">1</span> --}}
-                    </a>
+                    {{-- </a> --}}
+                {{-- </li> --}}
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
@@ -276,12 +284,6 @@
                                 </li>
                             @endforeach
                         </ul>
-                    </li>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Offerte</a></li>
-                        <li><a class="dropdown-item" href="#">Nuovi annunci</a></li>
-
-                    </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
@@ -309,13 +311,15 @@
                         </ul>
                     </li>
                     <li>
-                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
-                                aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
-                        </form>
+                        <x-locale lang="it" nation="it"/>
                     </li>
-
+                    <li>
+                        <x-locale lang="en" nation="en"/>
+                    </li>
+                    
+                    <li>
+                        <x-locale lang="uk" nation="uk"/>
+                    </li>
                 </ul>
             @endguest
 
