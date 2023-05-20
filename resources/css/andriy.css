@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------FONTS------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*--------------------------------------------------------------END FONTS------------------------------------------------------------*/
+:root{
+    --main-font: Arial, sans-serif;
+    --heading-font:'Public Sans', sans-serif;
+    --thin-font:'Open Sans', sans-serif;
+    --decorativ-font:'Open Sans', sans-serif;
+}
+
+
+.main-font{
+    font-family:var(--heading-font);
+    font-weight:300;
+}
+.heading-font{
+    font-family: var(--heading-font);
+    font-weight:800;
+}
+
+.thin-font{
+    font-family: 'Archivo Black', sans-serif;
+}
+.decorativ-font{
+    font-family: 'Archivo Black', sans-serif;
+}
+/*--------------------------------------------------------------END FONTS------------------------------------------------------------*/
+/*----------------------------------STILE PER ACORDION---------------------------------------*/
+.accordion-button{
+    background-color:  #ecf9f2;
+
+}
+.accordion-item .accordion-header button.accordion-button[aria-expanded="true"] {
+    background-color:#ffe6e6; /* Змініть на власний колір */
+    color:black;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+.accordion-button:focus {
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*----------------------------------END STILE PER ACORDION------------------------------------*/

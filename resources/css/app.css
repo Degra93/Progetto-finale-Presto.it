@@ -1,5 +1,5 @@
 @import 'bootstrap';
-
+@import url('andriy.css');
 :root{
     --primary: #fbc257;
     --primary-light: #fccc73;
@@ -254,3 +254,4 @@ section.hero{
     transition: all width 1s ease;
     width: 0;
   }
+
