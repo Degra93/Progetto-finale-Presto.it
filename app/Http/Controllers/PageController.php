@@ -19,7 +19,10 @@ class PageController extends Controller
     }
 
     public function categoryShow(Category $category){
-        return view('categoryShow', compact('category'));
+        $announcements = $category->announcements()->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(5);
+        return view('categoryShow', compact('category', 'announcements'));
+        
+        
 
     }
 
