@@ -1,5 +1,7 @@
 import 'bootstrap';
 import 'animate.css';
+AOS.init();
+
 
 //   navbar
 const navE1 = document.querySelector('.navbar');
@@ -25,7 +27,7 @@ const splide = new Splide( '#first-slider', {
   breakpoints: {
     1200: { perPage: 2, gap: '1rem' },
     640 : { gap: 0 },
-    390 : {perPage: 2, gap: 0},
+    390 : {perPage: 1, gap: 0},
   },
 
 } );

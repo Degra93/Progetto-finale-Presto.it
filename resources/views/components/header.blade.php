@@ -308,27 +308,27 @@
 
 <section class="hero">
     <div class="spacer"></div>
-    <div class="container-fluid">
+    <div class="container-fluid"  >
         <div class="row">
-            <div class="col-md-6 text-center">
-                <div class="copy">
+            <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
+                <div class="copy" >
                     <div class="text-label">
                         Cambia il tuo business in meglio
-                    </div>
+                    </div><br>
                     <div class="text-hero-bold">
                         Il futuro è qui.
-                    </div>
+                    </div><br>
                     <div class="text-hero-regular">
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
-                    </div>
-                    <div class="cta">
-                        <a href="" class="btn btn-primary shadow-none">Crea Annuncio</a>
+                    </div><br>
+                    <div class="cta mb-sm-2">
+                        <a href="{{ route('announcement.create') }}" class="btn btn-warning shadow-none">Crea Annuncio</a>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img class="img-fluid" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
+            <div class="col-md-6 pt-3">
+                <img class="img-fluid" data-aos="zoom-in-left" data-aos-duration="3000" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
     </div>
@@ -336,9 +336,9 @@
 {{-- categories slider --}}
 <div class="container">
     <div class="row mt-3">
-        <h2 class="display-6 lh-1 fw-bold">Le nostre categorie</h2>
+        <h2 class="display-6 lh-1 fw-bold pt-3 text-center mt-3">Le nostre categorie</h2>
 
-        <div class="splide" id="first-slider">
+        <div class="splide pt-5" id="first-slider">
             <div class="splide__track">
 
                 <div class="splide__list">
@@ -366,7 +366,7 @@
     </div>
 </div>
 <!-- Page Content-->
-<section class="pt-4">
+{{-- <section class="pt-4">
     <div class="container px-lg-5">
         <!-- Page Features-->
         <div class="row gx-lg-5">
@@ -450,4 +450,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
