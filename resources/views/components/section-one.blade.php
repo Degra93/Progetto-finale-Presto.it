@@ -121,21 +121,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="fade-right" data-aos-duration="2000">
 
 
-          <div class="card mb-7 text-white" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)">
+          <div class="card mb-7" style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
 
 
 
 
-            <div class="card-body my-auto text-center text-dark">
+            <div class="card-body my-auto">
 
 
-              <h4 class="mb-0 text-primary fw-bold">INFORMATICA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">INFORMATICA</h4>
 
 
-              <a class="btn btn-link stretched-link text-reset" href="http://127.0.0.1:8000/categoria/1">
+              <a class="btn btn-link stretched-link text-white" href="http://127.0.0.1:8000/categoria/1">
                Esplora Ora!
               </a>
 
@@ -144,17 +144,17 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-left" data-aos-duration="2000">
 
 
           <div class="card mb-7 text-body " style="min-height: 400px; " >
 
-            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://blogautomobilenew.mediamatik.com/wp-content/uploads/2019/07/Peugeot-3008-1.jpg); background-position: center center;">
 
 
 
 
-              <h4 class="mb-0 text-primary fw-bold  ">AUTO</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold  ">AUTO</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
@@ -167,19 +167,19 @@
 
         </div>
 
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="fade-up-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
 
 
-            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://picsum.photos/1000/600)">
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
 
 
-              <h4 class="mb-0 text-primary fw-bold">CASA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">TELEFONIA</h4>
 
 
-              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/3">
+              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/2">
                 Esplora Ora!
               </a>
 
@@ -188,20 +188,20 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-left" data-aos-duration="2000">
 
 
           <div class="card text-white" style="min-height: 400px; ">
 
 
 
-            <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://picsum.photos/600/600)" >
+            <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
 
 
-              <h4 class="mb-0 text-primary fw-bold">SALUTE</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">SPORT</h4>
 
               <!-- Link -->
-              <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/9">
+              <a class="btn btn-link stretched-link px-0 text-white" href="http://127.0.0.1:8000/categoria/8">
                 Esplora Ora!
               </a>
 
