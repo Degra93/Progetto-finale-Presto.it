@@ -74,9 +74,9 @@
 
 @if(count($announceToCheck))
 
-    <div class="col-3 mx-auto text-center  mt-5 text-black">
+    <div class="col-3 mx-auto text-center margin-count text-black">
         <h3 class="h3 heading-font">{{App\Models\Announcement::daRevisionare()}}</h3>
-        <p class="heading-font">ANNUNCI DA REVIZIONARE</p>
+        <p class="heading-font">ANNUNCI DA REVISIONARE</p>
     </div>
 {{--
         <div class="container">
@@ -151,13 +151,13 @@
                                                     <div class=" mx-2">
                                                         <form id="myForm" action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                             @csrf @method('PATCH')
-                                                            <button type="button" class="btn-hover btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Accetta</button>
+                                                            <button class="btn-hover btn btn-warning">Accetta</button>
                                                         </form>
                                                     </div>
                                                     <div class="mx-2">
                                                         <form  action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                             @csrf @method('PATCH')
-                                                            <button type="button" class="btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rifiuta</button>
+                                                            <button class="btn-hover btn btn-danger">Rifiuta</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -186,7 +186,7 @@
     </div>
  @endif
 
-  <!-------------------------- Modal ----------------------------------------------->
+  {{-- <!-------------------------- Modal ----------------------------------------------->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -218,7 +218,7 @@
       document.getElementById('myForm').submit(); // Відправка форми на сервер
     });
   }
-</script>
+</script> --}}
 
 
 </x-main>

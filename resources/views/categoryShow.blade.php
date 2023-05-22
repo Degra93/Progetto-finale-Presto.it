@@ -31,7 +31,7 @@
             <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
         </div>
         <div class="row g-4">
-            @forelse ($category->announcements as $announcement)
+            @forelse ($announcements as $announcement)
             <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
 
                 <article class="postcard light yellow">

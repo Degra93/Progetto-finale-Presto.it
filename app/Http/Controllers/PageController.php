@@ -19,12 +19,20 @@ class PageController extends Controller
     }
 
     public function categoryShow(Category $category){
-        return view('categoryShow', compact('category'));
+        $announcements = $category->announcements()->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(5);
+        return view('categoryShow', compact('category', 'announcements'));
+        
+        
 
     }
 
     public function searchAnnounces(Request $request){
         $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
         return view('announcement.index', compact('announcements'));
+    }
+
+    public function setLocale($lang){
+        session()->put('locale',$lang);
+        return redirect()->back();
     }
 }

@@ -45,3 +45,6 @@ Route::get('became/revisor/{user}',[RevisorController::class,'makeRevisor'])->na
 
 //Ricerca annuncio
 Route::get('/search/annuncio',[PageController::class, 'searchAnnounces'])->name('announcement.search');
+
+//Set linguaggio
+Route::post('/lingua/{lang}',[PageController::class, 'setLocale'])->name('setLocale');
