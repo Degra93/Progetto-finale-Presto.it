@@ -22,9 +22,9 @@
     </head>
     <body >
         <x-navbar />
-
-    {{$slot}}
-
+            <div style="min-height: 31ch">
+                {{$slot}}
+            </div>
         <x-footer/>
     @livewireScripts
     </body>

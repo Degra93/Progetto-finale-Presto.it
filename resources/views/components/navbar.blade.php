@@ -243,9 +243,14 @@
                 </li>
             @endforeach
         </ul> --}}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    @if (App\Models\Announcement::daRevisionare())
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                        
+                    @endif
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -259,7 +264,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea Annuncio</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea</a></li>
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
                     {{-- Bottone revisore se ha il revisore dentro: --}}
 
@@ -285,19 +290,24 @@
                             @endforeach
                         </ul>
                     </li>
+                    @if (Auth::user()->is_revisor)
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
                             <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
                                 alt="icona-utente">
+                                @if (App\Models\Announcement::daRevisionare())
+                                <span class="badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                                    
+                                @endif
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            @if (Auth::user()->is_revisor)
+                            {{-- @if (Auth::user()->is_revisor) --}}
                             <li>
-                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori</a>
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori<span class="badge rounded-pill bg-warning ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>
                             </li>
-                            @endif
+                            {{-- @endif --}}
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <a class="dropdown-item fw-bold>" href="/logout"
@@ -321,8 +331,41 @@
                         <x-locale lang="uk" nation="uk"/>
                     </li>
                 </ul>
-            @endguest
+                @else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                        <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
+                            alt="icona-utente">
+                            <span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item fw-bold>" href="/logout"
+                                onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
+                        </li>
 
+
+                        <form id="form-logout" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </ul>
+                </li>
+                <li>
+                    <x-locale lang="it" nation="it"/>
+                </li>
+                <li>
+                    <x-locale lang="en" nation="en"/>
+                </li>
+                
+                <li>
+                    <x-locale lang="uk" nation="uk"/>
+                </li>
+            </ul>
+            @endguest
+            @endif
         </div>
     </div>
 </nav>
