@@ -292,7 +292,7 @@
                     </li>
                     @if (Auth::user()->is_revisor)
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
                             <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
