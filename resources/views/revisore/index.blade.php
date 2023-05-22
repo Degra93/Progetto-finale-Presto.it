@@ -1,5 +1,5 @@
 <x-main>
-
+<div style="height:30px"></div>
 
 <!______________________CODICE VECHIO_______________________________________>
 {{--
@@ -124,7 +124,7 @@
         </div>
 --}}
 
-    <div class="container mb-5 main-font">
+    <div class="container mb-5 main-font" style="height:10px">
         <div class="row"></div>
             <div class="col-md-8 mx-auto">
                 @foreach ($announceToCheck as $key => $announceToCheck)
@@ -149,13 +149,13 @@
                                                 <p class=""><span class=" heading-font">Pubblicato il:</span>{{$announceToCheck->created_at->format('d/m/Y')}} Autore: {{$announceToCheck->user->name}}</p>
                                                 <div class="d-flex justify-content-start mt-5">
                                                     <div class=" mx-2">
-                                                        <form action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+                                                        <form id="myForm" action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                             @csrf @method('PATCH')
                                                             <button type="button" class="btn-hover btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Accetta</button>
                                                         </form>
                                                     </div>
                                                     <div class="mx-2">
-                                                        <form  id="myForm" action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+                                                        <form  action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                             @csrf @method('PATCH')
                                                             <button type="button" class="btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Rifiuta</button>
                                                         </form>
