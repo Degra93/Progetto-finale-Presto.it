@@ -247,7 +247,7 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
                         
                     @endif
                 </span>
@@ -295,17 +295,17 @@
                         <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
-                            <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
+                            <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle position-relative" height="22"
                                 alt="icona-utente">
                                 @if (App\Models\Announcement::daRevisionare())
-                                <span class="badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                                <span class="position-absolute top-40 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
                                     
                                 @endif
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             {{-- @if (Auth::user()->is_revisor) --}}
                             <li>
-                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori<span class="badge rounded-pill bg-warning ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori<span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>
                             </li>
                             {{-- @endif --}}
                             <li><hr class="dropdown-divider"></li>
