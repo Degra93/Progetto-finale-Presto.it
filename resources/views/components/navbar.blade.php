@@ -178,8 +178,8 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll fw-bold">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll ">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
@@ -229,8 +229,8 @@
         </div>
     </nav>
 @else
-    <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll fw-bold">
-        <div class="container">
+    <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll ">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
@@ -253,12 +253,21 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  text-center ms-auto ml-1 mb-1 mb-lg-0">
                     <li>
-                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
+                        <form class="" action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <div class="searchBox">
+
+                                <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">{{__('ui.cerca')}}</button>
+                                <button class="searchButton" type="submit"> 
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            
+                            {{-- <input type="search" name="searched" class=" form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
+                                aria-label="Search">
+                            <button class="searchInput searchButton material-icons " type="submit">{{__('ui.cerca')}}</button> --}}
                         </form>
                     </li>
                     <li class="nav-item">
@@ -343,7 +352,7 @@
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item fw-bold>" href="/logout"
+                            <a class="dropdown-item >" href="/logout"
                                 onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
                         </li>
 
