@@ -316,7 +316,7 @@
                         Cambia il tuo business in meglio
                     </div><br>
                     <div class="text-hero-bold">
-                        Il futuro è qui.
+                       {{__('ui.futuro')}}
                     </div><br>
                     <div class="text-hero-regular">
                         Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
