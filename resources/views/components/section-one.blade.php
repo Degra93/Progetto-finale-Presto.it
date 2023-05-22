@@ -256,6 +256,20 @@
     </div>
 </div>
 
+{{-- newsletter --}}
+<div class="container d-flex justify-content-center pb-4">
+ <form class="form" action="" method="post">
+  <span class="title">Subscribe to our newsletter.</span>
+  <p class="description">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
+  <div>
+    <input placeholder="Enter your email" type="email" name="email" id="email-address">
+    <button type="submit">Subscribe</button>
+  </div>
+ </form>
+</div>
+{{-- fine newsletter --}}
+
+{{-- 
 <section class="py-5 py-md-5 bg-light">
     <div class="container">
       <div class="row justify-content-center">
@@ -267,9 +281,7 @@
           </h2>
 
 
-          <p class="mb-6">
-            Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.
-          </p>
+          
 
         </div>
       </div>
@@ -295,7 +307,7 @@
         </div>
       </div>
     </div>
-</section>
+</section> --}}
 
 {{-- <div class="container-xxl py-5 ">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
