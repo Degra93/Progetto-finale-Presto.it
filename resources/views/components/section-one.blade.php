@@ -111,11 +111,11 @@
         <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
 
-          <h2 class="mb-4 fw-bold ">Categorie piu viste</h2>
+          <h2 class="mb-4 fw-bold ">{{__('ui.better')}}</h2>
 
 
           <p class="mb-10 text-gray-500">
-           Vieni alla Scoperta di tantissimi prodotti
+            {{__('ui.vieni')}}
           </p>
 
         </div>
@@ -132,11 +132,11 @@
             <div class="card-body my-auto">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">INFORMATICA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.informatica')}}</h4>
 
 
               <a class="btn btn-link stretched-link text-white" href="http://127.0.0.1:8000/categoria/1">
-               Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -154,11 +154,11 @@
 
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold  ">AUTO</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold  ">{{__('ui.auto')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -176,11 +176,11 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">TELEFONIA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.telefonia')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/2">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -198,11 +198,11 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">SPORT</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.sport')}}</h4>
 
               <!-- Link -->
               <a class="btn btn-link stretched-link px-0 text-white" href="http://127.0.0.1:8000/categoria/8">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>

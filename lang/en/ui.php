@@ -1,36 +1,51 @@
 <?php
 return[
+    // NAVBAR
+    
+    'ricerca'=>'Search here',
+    
+    'cerca'=>'Search',
+    
+    'annunci'=>'Announcements',
+    
+    'categorie'=>'Categories',
+    
+    'informatica'=>'Informatics',
+    
+    'telefonia'=>'Telephony',
+    
+    // 'casa'=>'Home',
+    
+    'auto'=>'Car',
+    
+    'moto'=>'Motorcycle',
+
+    'sport'=>'sport',
+    
+    // 'libri'=>'Bookshelf',
+    
+    // 'salute'=>'Health',
+    
+    // 'animali'=>'Pets',
+    
+    // SECTION
+
+    'cambia'=>'Change your business for the better',
+    
+    'futuro'=>'The Future is here',
+    
+    'metodi'=>'There are many ways to organize your business, ShopyPro is the most effective method',
+    
+    'crea'=>'Create ad',
+    
     'allAnnoucements'=>'Here our Categories',
 
-    'futuro'=>'The Future is here',
+    // HEADER
+    
+    'better'=>'The most visited categories',
 
-    'metodi'=>'There are many ways to organize your business, ShopyPro is the most effective method',
+    'vieni'=>'Come and discover many products',
 
-    'crea'=>'Create ad',
-// NAVBAR
-
-    'ricerca'=>'Search here',
-
-    'cerca'=>'Search',
-
-    'annunci'=>'Announcements',
-
-    'categorie'=>'Categories',
-
-    'informatica'=>'Informatics',
-
-    'telefonia'=>'Telephony',
-
-    'casa'=>'Home',
-
-    'auto'=>'Auto',
-
-    'moto'=>'Moto',
-
-    'libri'=>'Bookshelf',
-
-    'salute'=>'Health',
-
-    'animali'=>'Pets'
+    'esplora'=>'Explore now',
 
 ];

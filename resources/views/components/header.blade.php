@@ -313,7 +313,7 @@
             <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
                 <div class="copy" >
                     <div class="text-label">
-                        Cambia il tuo business in meglio
+                        {{__('ui.cambia')}}
                     </div><br>
                     <div class="text-hero-bold">
                        {{__('ui.futuro')}}
