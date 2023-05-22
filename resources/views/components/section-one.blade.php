@@ -257,15 +257,15 @@
 </div>
 
 {{-- newsletter --}}
-<div class="container d-flex justify-content-center pb-4">
- <form class="form" action="" method="post">
-  <span class="title">Subscribe to our newsletter.</span>
-  <p class="description">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
+<div class="container-fluid">
+<form class="form pb-4" action="" method="post">
+  <span class="title text-center">Subscribe to our newsletter.</span>
+  <p class="description text-center pt-3">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
   <div>
     <input placeholder="Enter your email" type="email" name="email" id="email-address">
     <button type="submit">Subscribe</button>
   </div>
- </form>
+</form>
 </div>
 {{-- fine newsletter --}}
 
