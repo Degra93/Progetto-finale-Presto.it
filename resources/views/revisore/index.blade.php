@@ -74,9 +74,9 @@
 
 @if(count($announceToCheck))
 
-    <div class="col-3 mx-auto text-center  mt-5 text-black">
+    <div class="col-3 mx-auto text-center margin-count text-black">
         <h3 class="h3 heading-font">{{App\Models\Announcement::daRevisionare()}}</h3>
-        <p class="heading-font">ANNUNCI DA REVIZIONARE</p>
+        <p class="heading-font">ANNUNCI DA REVISIONARE</p>
     </div>
 {{--
         <div class="container">
