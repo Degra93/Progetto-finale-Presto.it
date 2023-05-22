@@ -1,4 +1,6 @@
 <?php
 return[
-    'allAnnoucements'=>'Here our Categories'
+    'allAnnoucements'=>'Here our Categories',
+
+    'futuro'=>'The Future it here'
 ];
