@@ -193,16 +193,16 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li>
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="{{__('ui.cerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
+                            <button class="btn btn-outline-warning rounded-5" type="submit">{{__('ui.crea')}}</button>
                         </form>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
 
-                    <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
@@ -256,16 +256,16 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li>
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
+                            <button class="btn btn-outline-warning rounded-5" type="submit">{{__('ui.cerca')}}</button>
                         </form>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea</a></li>
-                    <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.create') }}">{{__('ui.crea')}}</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
                     {{-- Bottone revisore se ha il revisore dentro: --}}
 
                     {{-- <a class="nav-link" href="#">
@@ -280,7 +280,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.categorie')}}</a>
                         <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li>
