@@ -20,9 +20,9 @@
 
         @livewireStyles
     </head>
-    <body >
+    <body class="d-flex flex-column min-vh-100">
         <x-navbar />
-            <div style="min-height: 31ch">
+            <div class=" flex-grow-1" style="min-height: 31ch">
                 {{$slot}}
             </div>
         <x-footer/>
