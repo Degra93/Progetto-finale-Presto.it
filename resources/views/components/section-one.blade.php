@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="flip-left" data-aos-duration="2000">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="fade-right" data-aos-duration="2000">
 
 
           <div class="card mb-7" style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
@@ -144,7 +144,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="flip-right" data-aos-duration="2000">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-up-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 text-body " style="min-height: 400px; " >
@@ -188,7 +188,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="flip-left" data-aos-duration="2000">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-right" data-aos-duration="2000">
 
 
           <div class="card text-white" style="min-height: 400px; ">
@@ -226,7 +226,7 @@
     </div>
     <div class="row g-4">
         @forelse ($announcements as $announcement)
-        <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
+        <div class="col-lg-12 col-12 " data-aos="fade-down-right" data-aos-duration="2000" >
 
           <article class="postcard light yellow text-center">
               <a class="postcard__img_link position-relative" href="#">
@@ -260,7 +260,7 @@
 </div>
 
 {{-- newsletter --}}
-<div class="container d-flex justify-content-center" data-aos="flip-up">
+<div class="container d-flex justify-content-center">
 <form class="form pb-4" action="" method="post">
   <span class="title text-center">{{__('ui.newsletter')}} </span>
   <p class="description text-center pt-3">{{__('ui.newsletter-p')}}</p>

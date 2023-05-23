@@ -310,8 +310,8 @@
     <div class="spacer"></div>
     <div class="container-fluid"  >
         <div class="row">
-            <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
-                <div class="copy" >
+            <div class="col-md-6 text-center " data-aos="fade-up-right" data-aos-duration="3000"  >
+                <div >
                     <div class="text-label">
                         {{__('ui.cambia')}}
                     </div><br>
@@ -328,7 +328,7 @@
                 </div>
             </div>
             <div class="col-md-6 pt-3">
-                <img class="img-fluid" data-aos="zoom-in-left" data-aos-duration="3000" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
+                <img class="img-fluid" data-aos="zoom-in-right" data-aos-duration="3000"  src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
     </div>
