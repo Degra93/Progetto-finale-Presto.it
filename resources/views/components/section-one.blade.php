@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="flip-left" data-aos-duration="2000">
 
 
           <div class="card mb-7" style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
@@ -144,7 +144,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="flip-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 text-body " style="min-height: 400px; " >
@@ -167,7 +167,7 @@
 
         </div>
 
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="flip-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
@@ -188,7 +188,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-left" data-aos-duration="2000">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="flip-left" data-aos-duration="2000">
 
 
           <div class="card text-white" style="min-height: 400px; ">
@@ -257,7 +257,7 @@
 </div>
 
 {{-- newsletter --}}
-<div class="container-fluid">
+<div class="container d-flex justify-content-center" data-aos="flip-up">
 <form class="form pb-4" action="" method="post">
   <span class="title text-center">Subscribe to our newsletter.</span>
   <p class="description text-center pt-3">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
