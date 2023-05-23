@@ -178,8 +178,8 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll fw-bold">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll ">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
@@ -193,16 +193,16 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li>
                         <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
+                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="{{__('ui.cerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
+                            <button class="btn btn-outline-warning rounded-5" type="submit">{{__('ui.crea')}}</button>
                         </form>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
 
-                    <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
@@ -229,8 +229,8 @@
         </div>
     </nav>
 @else
-    <nav class="navbar  navbar-expand-xl fixed-top navbar-scroll fw-bold">
-        <div class="container">
+    <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll ">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
@@ -247,25 +247,34 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
                         
                     @endif
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  text-center ms-auto ml-1 mb-1 mb-lg-0">
                     <li>
-                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="Ricerca qui"
+                        <form class="" action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <div class="searchBox">
+
+                                <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">Cerca</button>
+                                <button class="searchButton" type="submit"> 
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            
+                            {{-- <input type="search" name="searched" class=" form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
+                                aria-label="Search">
+                            <button class="searchInput searchButton material-icons " type="submit">{{__('ui.cerca')}}</button> --}}
                         </form>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('homepage') }}">Home</a>
                     </li>
-                    <li><a class="nav-link" href="{{ route('announcement.create') }}">Crea</a></li>
-                    <li><a class="nav-link" href="{{ route('announcement.index') }}">Annunci</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.create') }}">{{__('ui.crea')}}</a></li>
+                    <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
                     {{-- Bottone revisore se ha il revisore dentro: --}}
 
                     {{-- <a class="nav-link" href="#">
@@ -280,7 +289,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.categorie')}}</a>
                         <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li>
@@ -292,20 +301,20 @@
                     </li>
                     @if (Auth::user()->is_revisor)
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }}
-                            <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
+                            <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle position-relative" height="22"
                                 alt="icona-utente">
                                 @if (App\Models\Announcement::daRevisionare())
-                                <span class="badge rounded-pill bg-warning">{{App\Models\Announcement::daRevisionare()}}</span>
+                                <span class="position-absolute top-40 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
                                     
                                 @endif
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             {{-- @if (Auth::user()->is_revisor) --}}
                             <li>
-                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori<span class="badge rounded-pill bg-warning ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori<span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>
                             </li>
                             {{-- @endif --}}
                             <li><hr class="dropdown-divider"></li>
@@ -343,7 +352,7 @@
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><hr class="dropdown-divider"></li>
                         <li>
-                            <a class="dropdown-item fw-bold>" href="/logout"
+                            <a class="dropdown-item >" href="/logout"
                                 onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
                         </li>
 

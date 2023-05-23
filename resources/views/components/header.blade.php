@@ -313,16 +313,16 @@
             <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
                 <div class="copy" >
                     <div class="text-label">
-                        Cambia il tuo business in meglio
+                        {{__('ui.cambia')}}
                     </div><br>
                     <div class="text-hero-bold">
-                        Il futuro è qui.
+                       {{__('ui.futuro')}}
                     </div><br>
                     <div class="text-hero-regular">
-                        Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace
+                        {{__('ui.metodi')}}
                     </div><br>
                     <div class="cta mb-sm-2">
-                        <a href="{{ route('announcement.create') }}" class="btn btn-warning shadow-none">Crea Annuncio</a>
+                        <a href="{{ route('announcement.create') }}" class="btn btn-warning shadow-none">{{__('ui.crea')}}</a>
 
                     </div>
                 </div>

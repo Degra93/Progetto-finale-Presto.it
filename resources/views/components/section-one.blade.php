@@ -111,11 +111,11 @@
         <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
 
-          <h2 class="mb-4 fw-bold ">Categorie piu viste</h2>
+          <h2 class="mb-4 fw-bold ">{{__('ui.better')}}</h2>
 
 
           <p class="mb-10 text-gray-500">
-           Vieni alla Scoperta di tantissimi prodotti
+            {{__('ui.vieni')}}
           </p>
 
         </div>
@@ -132,11 +132,11 @@
             <div class="card-body my-auto">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">INFORMATICA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.informatica')}}</h4>
 
 
               <a class="btn btn-link stretched-link text-white" href="http://127.0.0.1:8000/categoria/1">
-               Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -154,11 +154,11 @@
 
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold  ">AUTO</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold  ">{{__('ui.auto')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -176,11 +176,11 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">TELEFONIA</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.telefonia')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/2">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -198,11 +198,11 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">SPORT</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.sport')}}</h4>
 
               <!-- Link -->
               <a class="btn btn-link stretched-link px-0 text-white" href="http://127.0.0.1:8000/categoria/8">
-                Esplora Ora!
+                {{__('ui.esplora')}}
               </a>
 
             </div>
@@ -256,6 +256,20 @@
     </div>
 </div>
 
+{{-- newsletter --}}
+<div class="container-fluid">
+<form class="form pb-4" action="" method="post">
+  <span class="title text-center">Subscribe to our newsletter.</span>
+  <p class="description text-center pt-3">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
+  <div>
+    <input placeholder="Enter your email" type="email" name="email" id="email-address">
+    <button type="submit">Subscribe</button>
+  </div>
+</form>
+</div>
+{{-- fine newsletter --}}
+
+{{-- 
 <section class="py-5 py-md-5 bg-light">
     <div class="container">
       <div class="row justify-content-center">
@@ -267,9 +281,7 @@
           </h2>
 
 
-          <p class="mb-6">
-            Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.
-          </p>
+          
 
         </div>
       </div>
@@ -295,7 +307,7 @@
         </div>
       </div>
     </div>
-</section>
+</section> --}}
 
 {{-- <div class="container-xxl py-5 ">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
