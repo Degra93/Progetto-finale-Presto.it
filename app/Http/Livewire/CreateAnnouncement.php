@@ -76,7 +76,7 @@ class CreateAnnouncement extends Component
         // Announcement::create([
             // 'title'=> $this->title,
             // 'body'=> $this->body,
-            // 'price'=>$this->price,   
+            // 'price'=>$this->price,   w
                 
         //     ]);
             $this->cleanForm();

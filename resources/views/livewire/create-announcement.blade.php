@@ -37,32 +37,6 @@
         <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
       </div>
 
-      {{-- <div class="mb-2">
-        <input wire:model="temp_images" type="file" name="images"  multiple class="form-control @error('temp_images.*') is-invalid @enderror"/>
-        @error('temp_images.*')
-            <span class="small text-danger">{{$message}}</span>
-        @enderror
-      </div>
-      @if (!empty($images))
-          <div class="row">
-            <div class="col-12">
-              <p>Preview</p>
-
-              1
-              <div class="row border border-4 border-info rounded py-4">
-                @foreach ($images as $key => $image)
-                <div class="col my-3">
-                  <div class="img_dim rounder mx-auto" style="background-image: url({{$image->temporaryUrl()}})"></div>
-                  
-                    <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella Image</button>
-                </div>
-                    @endforeach
-                  
-                
-              </div>
-            </div>
-          </div>
-      @endif --}}
 
       <div class="d-flex flex-row align-items-center mb-4">
         <div class="form-outline flex-fill mb-0">
