@@ -71,31 +71,34 @@
         </div>
         <div class="row g-4">
             @forelse ($announcements as $announcement)
+            {{-- <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" /> --}}
+            
             <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
-                
-                <article class="postcard light yellow">
+
+                <article class="postcard light yellow text-center">
                     <a class="postcard__img_link position-relative" href="#">
-                        {{-- <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" /> --}}
-                        <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300) : 'https://picsum.photos/600'}}" alt="Image Title" />
-                        <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4   ">Prezzo: {{$announcement->price}}</small>
+                        <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300)  : 'https://picsum.photos/600'}}" alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
+                        <div class="d-flex justify-content-between">
+                            
+                            <a href="" class="btn btn-sm btn-warning rounded py-2 px-4 fw-bold">Prezzo: {{$announcement->price}} €</a>
+                        </div>
                         <h5 class="mb-0">{{$announcement->title}}</h5>
                         <div class="postcard__subtitle small">
                             <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
                         </div>
                         <div class="postcard__bar"></div>
-                        <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>   
+                        <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                            <a class="btn btn-sm btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
                             
-                        </div>                     
+                        </div>
                     </div>
-                    
+            
                 </article>
-
-            </div>
+          </div>
             @empty
             <h2>Non ci sono annunci nella Ricerca</h2>
             @endforelse
