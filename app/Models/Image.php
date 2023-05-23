@@ -29,4 +29,8 @@ class Image extends Model
 
         return Storage::url($file);
     }
+
+    public function getUrl($w = null , $h = null){
+        return Image::getUrlByFilePath($this->path, $w ,$h);
+    }
 }
