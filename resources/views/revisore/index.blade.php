@@ -1,6 +1,6 @@
 <x-main >
 <section class="grow d-flex flex-column">
-    <div style="height:30px"></div>
+    <div class="spacer"></div>
 
     <!______________________CODICE VECHIO_______________________________________>
     {{--

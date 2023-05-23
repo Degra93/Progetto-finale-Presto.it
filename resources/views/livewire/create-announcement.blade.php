@@ -1,5 +1,5 @@
 
-<div class="container py-4">
+<div class="container py-4 my-5">
     <x-success/>
     <form wire:submit.prevent="store" enctype="multipart/form-data">
         @csrf
@@ -53,12 +53,12 @@
                 @foreach ($images as $key => $image)
                 <div class="col my-3">
                   <div class="img_dim rounder mx-auto" style="background-image: url({{$image->temporaryUrl()}})"></div>
-                  
+
                     <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella Image</button>
                 </div>
                     @endforeach
-                  
-                
+
+
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
             @error('temporary_images.*')
             <div class=" text-danger">
               {{$message}}
-            </div> 
+            </div>
             @enderror
           </div>
       </div>
