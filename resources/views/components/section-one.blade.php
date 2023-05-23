@@ -262,11 +262,11 @@
 {{-- newsletter --}}
 <div class="container d-flex justify-content-center" data-aos="flip-up">
 <form class="form pb-4" action="" method="post">
-  <span class="title text-center">Subscribe to our newsletter.</span>
-  <p class="description text-center pt-3">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
+  <span class="title text-center">{{__('ui.newsletter')}} </span>
+  <p class="description text-center pt-3">{{__('ui.newsletter-p')}}</p>
   <div>
-    <input placeholder="Enter your email" type="email" name="email" id="email-address">
-    <button type="submit">Subscribe</button>
+    <input placeholder="{{__('ui.enter-email')}}" type="email" name="email" id="email-address">
+    <button type="submit">{{__('ui.iscriviti')}}</button>
   </div>
 </form>
 </div>

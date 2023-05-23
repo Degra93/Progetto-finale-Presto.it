@@ -3,12 +3,11 @@
       <div class="row row-30 ">
         <div class="col-md-4 col-xl-5 mt-2">
           <div class="pr-xl-4 text-center">
-            <p>Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!</p>
+            <p>{{__('ui.chi-siamo')}}</p>
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
-            <h5>Vuoi lavorare con noi?</h5>
-            <a class="btn btn-danger" onclick="return confirm('Sei sicuro di voler diventare revisore?')" href="{{route('ask.revisor')}}">Diventa Revisore</a>
+            <h5>Vuoi lavorare con noi?</h5> <a class="btn btn-danger" onclick="return confirm('Sei sicuro di voler diventare revisore?')" href="{{route('ask.revisor')}}">Diventa Revisore</a>
           </div>
         </div>
         <div class="col-md-4 mt-2 text-center">

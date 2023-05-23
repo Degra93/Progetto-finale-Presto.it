@@ -52,4 +52,17 @@ return[
 
     'esplora-i'=>'Esplora i nostri ANNUNCI',
 
+    // NEWSLETTER
+
+    'newsletter'=>'Iscriviti alla nostra Newsletter',
+
+    'newsletter-p'=>'Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti',
+
+    'enter-email'=>'Inserisci la tua E-mail',
+
+    'iscriviti'=>'Iscriviti',
+
+    // FOOTER
+
+    'chi-siamo'=>'Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!',
 ];

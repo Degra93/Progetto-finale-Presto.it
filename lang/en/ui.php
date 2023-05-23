@@ -52,4 +52,20 @@ return[
 
     'esplora-i'=>'Explore our classifieds',
 
+    // NEWSLETTER
+
+    'newsletter'=>'Subscribe to our newsletter',
+
+    'newsletter-p'=>'Subscribe to our newsletter to learn about our projects and news about our extraordinary products in real time',
+
+    'enter-email'=>'Enter your E-mail',
+
+    'iscriviti'=>'Subscribe',
+
+    // FOOTER
+
+    'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
+
+
+
 ];
