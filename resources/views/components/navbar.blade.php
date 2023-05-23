@@ -192,10 +192,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li>
-                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
-                            <input type="search" name="searched" class="form-control me-2 rounded-5" placeholder="{{__('ui.cerca')}}"
+                        <form class="" action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                            <div class="searchBox">
+
+                                <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                            <button class="btn btn-outline-warning rounded-5" type="submit">{{__('ui.crea')}}</button>
+                                <button class="searchButton" type="submit"> 
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            
+                            {{-- <input type="search" name="searched" class=" form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
+                                aria-label="Search">
+                            <button class="searchInput searchButton material-icons " type="submit">{{__('ui.cerca')}}</button> --}}
                         </form>
                     </li>
                     <li class="nav-item">
@@ -221,6 +230,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register') }}">Registrati</a>
+                    </li>
+                    <li>
+                        <x-locale lang="it" nation="it"/>
+                    </li>
+                    <li>
+                        <x-locale lang="en" nation="en"/>
+                    </li>
+                    
+                    <li>
+                        <x-locale lang="uk" nation="uk"/>
                     </li>
                 </ul>
 

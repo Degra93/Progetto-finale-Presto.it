@@ -75,7 +75,8 @@
                 
                 <article class="postcard light yellow">
                     <a class="postcard__img_link position-relative" href="#">
-                        <img class="postcard__img pt-4" src="https://picsum.photos/501/501" alt="Image Title" />
+                        {{-- <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" /> --}}
+                        <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300) : 'https://picsum.photos/600'}}" alt="Image Title" />
                         <small class="position-absolute start-0 sss translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4   ">Prezzo: {{$announcement->price}}</small>
                     </a>
                     <div class="postcard__text t-dark">

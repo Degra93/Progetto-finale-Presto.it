@@ -237,9 +237,8 @@ a {
 /* BUTTON SEARCH  */
 
 body {
-    background-image: linear-gradient(to right , #cb2d3e , #ef473a);
+    background-image: linear-gradient(to right , #fef7eb , #ffedcd);
 }
-
 .searchBox {
     background: #2f3640;
     height: 40px;
