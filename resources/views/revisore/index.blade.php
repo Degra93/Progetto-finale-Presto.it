@@ -140,9 +140,49 @@
                                 <div id="collapse{{$key}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-light">
                                         <div class="row">
-                                                <div class="col-md-5">
-                                                    <img src="https://picsum.photos/800/1000" class="img-fluid  mx-auto rounded " alt="...">
+                                           
+                                            <div class="col-md-5">
+                                                  
+                                                 
+                                           
+                                            <div id="carouselExample" class="carousel slide">
+                                                 @if ($announceToCheck->images)
+                                                <div class="carousel-inner">
+                                                   
+                                                     @foreach ($announceToCheck->images as $image)
+                                                        <div class="carousel-item  @if($loop->first) active @endif">
+                                                            <img src="{{Storage::url($image->path)}}" class="img-fluid rounded" alt="img">
+                                                        </div>
+                                                    @endforeach
                                                 </div>
+                                                @else
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                      <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                      <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
+                                                    </div>
+                                                  </div>
+                                                
+                                                @endif
+                                                
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="visually-hidden">Next</span>
+                                                </button>
+                                              </div>
+
+                                              {{-- <img src="https://picsum.photos/800/1000" class="img-fluid  mx-auto rounded " alt="..."> --}}
+
+                                            </div>
                                                 <div class="col-md-7  mx-auto align-self-center ">
                                                     <h3 class=""><span class=" heading-font">Titolo:</span> {{$announceToCheck->title}}</h3>
                                                     <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">Descrizione:</span> {{$announceToCheck->body}}</p>
