@@ -9,6 +9,7 @@ use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rules\File;
 
 class CreateAnnouncement extends Component
 {
@@ -76,6 +77,8 @@ class CreateAnnouncement extends Component
 
                 dispatch(new ResizeImage($newImage->path, 400, 300));
             }
+
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
         $this->announcement->user()->associate(Auth::user());
         $this->announcement->save();

@@ -140,15 +140,15 @@
                                 <div id="collapse{{$key}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-light">
                                         <div class="row">
-                                           
+
                                             <div class="col-md-5">
-                                                  
-                                                 
-                                           
+
+
+
                                             <div id="carouselExample" class="carousel slide">
                                                  @if ($announceToCheck->images)
                                                 <div class="carousel-inner">
-                                                   
+
                                                      @foreach ($announceToCheck->images as $image)
                                                         <div class="carousel-item  @if($loop->first) active @endif">
                                                             <img src="{{Storage::url($image->path)}}" class="img-fluid rounded" alt="img">
@@ -167,9 +167,9 @@
                                                       <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
                                                     </div>
                                                   </div>
-                                                
+
                                                 @endif
-                                                
+
                                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                   <span class="visually-hidden">Previous</span>
