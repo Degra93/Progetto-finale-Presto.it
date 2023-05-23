@@ -230,7 +230,7 @@
 
             <article class="postcard light yellow text-center">
                 <a class="postcard__img_link position-relative" href="#">
-                    <img class="postcard__img " src="https://picsum.photos/501/501" alt="Image Title" />
+                    <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" />
                     <small class="bg-dark fw-bold text-warning rounded">Prezzo: {{$announcement->price}} €</small>
                 </a>
                 <div class="postcard__text t-dark">
