@@ -178,7 +178,7 @@
 
 {{-- seconda nav --}}
 @guest
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll ">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll fw-bold ">
         <div class="container-fluid p-0 m-0">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -208,7 +208,7 @@
                         </form>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('homepage') }}">Home</a>
+                        <a class="nav-link" href="{{ route('homepage') }}">{{__('ui.home')}}</a>
                     </li>
 
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
@@ -248,7 +248,7 @@
         </div>
     </nav>
 @else
-    <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll ">
+    <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll fw-bold ">
         <div class="container p-0 m-o">
             <a class="navbar-brand p-0 m-0" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
@@ -290,7 +290,7 @@
                         </form>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('homepage') }}">Home</a>
+                        <a class="nav-link" href="{{ route('homepage') }}">{{__('ui.home')}}</a>
                     </li>
                     <li><a class="nav-link" href="{{ route('announcement.create') }}">{{__('ui.crea')}}</a></li>
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
@@ -311,8 +311,8 @@
                             data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.categorie')}}</a>
                         <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
-                                <li>
-                                    <a href="{{ route('categoryShow', compact('category')) }}"
+                                <li >
+                                    <a class="fw-bold text-black" href="{{ route('categoryShow', compact('category')) }}"
                                         class="dropdown-item">{{__('ui.'.$category->name)}}</a>
                                 </li>
                             @endforeach

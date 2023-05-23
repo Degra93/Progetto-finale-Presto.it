@@ -14,7 +14,7 @@ return[
     
     'Telefonia'=>'Телефонія',
 
-    // 'Casa'=>'Casa',
+    'Casa'=>'додому',
 
     'Auto'=>'Aвтомобіль',
     
@@ -22,13 +22,13 @@ return[
     
     'Sport'=>'Cпорт',
     
-    // 'Libri'=>'Libri',
+    'Libri'=>'Книги',
     
-    // 'Salute'=>'Salute',
+    'Salute'=>'Здоров',
     
-    // 'Animali'=>'Animali',
+    'Animali'=>'Тварини',
 
-    // 'Game'=>'Game',
+    'Game'=>'гра',
 
     // SECTION
 

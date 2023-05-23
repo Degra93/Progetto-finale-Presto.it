@@ -69,13 +69,13 @@
             <h6 class="section-title text-center text-primary text-uppercase pt-3">Nostri Annunci</h6>
             <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase ">Annunci</span></h1>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 ">
             @forelse ($announcements as $announcement)
             {{-- <img class="postcard__img pt-4" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" /> --}}
             
             <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
 
-                <article class="postcard light yellow text-center">
+                <article class="postcard light yellow text-center bg-annunci-home">
                     <a class="postcard__img_link position-relative" href="#">
                         <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300)  : 'https://picsum.photos/600'}}" alt="Image Title" />
                     </a>

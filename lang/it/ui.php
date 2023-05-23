@@ -20,7 +20,7 @@ return[
     
      'Moto'=>'Moto',
 
-     'Sport'=>'sport',
+     'Sport'=>'Sport',
     
     'Libri'=>'Libri',
     
