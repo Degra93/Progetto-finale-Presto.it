@@ -124,7 +124,7 @@
         </div>
 --}}
 
-    <div class="container mb-5 main-font" style="height:10px">
+    <div class="container mb-5 main-font" style="height:100%">
         <div class="row"></div>
             <div class="col-md-8 mx-auto">
                 @foreach ($announceToCheck as $key => $announceToCheck)
