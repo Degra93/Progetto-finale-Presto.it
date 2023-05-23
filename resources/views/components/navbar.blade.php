@@ -179,12 +179,12 @@
 {{-- seconda nav --}}
 @guest
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll ">
-        <div class="container-fluid">
+        <div class="container-fluid p-0 m-0">
             <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -249,8 +249,8 @@
     </nav>
 @else
     <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('homepage') }}">
+        <div class="container p-0 m-o">
+            <a class="navbar-brand p-0 m-0" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
             </a>
@@ -262,7 +262,7 @@
                 </li>
             @endforeach
         </ul> --}}
-            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler position" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())

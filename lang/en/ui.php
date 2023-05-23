@@ -67,5 +67,21 @@ return[
     'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
 
 
+    'vuoi'=>'Do you want to work with us?',
+
+    'diventa'=>'Become a Reviewer',
+
+    'contatti'=>'Contacts',
+
+    'footer-chi'=>'About us',
+
+    'home'=>'Home',
+
+    'indirizzo'=>'Address',
+
+    'telefono'=>'Telephone',
+
+    
+
 
 ];

@@ -65,4 +65,18 @@ return[
     // FOOTER
 
     'chi-siamo'=>'Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!',
+
+    'vuoi'=>'Vuoi lavorare con noi?',
+
+    'diventa'=>'Diventa Revisiore',
+
+    'footer-chi'=>'Chi siamo',
+
+    'contatti'=>'Contatti',
+
+    'home'=>'Home',
+
+    'indirizzo'=>'Indirizzo',
+
+    'telefono'=>'telefono',
 ];

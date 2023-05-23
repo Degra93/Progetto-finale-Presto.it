@@ -20,7 +20,7 @@
 
         @livewireStyles
     </head>
-    <body class="container-fluid d-flex flex-column min-vh-100">
+    <body class=" bg-dark container-fluid d-flex flex-column min-vh-100 p-0 ">
         <x-navbar />
             <div class=" flex-grow-1" style="min-height: 31ch">
                 {{$slot}}
