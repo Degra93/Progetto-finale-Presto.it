@@ -219,7 +219,7 @@
                             @foreach ($categories as $category)
                                 <li>
                                     <a href="{{ route('categoryShow', compact('category')) }}"
-                                        class="dropdown-item">{{ $category->name }}</a>
+                                        class="dropdown-item">{{__('ui.'.$category->name)}}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -313,7 +313,7 @@
                             @foreach ($categories as $category)
                                 <li>
                                     <a href="{{ route('categoryShow', compact('category')) }}"
-                                        class="dropdown-item">{{ $category->name }}</a>
+                                        class="dropdown-item">{{__('ui.'.$category->name)}}</a>
                                 </li>
                             @endforeach
                         </ul>

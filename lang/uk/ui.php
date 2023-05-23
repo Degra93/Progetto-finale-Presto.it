@@ -10,23 +10,25 @@ return[
     
     'categorie'=>'розділ',
     
-    'informatica'=>'Інформатика',
+    'Informatica'=>'Інформатика',
     
-    'telefonia'=>'Телефонія',
+    'Telefonia'=>'Телефонія',
 
-    // 'casa'=>'Casa',
+    // 'Casa'=>'Casa',
 
-    'auto'=>'Aвтомобіль',
+    'Auto'=>'Aвтомобіль',
     
-    'moto'=>'Mотоцикл',
+    'Moto'=>'Mотоцикл',
     
-    'sport'=>'Cпорт',
+    'Sport'=>'Cпорт',
     
-    // 'libri'=>'Libri',
+    // 'Libri'=>'Libri',
     
-    // 'salute'=>'Salute',
+    // 'Salute'=>'Salute',
     
-    // 'animali'=>'Animali',
+    // 'Animali'=>'Animali',
+
+    // 'Game'=>'Game',
 
     // SECTION
 

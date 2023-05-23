@@ -347,7 +347,7 @@
                         <div class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy" lc-helper="background" style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; " >
                             <div class="lc-block pt-5 mt-5 mb-5  text-center ">
                                 <div editable="rich">
-                                    <h2 class="display-6 lh-1 fw-bold mb-5">{{$category->name}}</h2>
+                                    <h2 class="display-6 lh-1 fw-bold mb-5">{{__('ui.'.$category->name)}}</h2>
 
                                 </div>
                             </div>

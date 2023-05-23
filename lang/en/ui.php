@@ -10,23 +10,25 @@ return[
     
     'categorie'=>'Categories',
     
-    'informatica'=>'Informatics',
+    'Informatica'=>'Informatics',
     
-    'telefonia'=>'Telephony',
+    'Telefonia'=>'Telephony',
     
-    // 'casa'=>'Home',
+    'Casa'=>'Home',
     
-    'auto'=>'Car',
+    'Auto'=>'Car',
     
-    'moto'=>'Motorcycle',
+    'Moto'=>'Motorcycle',
 
-    'sport'=>'sport',
+    'Sport'=>'sport',
     
-    // 'libri'=>'Bookshelf',
+    'Libri'=>'Bookshelf',
     
-    // 'salute'=>'Health',
+    'Salute'=>'Health',
     
-    // 'animali'=>'Pets',
+    'Animali'=>'Pets',
+
+    'Game'=>'Game',
     
     // SECTION
 
