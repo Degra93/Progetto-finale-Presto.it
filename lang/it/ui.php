@@ -48,4 +48,8 @@ return[
 
     'esplora'=>'Esplora ora',
 
+    'nostri'=>'I Nostri Annunci',
+
+    'esplora-i'=>'Esplora i nostri ANNUNCI',
+
 ];

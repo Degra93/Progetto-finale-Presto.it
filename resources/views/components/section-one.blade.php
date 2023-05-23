@@ -221,8 +221,8 @@
 
 <div class="container pt-5 ">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-        <h6 class="section-title text-center text-primary text-uppercase ">Nostri Annunci</h6>
-        <h1 class="mb-5 fw-bold">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+        <h4 class="section-title text-center text-primary text-uppercase ">{{__('ui.nostri')}}</h4>
+        <h2 class="mb-5 fw-bold">{{__('ui.esplora-i')}} <span class="text-primary text-uppercase"></span></h2>
     </div>
     <div class="row g-4">
         @forelse ($announcements as $announcement)
