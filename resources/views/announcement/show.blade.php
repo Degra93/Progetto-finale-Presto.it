@@ -9,28 +9,23 @@
             <div class="row ">
               <div class="col-12 py-3 ">
                 
-                <div id="carouselExample" class="carousel slide">
+                
                     @if ($announcement->images)
+                    <div id="carouselExample" class="carousel slide">
                    <div class="carousel-inner">
                       
-                        @foreach ($announcement->images as $image)
+                        @forelse ($announcement->images as $image)
                            <div class="carousel-item  @if($loop->first) active @endif">
-                               <img src="{{$image->getUrl(400,300)}}" class="img-fluid rounded" alt="img">
+                               <img src="{{$image->getUrl(1000,600)}}" class="img-fluid rounded" alt="img">
                            </div>
-                       @endforeach
+                           @empty
+                            <div class="col-12">
+                                <img src="https://picsum.photos/1000/600" class="img-fluid" alt="">
+                            </div>
+                       @endforelse
                    </div>
                    @else
-                   <div class="carousel-inner">
-                       <div class="carousel-item active">
-                         <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
-                       </div>
-                       <div class="carousel-item">
-                         <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
-                       </div>
-                       <div class="carousel-item">
-                         <img src="https://picsum.photos/800/1000" class="img-fluid rounded" alt="...">
-                       </div>
-                     </div>
+                   
                    
                    @endif
                    
@@ -47,12 +42,9 @@
               @foreach ($announcement->images as $image )
                      <div class="col-12 col-md-6 col-lg-6 py-2">
                     
-                    <img src="{{$image->getUrl(400,300)}}" class="img-fluid" alt="">
+                    <img src="{{$image->getUrl(1000,600)}}" class="img-fluid" alt="">
                 </div>           
               @endforeach
-              <div class="col-3">
-                  <img src="" class="img-fluid" alt="">
-              </div>
                 
             </div>
         </div>
@@ -78,10 +70,11 @@
                             <div class="handle_options__u6xgU"><hr><p>disponibile in<!-- -->:</p></div>
                         </div>
                         <div class="col-12 p-2">
-                            <button type="button" class="btn btn-primary">Blue</button>
-                            <button type="button" class="btn btn-secondary">Grigio</button>
-                            <button type="button" class="btn btn-warning">Giallo</button>
-                            <button type="button" class="btn btn-info">Celeste</button>
+                            <button type="button" class="btn btn-primary rounded-pill"><h5>Blue</h5></button>
+                            <button type="button" class="btn btn-secondary rounded-pill"><h5>Grigio</h5></button>
+                            <button type="button" class="btn btn-warning rounded-pill"><h5>Giallo</h5></button>
+                            <button type="button" class="btn btn-info rounded-pill"><h5>Blue</h5></button>
+
                         </div>
 
                         <div class="col-12">
@@ -146,10 +139,10 @@
                             
                         </div>
                         <div class="pt-5">
-                          <a href="{{route('categoryShow',['category'=>$announcement->category])}}" class=" my-2 border-top pt-2 border-dark card-link shadow btn btn-warning">Categoria: {{$announcement->category->name}}</a><br>
+                          <a href="{{route('categoryShow',['category'=>$announcement->category])}}" class=" btn btn-warning rounded-pill my-2 " type="button"><h5>Categoria: {{$announcement->category->name}}</h5></a><br>
                           <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
                       </div>
-                        <div class="col-12 py-3 bgw">
+                        <div class="col-12 pb-2 bgw">
                             <button type="button" class="btn btn-warning rounded-pill"><h5> {{$announcement->title}} Makes The Differences </h5></button>
                         </div>
                         

@@ -36,7 +36,7 @@
 
                 <article class="postcard light yellow text-center">
                     <a class="postcard__img_link position-relative" href="#">
-                        <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300)  : 'https://picsum.photos/600'}}" alt="Image Title" />
+                        <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(1000,600)  : 'https://picsum.photos/600'}}" alt="Image Title" />
                     </a>
                     <div class="postcard__text t-dark">
                         <div class="d-flex justify-content-between">
