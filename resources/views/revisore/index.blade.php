@@ -140,10 +140,7 @@
                                 <div id="collapse{{$key}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-light">
                                         <div class="row">
-
                                             <div class="col-md-5">
-
-
 
                                             <div id="carouselExample" class="carousel slide">
                                                  @if ($announceToCheck->images)
@@ -190,15 +187,19 @@
                                                     <p class=""><span class=" heading-font">Pubblicato il:</span>{{$announceToCheck->created_at->format('d/m/Y')}} Autore: {{$announceToCheck->user->name}}</p>
                                                     <div class="d-flex justify-content-start mt-5">
                                                         <div class=" mx-2">
-                                                            <form id="myForm" action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+                                                            <form id="acetta"   action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                                 @csrf @method('PATCH')
-                                                                <button class="btn-hover btn btn-warning">Accetta</button>
+                                                                <button type="button" class="btn btn-primary btn-hover btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                                    Accetta
+                                                                </button>
                                                             </form>
                                                         </div>
                                                         <div class="mx-2">
-                                                            <form  action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
+                                                            <form id="rifuta" action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                                 @csrf @method('PATCH')
-                                                                <button class="btn-hover btn btn-danger">Rifiuta</button>
+                                                                <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
+                                                                    Rifiuta
+                                                                </button>
                                                             </form>
                                                         </div>
                                                     </div>
@@ -227,39 +228,51 @@
         </div>
     @endif
 
-    {{-- <!-------------------------- Modal ----------------------------------------------->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <p class="h2 text-center">Sei sicuro?</p>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
-            <button type="button" class="btn-hover btn btn-danger"  onclick="openModalAndSubmitForm()" data-bs-dismiss="modal">Si</button>
-            </div>
-        </div>
-        </div>
-    </div>
-
-
     <script>
-
-        function ok(){
-            $('#staticBackdrop').modal('show'); // Відкриття модального вікна
+        function acetta() {
+            document.getElementById('acetta').submit(); // Відправка форми на сервер
+        }
+        function rifuta() {
+            document.getElementById('rifuta').submit(); // Відправка форми на сервер
         }
 
-    function openModalAndSubmitForm() {
-
-        $('#staticBackdrop').on('hidden.bs.modal', function () {
-        document.getElementById('myForm').submit(); // Відправка форми на сервер
-        });
-    }
-    </script> --}}
+    </script>
+        <!-------------------------- Modals Accetta ----------------------------------------------->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="h2 text-center">Sei sicuro?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="acetta()">Si</button>
+                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------- Modals rifuta ----------------------------------------------->
+        <div class="modal fade" id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="h2 text-center">Sei sicuro?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="rifuta()">Si</button>
+                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 </x-main>
 

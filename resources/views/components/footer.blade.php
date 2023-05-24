@@ -8,7 +8,10 @@
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
             <h5>Vuoi lavorare con noi?</h5>
-            <a class="btn btn-danger" onclick="return confirm('Sei sicuro di voler diventare revisore?')" href="{{route('ask.revisor')}}">Diventa Revisore</a>
+            <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
+                Diventa Revisore2
+            </button>
+
           </div>
         </div>
         <div class="col-md-4 mt-2 text-center">
@@ -45,4 +48,26 @@
       <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
       <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
     </div> --}}
+
+
+
+    <!-------------------------- Modal----------------------------------------------->
+        <div class="modal fade" id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="h2 text-center text-black">Sei sicuro?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
+                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-------------------------- Modal----------------------------------------------->
   </footer>
