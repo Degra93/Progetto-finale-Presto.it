@@ -100,7 +100,7 @@
                         <div class="col-12 bgw pt-5">
                             <ul>
                                 <h2>Caratteristiche Tecniche:</h2>
-                                {{$announcement->body}}
+                              <span>{{$announcement->body}}</span>  
                                 	
                                
                             </ul>
@@ -124,20 +124,20 @@
                             <ul>
                                 <h2>Caratteristiche EXTRA:</h2>
                                 <li>
-                                    Perfetta per bevande sia calde sia fredde
+                                    <span> Perfetta per bevande sia calde sia fredde </span>
                                 </li>
                                 
                                 <li>
-                                    Non rilascia alcun odore o sapore
+                                    <span> Non rilascia alcun odore o sapore </span>
                                 </li>
                                 <li>
-                                    Resistenza termica +160° ~ -20°
+                                    <span> Resistenza termica +160° ~ -20° </span>
                                 </li>
                                 <li>
-                                    Lavabile anche in lavastoviglie 
+                                    <span> Lavabile anche in lavastoviglie  </span>
                                 </li>
                                 <li>
-                                    100% Design Italiano
+                                    <span> 100% Design Italiano </span>
                                 </li>
                                 	
                               
