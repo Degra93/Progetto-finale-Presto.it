@@ -179,8 +179,8 @@
 {{-- seconda nav --}}
 @guest
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll fw-bold ">
-        <div class="container-fluid p-0 m-0">
-            <a class="navbar-brand" href="{{ route('homepage') }}">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-2" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
             </a>
@@ -197,11 +197,11 @@
 
                                 <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                                <button class="searchButton" type="submit"> 
+                                <button class="searchButton" type="submit">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
                             </div>
-                            
+
                             {{-- <input type="search" name="searched" class=" form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
                             <button class="searchInput searchButton material-icons " type="submit">{{__('ui.cerca')}}</button> --}}
@@ -237,7 +237,7 @@
                     <li>
                         <x-locale lang="en" nation="en"/>
                     </li>
-                    
+
                     <li>
                         <x-locale lang="uk" nation="uk"/>
                     </li>
@@ -249,8 +249,8 @@
     </nav>
 @else
     <nav class="navbar mx-0 px-0  navbar-expand-xl fixed-top navbar-scroll fw-bold ">
-        <div class="container p-0 m-o">
-            <a class="navbar-brand p-0 m-0" href="{{ route('homepage') }}">
+        <div class="container-fluid">
+            <a class="navbar-brand  ms-2" href="{{ route('homepage') }}">
                 <img class="bg-warning bg-gradient" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
                 <a class="nav-link fw-bold fs-4" href="{{ route('homepage') }}">ShopyPro</a>
             </a>
@@ -262,12 +262,12 @@
                 </li>
             @endforeach
         </ul> --}}
-            <button class="navbar-toggler position" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler position me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
-                        
+
                     @endif
                 </span>
             </button>
@@ -279,11 +279,11 @@
 
                                 <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
-                                <button class="searchButton" type="submit"> 
+                                <button class="searchButton" type="submit">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
                             </div>
-                            
+
                             {{-- <input type="search" name="searched" class=" form-control me-2 rounded-5" placeholder="{{__('ui.ricerca')}}"
                                 aria-label="Search">
                             <button class="searchInput searchButton material-icons " type="submit">{{__('ui.cerca')}}</button> --}}
@@ -312,8 +312,7 @@
                         <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li >
-                                    <a class="fw-bold text-black" href="{{ route('categoryShow', compact('category')) }}"
-                                        class="dropdown-item">{{__('ui.'.$category->name)}}</a>
+                                    <a class="fw-bold text-black dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{__('ui.'.$category->name)}}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -327,7 +326,7 @@
                                 alt="icona-utente">
                                 @if (App\Models\Announcement::daRevisionare())
                                 <span class="position-absolute top-40 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
-                                    
+
                                 @endif
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
@@ -354,11 +353,11 @@
                     <li>
                         <x-locale lang="en" nation="en"/>
                     </li>
-                    
+
                     <li>
                         <x-locale lang="uk" nation="uk"/>
                     </li>
-                </ul>
+
                 @else
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
@@ -387,7 +386,7 @@
                 <li>
                     <x-locale lang="en" nation="en"/>
                 </li>
-                
+
                 <li>
                     <x-locale lang="uk" nation="uk"/>
                 </li>
