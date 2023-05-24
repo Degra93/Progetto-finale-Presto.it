@@ -82,6 +82,26 @@ return[
 
     'telefono'=>'Телефон',
 
+    // CREA ANNUNCIO
+
+    'crea-ann'=>'СТВОРИТИ НОВЕ ОГОЛОШЕННЯ',
+
+    'titolo'=>'Назва',
+
+    'categoria'=>'Категорія',
+
+    'scegli'=>'Ви вибираєте',
+
+    'testo'=>'Tекст',
+
+    'prezzo'=>'Ціна',
+
+    'azzera'=>'Скинути',
+
+    'cancella'=>'ясно',
+
+    
+
 
 
 
