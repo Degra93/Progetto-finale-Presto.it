@@ -310,8 +310,8 @@
     <div class="spacer"></div>
     <div class="container-fluid"  >
         <div class="row">
-            <div class="col-md-6 text-center " data-aos="zoom-in-right" data-aos-duration="3000" >
-                <div class="copy" >
+            <div class="col-md-6 text-center " data-aos="fade-up-right" data-aos-duration="3000"  >
+                <div >
                     <div class="text-label">
                         {{__('ui.cambia')}}
                     </div><br>
@@ -328,7 +328,7 @@
                 </div>
             </div>
             <div class="col-md-6 pt-3">
-                <img class="img-fluid" data-aos="zoom-in-left" data-aos-duration="3000" src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
+                <img class="img-fluid" data-aos="zoom-in-right" data-aos-duration="3000"  src="https://growup-demo.netlify.app/assets/img/illustration/Hero%20Image.svg" alt="header-image">
             </div>
         </div>
     </div>
@@ -347,7 +347,7 @@
                         <div class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy" lc-helper="background" style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; " >
                             <div class="lc-block pt-5 mt-5 mb-5  text-center ">
                                 <div editable="rich">
-                                    <h2 class="display-6 lh-1 fw-bold mb-5">{{$category->name}}</h2>
+                                    <h2 class="display-6 lh-1 fw-bold mb-5">{{__('ui.'.$category->name)}}</h2>
 
                                 </div>
                             </div>

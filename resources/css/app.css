@@ -2,7 +2,7 @@
 @import url('andriy.css');
 :root{
     --primary: #fbc257;
-    --primary-light: #fccc73;
+    --primary-light: #ecaf3c;
     --dark-brown: #341413;
     --gray-1: #798092;
     --gray-2: #e6e6ed;
@@ -35,12 +35,13 @@
 }
 /* newsletter */
 .form {
+    background-image: linear-gradient(to right , #8b2828c2, #0c0b0ecc);
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    background: #fbc257;
+
     border-radius: 15px;
-    max-width: 350px;
+
   }
 
   .title {
@@ -214,6 +215,11 @@ ol {
         }
         } */
 
+
+        .bg-annunci-home{
+            background-image: linear-gradient(to right , #534c743a, #534c74fb);
+
+        };
 /* slider */
 .card-body-bg-img {
     background-image: url('https://picsum.photos/1000/1100');
@@ -226,7 +232,7 @@ ol {
 /* navbar */
 a {
     font-size: 14px;
-    font-weight: 700
+
 }
 
 /* .superNav {
@@ -237,24 +243,30 @@ a {
 /* BUTTON SEARCH  */
 
 body {
-    background-image: linear-gradient(to right , #fef7eb , #ffedcd);
+    background-color: #ecececd5;
+
 }
 .searchBox {
-    background: #2f3640;
+    display: inline;
+    justify-content: center;
+    background: none;
     height: 40px;
     border-radius: 40px;
+
+
 
 
 }
 
 .searchBox:hover > .searchInput {
-    width: 240px;
-    padding: 0 6px;
+    width: 220px;
+    padding: 0 4px;
+    background-color: #3a3939;
 }
 
 .searchBox:hover > .searchButton {
-  background: white;
-  color : #2f3640;
+  background: #3a3939;
+  color : #ffffff;
 }
 
 .searchButton {
@@ -272,7 +284,7 @@ body {
 
 .searchInput {
     border:none;
-    background: none;
+    background:currentColor;
     outline:none;
     float:left;
     padding: 0;
@@ -296,9 +308,13 @@ body {
 .navbar {
     transition: all 0.8s;
     margin: 0%;
+
 }
 .nav-link:hover{
-    color: #fbc257;
+    color: #000000;
+
+    border-radius: 3%;
+
 }
 
 
@@ -308,10 +324,10 @@ body {
 
 }
 .navbar-scrolled .nav-link:hover{
-    color: #e6e6ed;
+    color: whitesmoke;
 }
 .navbar-scroll {
-background-color: whitesmoke;
+background-color:transparent;
 
 }
 .navbar-scroll .dropdown-menu{
@@ -326,10 +342,7 @@ background-color: whitesmoke;
 .navbar-scrolled .dropdown-menu .dropdown-item:hover{
     color: #fbc257;
 }
-.navbar-scrolled .btn-outline-warning{
-    color: whitesmoke;
-    border-color: whitesmoke;
-}
+
 
 
 .navbar-scrolled {
@@ -341,10 +354,10 @@ background-color: whitesmoke;
     background-color: #fbc257;
 }
 
-/* .navbar.navbar-scroll.navbar-scrolled {
-    padding-top: 8px;
-    padding-bottom: 8px;
-} */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 .form-control {
     outline: none !important;
@@ -553,7 +566,7 @@ section.hero{
 }
 
 .img_dim{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
 
 }

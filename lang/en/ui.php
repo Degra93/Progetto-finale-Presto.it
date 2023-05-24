@@ -10,23 +10,25 @@ return[
     
     'categorie'=>'Categories',
     
-    'informatica'=>'Informatics',
+    'Informatica'=>'Informatics',
     
-    'telefonia'=>'Telephony',
+    'Telefonia'=>'Telephony',
     
-    // 'casa'=>'Home',
+    'Casa'=>'Home',
     
-    'auto'=>'Car',
+    'Auto'=>'Car',
     
-    'moto'=>'Motorcycle',
+    'Moto'=>'Motorcycle',
 
-    'sport'=>'sport',
+    'Sport'=>'sport',
     
-    // 'libri'=>'Bookshelf',
+    'Libri'=>'Bookshelf',
     
-    // 'salute'=>'Health',
+    'Salute'=>'Health',
     
-    // 'animali'=>'Pets',
+    'Animali'=>'Pets',
+
+    'Game'=>'Game',
     
     // SECTION
 
@@ -47,5 +49,41 @@ return[
     'vieni'=>'Come and discover many products',
 
     'esplora'=>'Explore now',
+
+    'nostri'=>'Our Announcements',
+
+    'esplora-i'=>'Explore our classifieds',
+
+    // NEWSLETTER
+
+    'newsletter'=>'Subscribe to our newsletter',
+
+    'newsletter-p'=>'Subscribe to our newsletter to learn about our projects and news about our extraordinary products in real time',
+
+    'enter-email'=>'Enter your E-mail',
+
+    'iscriviti'=>'Subscribe',
+
+    // FOOTER
+
+    'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
+
+
+    'vuoi'=>'Do you want to work with us?',
+
+    'diventa'=>'Become a Reviewer',
+
+    'contatti'=>'Contacts',
+
+    'footer-chi'=>'About us',
+
+    'home'=>'Home',
+
+    'indirizzo'=>'Address',
+
+    'telefono'=>'Telephone',
+
+    
+
 
 ];

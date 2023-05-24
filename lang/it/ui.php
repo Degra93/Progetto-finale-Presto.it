@@ -10,23 +10,25 @@ return[
     
     'categorie'=>'Categorie',
     
-     'informatica'=>'Informatica',
+     'Informatica'=>'Informatica',
     
-     'telefonia'=>'Telefonia',
+     'Telefonia'=>'Telefonia',
     
-    // 'casa'=>'Casa',
+    'Casa'=>'Casa',
     
-     'auto'=>'Auto',
+     'Auto'=>'Auto',
     
-     'moto'=>'Moto',
+     'Moto'=>'Moto',
 
-     'sport'=>'sport',
+     'Sport'=>'Sport',
     
-    // 'libri'=>'Libri',
+    'Libri'=>'Libri',
     
-    // 'salute'=>'Salute',
+    'Salute'=>'Salute',
     
-    // 'animali'=>'Animali',
+    'Animali'=>'Animali',
+
+    'Game'=>'Game',
     
     // SECTION 
 
@@ -48,4 +50,35 @@ return[
 
     'esplora'=>'Esplora ora',
 
+    'nostri'=>'I Nostri Annunci',
+
+    'esplora-i'=>'Esplora i nostri ANNUNCI',
+
+    // NEWSLETTER
+
+    'newsletter'=>'Iscriviti alla nostra Newsletter',
+
+    'newsletter-p'=>'Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti',
+
+    'enter-email'=>'Inserisci la tua E-mail',
+
+    'iscriviti'=>'Iscriviti',
+
+    // FOOTER
+
+    'chi-siamo'=>'Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!',
+
+    'vuoi'=>'Vuoi lavorare con noi?',
+
+    'diventa'=>'Diventa Revisiore',
+
+    'footer-chi'=>'Chi siamo',
+
+    'contatti'=>'Contatti',
+
+    'home'=>'Home',
+
+    'indirizzo'=>'Indirizzo',
+
+    'telefono'=>'telefono',
 ];

@@ -3,11 +3,11 @@
 
     <div class="spacer container-fluid" style="background-color: rgb(170, 155, 155)"></div>
 
-<div class="container pt-5">
+<div class="container pt-5 ">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
-            <div class="row">
-              <div class="col-12 py-3">
+            <div class="row ">
+              <div class="col-12 py-3 ">
                 
                 <div id="carouselExample" class="carousel slide">
                     @if ($announcement->images)

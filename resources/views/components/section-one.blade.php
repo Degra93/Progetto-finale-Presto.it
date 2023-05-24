@@ -132,7 +132,7 @@
             <div class="card-body my-auto">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.informatica')}}</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.Informatica')}}</h4>
 
 
               <a class="btn btn-link stretched-link text-white" href="http://127.0.0.1:8000/categoria/1">
@@ -144,7 +144,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-up-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 text-body " style="min-height: 400px; " >
@@ -154,7 +154,7 @@
 
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold  ">{{__('ui.auto')}}</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold  ">{{__('ui.Auto')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/4">
@@ -167,7 +167,7 @@
 
         </div>
 
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="fade-up-right" data-aos-duration="2000">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="flip-right" data-aos-duration="2000">
 
 
           <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
@@ -176,7 +176,7 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.telefonia')}}</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.Telefonia')}}</h4>
 
 
               <a class="btn btn-link stretched-link px-0 text-reset" href="http://127.0.0.1:8000/categoria/2">
@@ -188,7 +188,7 @@
           </div>
 
         </div>
-        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-left" data-aos-duration="2000">
+        <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-right" data-aos-duration="2000">
 
 
           <div class="card text-white" style="min-height: 400px; ">
@@ -198,7 +198,7 @@
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
 
 
-              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.sport')}}</h4>
+              <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.Sport')}}</h4>
 
               <!-- Link -->
               <a class="btn btn-link stretched-link px-0 text-white" href="http://127.0.0.1:8000/categoria/8">
@@ -220,36 +220,39 @@
 
 
 <div class="container pt-5 ">
-    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-        <h6 class="section-title text-center text-primary text-uppercase ">Nostri Annunci</h6>
-        <h1 class="mb-5 fw-bold">Esplora i nostri  <span class="text-primary text-uppercase">Annunci</span></h1>
+    <div class="text-center wow fadeInUp " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <h4 class="section-title text-center text-primary text-uppercase ">{{__('ui.nostri')}}</h4>
+        <h2 class="mb-5 fw-bold">{{__('ui.esplora-i')}} <span class="text-primary text-uppercase"></span></h2>
     </div>
     <div class="row g-4">
         @forelse ($announcements as $announcement)
-        <div class="col-lg-12 col-12 " data-aos="fade-right" data-aos-duration="3000">
+        <div class="col-lg-12 col-12 " data-aos="fade-down-right" data-aos-duration="2000" >
 
-            <article class="postcard light yellow text-center">
-                <a class="postcard__img_link position-relative" href="#">
-                    <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : 'https://picsum.photos/600'}}" alt="Image Title" />
-                    <small class="bg-dark fw-bold text-warning rounded">Prezzo: {{$announcement->price}} €</small>
-                </a>
-                <div class="postcard__text t-dark">
-                    <h5 class="mb-0">{{$announcement->title}}</h5>
-                    <div class="postcard__subtitle small">
-                        <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
-                    </div>
-                    <div class="postcard__bar"></div>
-                    <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-sm btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
-                        <a class="btn btn-sm btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
-
-                    </div>
-                </div>
-
-            </article>
-
-        </div>
+          <article class="postcard light yellow text-center bg-annunci-home">
+              <a class="postcard__img_link position-relative" href="#">
+                  <img class="postcard__img " src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(400,300)  : 'https://picsum.photos/600'}}" alt="Image Title" />
+              </a>
+              <div class="postcard__text t-dark">
+                  <div class="d-flex justify-content-between">
+                      
+                      <a href="" class="btn btn-sm btn-warning rounded py-2 px-4 fw-bold">Prezzo: {{$announcement->price}} €</a>
+                  </div>
+                  <h5 class="mb-0">{{$announcement->title}}</h5>
+                  <div class="postcard__subtitle small">
+                      <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
+                  <div class="d-flex justify-content-between">
+                      <a class="btn btn-sm btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
+                      <a class="btn btn-sm btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                      
+                  </div>
+              </div>
+      
+          </article>
+    </div>
+        
         @empty
         <h2>Non ci sono annunci nella Ricerca</h2>
         @endforelse
@@ -257,13 +260,13 @@
 </div>
 
 {{-- newsletter --}}
-<div class="container-fluid">
-<form class="form pb-4" action="" method="post">
-  <span class="title text-center">Subscribe to our newsletter.</span>
-  <p class="description text-center pt-3">Iscriviti alla nostra newsletter per conoscere in tempo reale i nostri progetti e le novità sui nostri straordinari prodotti.</p>
-  <div>
-    <input placeholder="Enter your email" type="email" name="email" id="email-address">
-    <button type="submit">Subscribe</button>
+<div class="container d-flex justify-content-center "  data-aos="zoom-in" data-aos-duration="3000">
+<form class="form pb-4 fw-bold text" action="" method="post">
+  <span class="title text-center">{{__('ui.newsletter')}} </span>
+  <p class="description text-center pt-3">{{__('ui.newsletter-p')}}</p>
+  <div >
+    <input placeholder="{{__('ui.enter-email')}}" type="email" name="email" id="email-address">
+    <button  type="submit">{{__('ui.iscriviti')}}</button>
   </div>
 </form>
 </div>
