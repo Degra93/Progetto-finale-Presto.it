@@ -68,7 +68,6 @@ return[
 
     'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
 
-
     'vuoi'=>'Do you want to work with us?',
 
     'diventa'=>'Become a Reviewer',
@@ -82,6 +81,26 @@ return[
     'indirizzo'=>'Address',
 
     'telefono'=>'Telephone',
+
+    // CREA ANNUNCIO
+
+    'crea-ann'=>'CREATE A NEW ANNUNCE',
+
+    'titolo'=>'Title',
+
+    'categoria'=>'Category',
+
+    'scegli'=>'Choose',
+
+    'testo'=>'Text',
+
+    'prezzo'=>'Price',
+
+    'azzera'=>'Reset',
+
+    'cancella'=>'Clear',
+
+    
 
     
 

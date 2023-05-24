@@ -2,11 +2,11 @@
   <div class="col-12 col-md-6">
     <div class="container py-4">
       <x-success/>
-      <h3 class="fw-normal text-center mt-5 ">CREA UN NUOVO ANNUNCIO</h3>
+      <h3 class="fw-normal text-center mt-5 ">{{__('ui.crea-ann')}}</h3>
       <form wire:submit.prevent="store" enctype="multipart/form-data">
         @csrf
         <div class="mb-2">
-          <label class="form-label">Titolo</label>
+          <label class="form-label">{{__('ui.titolo')}}</label>
           @error('title')
           <span class="small text-danger">{{$message}}</span>
           @enderror
@@ -14,9 +14,9 @@
         </div>
 
         <div class="mb-2">
-          <label for="category" class="my-1 me-3">Categoria</label>
+          <label for="category" class="my-1 me-3">{{__('ui.categoria')}}</label>
           <select wire:model.lazy='category'  class="form-control">
-            <option value="">Scegli</option>
+            <option value="">{{__('ui.scegli')}}</option>
             @foreach($categories as $category)
             <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
@@ -24,7 +24,7 @@
       </div>
 
       <div class="mb-2">
-        <label class="my-1 me-3" for="body">Testo</label>
+        <label class="my-1 me-3" for="body">{{__('ui.testo')}}</label>
         @error('body')
             <span class="small text-danger">{{$message}}</span>
         @enderror
@@ -32,7 +32,7 @@
       </div>
 
       <div class="mb-2">
-        <label class="form-label">Prezzo</label>
+        <label class="form-label">{{__('ui.prezzo')}}</label>
         @error('price')
             <span class="small text-danger">{{$message}}</span>
         @enderror
@@ -57,10 +57,10 @@
 
         <div class="pt-1  text-center">
           <div class="d-flex justify-content-center">
-            <button class="btn-hover btn btn-warning btn-sm py-2 px-2 d-block mb-3" type="submit">Crea annuncio</button>
+            <button class="btn-hover btn btn-warning btn-sm py-2 px-2 d-block mb-3" type="submit">{{__('ui.crea')}}</button>
           </div>
           <div class="d-flex justify-content-center">
-            <button class="btn-hover btn btn-danger btn-sm py-2 px-3 d-block" type="reset">Azzera</button>
+            <button class="btn-hover btn btn-danger btn-sm py-2 px-3 d-block" type="reset">{{__('ui.azzera')}}</button>
           </div>
         </div>
       </form>
@@ -77,7 +77,7 @@
               @foreach ($images as $key =>$image )
               <div class="col my-3">
                 <div class="img_dim mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}}); background-position: center center"></div>
-                <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>Cancella</button>
+                <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click='removeImage({{$key}})'>{{__('ui.cancella')}}</button>
               </div>
               @endforeach
             </div>

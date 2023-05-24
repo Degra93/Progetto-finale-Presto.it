@@ -81,4 +81,23 @@ return[
     'indirizzo'=>'Indirizzo',
 
     'telefono'=>'telefono',
+
+    'crea-ann'=>'CREA UN NUOVO ANNUNCIO',
+    
+    'titolo'=>'Titolo',
+
+    'categoria'=>'Categoria',
+
+    'scegli'=>'Scegli',
+
+    'testo'=>'Tеsto',
+
+    'prezzo'=>'Prezzo',
+
+    'azzera'=>'Azzera',
+
+    'cancella'=>'Cancella',
+
+    
+
 ];
