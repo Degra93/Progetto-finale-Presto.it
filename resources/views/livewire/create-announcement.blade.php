@@ -12,7 +12,7 @@
           @enderror
           <input class="form-control @error('title') is-invalid @enderror" type="text" wire:model.lazy="title" value="{{old('title')}}" />
         </div>
-        
+
         <div class="mb-2">
           <label for="category" class="my-1 me-3">Categoria</label>
           <select wire:model.lazy='category'  class="form-control">
@@ -20,41 +20,41 @@
             @foreach($categories as $category)
             <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
-          </select>
-        </div>
-        
-        <div class="mb-2">
-          <label class="my-1 me-3" for="body">Testo</label>
-          @error('body')
-          <span class="small text-danger">{{$message}}</span>
-          @enderror
-          <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="2"  >{{old('body')}}</textarea>
-        </div>
-        
-        <div class="mb-2">
-          <label class="form-label">Prezzo</label>
-          @error('price')
-          <span class="small text-danger">{{$message}}</span>
-          @enderror
-          <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
-        </div>
-        
-        
-        <div class="d-flex flex-row align-items-center mb-4">
-          <div class="form-outline flex-fill mb-0">
+        </select>
+      </div>
+
+      <div class="mb-2">
+        <label class="my-1 me-3" for="body">Testo</label>
+        @error('body')
+            <span class="small text-danger">{{$message}}</span>
+        @enderror
+        <textarea class="form-control @error('body') is-invalid @enderror"  wire:model.lazy="body" rows="2"  >{{old('body')}}</textarea>
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Prezzo</label>
+        @error('price')
+            <span class="small text-danger">{{$message}}</span>
+        @enderror
+        <input class="form-control @error('price') is-invalid @enderror" type="number" wire:model.lazy="price" value="{{old('price')}}" />
+      </div>
+
+
+      <div class="d-flex flex-row align-items-center mb-4">
+        <div class="form-outline flex-fill mb-0">
             <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror"
             placeholder="Img"/>
             @error('temporary_images.*')
             <div class=" text-danger">
               {{$message}}
-            </div> 
+            </div>
             @enderror
           </div>
         </div>
-        
-        
-        
-        
+
+
+
+
         <div class="pt-1  text-center">
           <div class="d-flex justify-content-center">
             <button class="btn-hover btn btn-warning btn-sm py-2 px-2 d-block mb-3" type="submit">Crea annuncio</button>
@@ -67,7 +67,7 @@
     </div>
   </div>
 
-  
+
   <div class="col-12 col-md-6 ">
     @if (!empty($images))
         <div class="row">
@@ -87,8 +87,8 @@
         <img src="https://picsum.photos/900/700"
       alt="Login image" class="w-100 h-100 d-none d-sm-block" >
         @endif
-    
+
   </div>
-  
+
 </div>
 
