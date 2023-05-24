@@ -15,7 +15,7 @@
                       
                         @foreach ($announcement->images as $image)
                            <div class="carousel-item  @if($loop->first) active @endif">
-                               <img src="{{Storage::url($image->path)}}" class="img-fluid rounded" alt="img">
+                               <img src="{{$image->getUrl(400,300)}}" class="img-fluid rounded" alt="img">
                            </div>
                        @endforeach
                    </div>
@@ -47,7 +47,7 @@
               @foreach ($announcement->images as $image )
                      <div class="col-12 col-md-6 col-lg-6 py-2">
                     
-                    <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="">
+                    <img src="{{$image->getUrl(400,300)}}" class="img-fluid" alt="">
                 </div>           
               @endforeach
               <div class="col-3">
