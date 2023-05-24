@@ -9,8 +9,16 @@
     --white: #ffffff;
 }
 
-h1,h2,h3,h4,h5,span,a,div{
+h1,h2,h3,h4,h5,span,a,p,input,button,label{
     font-family: 'Merriweather', serif;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+    
 }
 
 .spacer{
@@ -220,10 +228,6 @@ ol {
         } */
 
 
-        .bg-annunci-home{
-            background-image: linear-gradient(to right , #534c743a, #534c74fb);
-
-        };
 /* slider */
 .card-body-bg-img {
     background-image: url('https://picsum.photos/1000/1100');

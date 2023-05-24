@@ -313,13 +313,13 @@
             <div class="col-md-6 text-center " data-aos="fade-up-right" data-aos-duration="3000"  >
                 <div >
                     <div class="text-label">
-                        {{__('ui.cambia')}}
+                        <h2 class="display-7">{{__('ui.cambia')}}</h2>
                     </div><br>
                     <div class="text-hero-bold">
-                       {{__('ui.futuro')}}
+                       <h1 class="display-1">{{__('ui.futuro')}}</h1>
                     </div><br>
                     <div class="text-hero-regular">
-                        {{__('ui.metodi')}}
+                        <h6>{{__('ui.metodi')}}</h6>
                     </div><br>
                     <div class="cta mb-sm-2">
                         <a href="{{ route('announcement.create') }}" class="btn btn-warning shadow-none">{{__('ui.crea')}}</a>
