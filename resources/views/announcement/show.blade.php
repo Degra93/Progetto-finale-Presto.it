@@ -1,7 +1,7 @@
 <x-main>
     <div class="spacer container-fluid"></div>
 
-    <div class="spacer container-fluid" style="background-color: rgb(170, 155, 155)"></div>
+    
 
 <div class="container pt-5 ">
     <div class="row">
