@@ -1,7 +1,7 @@
 <x-main>
     <div class="spacer container-fluid"></div>
 
-    <div class="spacer container-fluid" style="background-color: rgb(170, 155, 155)"></div>
+    
 
 <div class="container pt-5 ">
     <div class="row">
@@ -15,7 +15,7 @@
                       
                         @foreach ($announcement->images as $image)
                            <div class="carousel-item  @if($loop->first) active @endif">
-                               <img src="{{Storage::url($image->path)}}" class="img-fluid rounded" alt="img">
+                               <img src="{{$image->getUrl(400,300)}}" class="img-fluid rounded" alt="img">
                            </div>
                        @endforeach
                    </div>
@@ -47,7 +47,7 @@
               @foreach ($announcement->images as $image )
                      <div class="col-12 col-md-6 col-lg-6 py-2">
                     
-                    <img src="{{Storage::url($image->path)}}" class="img-fluid" alt="">
+                    <img src="{{$image->getUrl(400,300)}}" class="img-fluid" alt="">
                 </div>           
               @endforeach
               <div class="col-3">
@@ -100,7 +100,7 @@
                         <div class="col-12 bgw pt-5">
                             <ul>
                                 <h2>Caratteristiche Tecniche:</h2>
-                                {{$announcement->body}}
+                              <span>{{$announcement->body}}</span>  
                                 	
                                
                             </ul>
@@ -124,20 +124,20 @@
                             <ul>
                                 <h2>Caratteristiche EXTRA:</h2>
                                 <li>
-                                    Perfetta per bevande sia calde sia fredde
+                                    <span> Perfetta per bevande sia calde sia fredde </span>
                                 </li>
                                 
                                 <li>
-                                    Non rilascia alcun odore o sapore
+                                    <span> Non rilascia alcun odore o sapore </span>
                                 </li>
                                 <li>
-                                    Resistenza termica +160° ~ -20°
+                                    <span> Resistenza termica +160° ~ -20° </span>
                                 </li>
                                 <li>
-                                    Lavabile anche in lavastoviglie 
+                                    <span> Lavabile anche in lavastoviglie  </span>
                                 </li>
                                 <li>
-                                    100% Design Italiano
+                                    <span> 100% Design Italiano </span>
                                 </li>
                                 	
                               

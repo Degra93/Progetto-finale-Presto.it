@@ -148,7 +148,7 @@
 
                                                      @foreach ($announceToCheck->images as $image)
                                                         <div class="carousel-item  @if($loop->first) active @endif">
-                                                            <img src="{{Storage::url($image->path)}}" class="img-fluid rounded" alt="img">
+                                                            <img src="{{$image->getUrl(400,300)}}" class="img-fluid rounded" alt="img">
                                                         </div>
                                                     @endforeach
                                                 </div>
