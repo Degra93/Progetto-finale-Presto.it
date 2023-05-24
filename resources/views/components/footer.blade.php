@@ -8,7 +8,9 @@
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
             <h5>Vuoi lavorare con noi?</h5>
-            <a class="btn btn-danger" onclick="return confirm('Sei sicuro di voler diventare revisore?')" href="{{route('ask.revisor')}}">Diventa Revisore</a>
+            <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
+                Diventa Revisore
+            </button>
           </div>
         </div>
         <div class="col-md-4 mt-2 text-center">
