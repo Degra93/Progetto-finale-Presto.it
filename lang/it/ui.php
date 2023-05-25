@@ -41,6 +41,8 @@ return[
     'crea'=>'Crea annuncio',
 
     'allAnnoucements'=>'Le nostre Categorie',
+
+    'dettagli'=>'Vedi dettagli',
     
     // HEADER
 
@@ -82,6 +84,8 @@ return[
 
     'telefono'=>'telefono',
 
+    // CREA ANNUNCIO
+
     'crea-ann'=>'CREA UN NUOVO ANNUNCIO',
     
     'titolo'=>'Titolo',
@@ -98,6 +102,26 @@ return[
 
     'cancella'=>'Cancella',
 
-    
+    // LOGIN FORM
+
+    'entra'=>'Login Utente',
+
+    'mail'=>'E-mail',
+
+    'pass'=>'Password',
+
+    'log-button'=>'Login',
+
+    'forget'=>'Password dimenticata?',
+
+    'no-account'=>'Non hai un account?',
+
+    'registrati'=>'Registrati qui',
+
+    // FORM REGISTRAZIONE
+
+    'form'=>'FORM DI REGISTRAZIONE',
+
+    'conferma-pass'=>'Conferma Password',
 
 ];

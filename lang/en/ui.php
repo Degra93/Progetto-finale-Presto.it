@@ -42,6 +42,8 @@ return[
     
     'allAnnoucements'=>'Here our Categories',
 
+    'dettagli'=>'See details',
+
     // HEADER
     
     'better'=>'The most visited categories',
@@ -100,7 +102,27 @@ return[
 
     'cancella'=>'Clear',
 
-    
+     // LOGIN FORM
+
+    'entra'=>'User Login',
+
+    'mail'=>'E-mail',
+
+    'pass'=>'Password',
+
+    'log-button'=>'Login',
+
+    'forget'=>'Forgot password?',
+
+    'no-account'=>'Do not have an account?',
+
+    'registrati'=>'Register here',
+
+     // FORM REGISTRAZIONE
+
+     'form'=>'REGISTRATION FORM',
+
+     'conferma-pass'=>'Confirm password',
 
     
 

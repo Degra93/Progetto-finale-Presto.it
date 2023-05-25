@@ -7,9 +7,9 @@
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
-            <h5>Vuoi lavorare con noi?</h5>
+            <h5>{{__('ui.vuoi')}}</h5>
             <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
-                Diventa Revisore
+              {{__('ui.diventa')}}
             </button>
           </div>
         </div>
