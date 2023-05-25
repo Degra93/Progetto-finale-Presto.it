@@ -66,8 +66,3 @@ splide2.mount();
             //     perPage: 3,
             //     rewind: true,
             //     } ).mount());
-
-
-
-
-

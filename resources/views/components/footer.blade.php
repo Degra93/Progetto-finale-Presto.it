@@ -7,9 +7,9 @@
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
-            <h5>Vuoi lavorare con noi?</h5>
+            <h5>{{__('ui.vuoi')}}</h5>
             <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
-                Diventa Revisore
+              {{__('ui.diventa')}}
             </button>
           </div>
         </div>
@@ -20,7 +20,7 @@
             <dd>Aulab, Bari, Italia</dd>
           </dl>
           <dl class="contact-list">
-            <dt>E-mail:</dt>
+            <dt>{{__('ui.mail')}}:</dt>
             <dd><a href="mailto:#">presto.it@gmail.com</a></dd>
           </dl>
           <dl class="contact-list">
@@ -41,14 +41,6 @@
         </div>
       </div>
     </div>
-    {{-- <div class="row no-gutters social-container">
-      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-    </div> --}}
-
-
 
     <!-------------------------- Modal----------------------------------------------->
         <div class="modal fade" id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

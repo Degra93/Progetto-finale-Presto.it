@@ -42,6 +42,8 @@ return[
 
     'allAnnoucements'=>'Наші Категорії',
 
+    'dettagli'=>'Дивіться деталі',
+
     // HEADER
 
     'better'=>'Найбільш відвідувані категорії',
@@ -81,6 +83,72 @@ return[
     'indirizzo'=>'адресу',
 
     'telefono'=>'Телефон',
+
+    // CREA ANNUNCIO
+
+    'crea-ann'=>'СТВОРИТИ НОВЕ ОГОЛОШЕННЯ',
+
+    'titolo'=>'Назва',
+
+    'categoria'=>'Категорія',
+
+    'scegli'=>'Ви вибираєте',
+
+    'testo'=>'Tекст',
+
+    'prezzo'=>'Ціна',
+
+    'azzera'=>'Скинути',
+
+    'cancella'=>'ясно',
+
+     // LOGIN FORM
+
+    'entra'=>'Вхід користувача',
+
+    'mail'=>'Електронна пошта',
+
+    'pass'=>'Пароль',
+
+    'log-button'=>'Логін',
+
+    'forget'=>'Забули пароль?',
+
+    'no-account'=>'Немає облікового запису?',
+
+    'registrati'=>'Зареєструватися тут',
+
+     // FORM REGISTRAZIONE
+
+     'nome'=>'Ім я',
+
+     'form'=>'РЕЄСТРАЦІЙНИЙ ФОРМУЛЯР',
+
+     'conferma-pass'=>'Підтвердьте пароль',
+
+     // SEZIONE ANNUNCI 
+
+    'pubblicato'=>'Опубліковано на',
+
+    'autore'=>'Автор',
+
+     // CATEGORY SHOW
+
+     'annunci-presenti'=>'Присутні оголошення для категорії',
+
+     'al-momento'=>'Зараз немає оголошень для цієї категорії...',
+
+     'che-ne-dici'=>'Як щодо створення власного?',
+
+      // ZONA REVISORE 
+
+    'da-revi'=>'ОГОЛОШЕННЯ ДЛЯ ПЕРЕГЛЯДУ',
+
+    'accetta'=>'прийняти',
+
+    'rifiuta'=>'відхилити',
+
+    'descrizione'=>'опис',
 
 
 

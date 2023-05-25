@@ -30,7 +30,7 @@ class CreateAnnouncement extends Component
         'price' => 'required|numeric',
         'category' => 'required',
         'images.*' => 'image|max:1024',
-        'temporary_images.*' => 'image|max:1024',
+        'temporary_images.*' => 'image|max:2048',
     ];
 
     protected $messages = [
@@ -38,6 +38,7 @@ class CreateAnnouncement extends Component
         'min' => 'Troppo corto',
         'images.*.image' => 'Deve essere un immagine',
         'temporary_images.*.image' => 'Deve essere un immagine',
+        'temporary_images.*.max' => 'Non deve superare 2MB',
     ];
 
 
@@ -76,7 +77,7 @@ class CreateAnnouncement extends Component
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path' => $image->store($newFileName, 'public')]);
 
-                dispatch(new ResizeImage($newImage->path, 400, 300));
+                dispatch(new ResizeImage($newImage->path, 1000, 600));
                 
             }
 

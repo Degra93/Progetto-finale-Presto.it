@@ -42,6 +42,8 @@ return[
     
     'allAnnoucements'=>'Here our Categories',
 
+    'dettagli'=>'See details',
+
     // HEADER
     
     'better'=>'The most visited categories',
@@ -68,7 +70,6 @@ return[
 
     'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
 
-
     'vuoi'=>'Do you want to work with us?',
 
     'diventa'=>'Become a Reviewer',
@@ -82,6 +83,72 @@ return[
     'indirizzo'=>'Address',
 
     'telefono'=>'Telephone',
+
+    // CREA ANNUNCIO
+
+    'crea-ann'=>'CREATE A NEW ANNUNCE',
+
+    'titolo'=>'Title',
+
+    'categoria'=>'Category',
+
+    'scegli'=>'Choose',
+
+    'testo'=>'Text',
+
+    'prezzo'=>'Price',
+
+    'azzera'=>'Reset',
+
+    'cancella'=>'Clear',
+
+     // LOGIN FORM
+
+    'entra'=>'User Login',
+
+    'mail'=>'E-mail',
+
+    'pass'=>'Password',
+
+    'log-button'=>'Login',
+
+    'forget'=>'Forgot password?',
+
+    'no-account'=>'Do not have an account?',
+
+    'registrati'=>'Register here',
+
+     // FORM REGISTRAZIONE
+
+     'nome'=>'Name',
+
+     'form'=>'REGISTRATION FORM',
+
+     'conferma-pass'=>'Confirm password',
+
+     // SEZIONE ANNUNCI 
+
+    'pubblicato'=>'Posted on',
+
+    'autore'=>'Author',
+
+     // CATEGORY SHOW
+
+     'annunci-presenti'=>'Ads present for the category',
+
+     'al-momento'=>'There are currently no ads for this category...',
+
+     'che-ne-dici'=>'How about making your own?',
+
+      // ZONA REVISORE 
+
+    'da-revi'=>'ADS TO REVIEW',
+
+    'accetta'=>'Accept',
+
+    'rifiuta'=>'Decline',
+
+    'descrizione'=>'Description',
 
     
 

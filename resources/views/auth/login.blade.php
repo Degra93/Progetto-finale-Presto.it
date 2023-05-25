@@ -6,9 +6,9 @@
                             <div class="col-12 col-md-6 text-black">
                                 <form action="/login" method="POST"  class="m-5" >
                                         @csrf
-                                    <h3 class="fw-normal mb-5 text-center text-body">LOGIN FORM</h3>
+                                    <h3 class="fw-normal mb-5 text-center text-body">{{__('ui.entra')}}</h3>
                                     <div class="form-outline mb-2">
-                                        <label class="form-label m-2" for="email">Email address</label>
+                                        <label class="form-label m-2" for="email">{{__('ui.mail')}}</label>
                                         @error('email')
                                             <span class="small text-danger">{{$message}}</span>
                                         @enderror
@@ -16,7 +16,7 @@
                                     </div>
 
                                     <div class="form-outline mb-2">
-                                        <label class="form-label m-2" for="password">Password</label>
+                                        <label class="form-label m-2" for="password">{{__('ui.pass')}}</label>
                                         @error('email')
                                             <span class="small text-danger">{{$message}}</span>
                                         @enderror
@@ -24,11 +24,11 @@
                                     </div>
 
                                     <div class="pt-1 mb-5 text-center">
-                                        <button class="btn-hover btn btn-warning btn-sm py-2 px-5 " type="submit">Login</button>
+                                        <button class="btn-hover btn btn-warning btn-sm py-2 px-5 " type="submit">{{__('ui.log-button')}}</button>
                                     </div>
 
-                                    <p class="small pb-lg-2"><a class="text-muted" href="#!">Password dimenticata?</a></p>
-                                    <p>Non hai un account? <a href="{{route('register')}}" class="link-info">Registrati qui</a></p>
+                                    <p class="small pb-lg-2"><a class="text-muted" href="#!">{{__('ui.forget')}}</a></p>
+                                    <p>{{__('ui.no-account')}}<a href="{{route('register')}}" class="link-info p-2">{{__('ui.registrati')}}</a></p>
 
                                 </form>
                             </div>
