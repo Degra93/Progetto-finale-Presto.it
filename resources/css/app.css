@@ -18,7 +18,7 @@ a{
 }
 a:hover{
     text-decoration: none;
-    
+
 }
 
 .spacer{
@@ -269,12 +269,12 @@ body {
 .searchBox:hover > .searchInput {
     width: 220px;
     padding: 0 4px;
-    background-color: #3a3939;
+    border-radius: 50px;
+    background-color: #ab7e2b9e;
 }
 
 .searchBox:hover > .searchButton {
   background: #3a3939;
-  color : #ffffff;
 }
 
 .searchButton {
@@ -283,7 +283,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
+    background: #ab7e2b9e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +296,7 @@ body {
     outline:none;
     float:left;
     padding: 0;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -314,7 +314,7 @@ body {
 
 }
 .navbar {
-    transition: all 0.8s;
+    transition: all 1s;
     margin: 0%;
 
 }
@@ -363,8 +363,8 @@ background-color:transparent;
 }
 
 .navbar.navbar-scroll.navbar-scrolled {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .form-control {

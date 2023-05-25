@@ -124,7 +124,7 @@
         <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="fade-right" data-aos-duration="2000">
 
 
-          <div class="card mb-7" style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
+          <div class="card mb-7 rounded-5" style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
 
 
 
@@ -147,9 +147,9 @@
         <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-up-right" data-aos-duration="2000">
 
 
-          <div class="card mb-7 text-body " style="min-height: 400px; " >
 
-            <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://blogautomobilenew.mediamatik.com/wp-content/uploads/2019/07/Peugeot-3008-1.jpg); background-position: center center;">
+
+            <div class="card card-body mb-7 my-auto px-md-10 text-center text-md-start rounded-5" style="min-height: 400px; background-image: url(https://blogautomobilenew.mediamatik.com/wp-content/uploads/2019/07/Peugeot-3008-1.jpg); background-position: center center;">
 
 
 
@@ -163,14 +163,14 @@
 
             </div>
 
-          </div>
+
 
         </div>
 
         <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="flip-right" data-aos-duration="2000">
 
 
-          <div class="card mb-7 mb-md-0 text-body" style="min-height: 400px; " >
+          <div class="card mb-7 mb-md-0 text-body rounded-5" style="min-height: 400px; " >
 
 
             <div class="card-body my-auto px-md-10 text-center text-md-start" style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
@@ -191,11 +191,11 @@
         <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-right" data-aos-duration="2000">
 
 
-          <div class="card text-white" style="min-height: 400px; ">
 
 
 
-            <div class="card-body my-auto px-md-10 text-center text-md-start" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
+
+            <div class="card card-body my-auto px-md-10 text-center text-white text-md-start rounded-5" style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;" >
 
 
               <h4 class="mb-0 display-5 text-warning fw-bold">{{__('ui.Sport')}}</h4>
@@ -207,7 +207,7 @@
 
             </div>
 
-          </div>
+
 
         </div>
       </div>
@@ -234,7 +234,7 @@
               </a>
               <div class="postcard__text t-dark">
                   <div class="d-flex justify-content-between">
-                      
+
                       <a href="" class=" btn-warning rounded py-2 px-4 fw-bold">{{__('ui.prezzo')}}:{{$announcement->price}} €</a>
                   </div>
                   <h5 class="mb-0">{{$announcement->title}}</h5>
@@ -246,13 +246,13 @@
                   <div class="d-flex justify-content-between">
                       <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
                       <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{$announcement->category->name}}</a>
-                      
+
                   </div>
               </div>
-      
+
           </article>
     </div>
-        
+
         @empty
         <h2>Non ci sono annunci nella Ricerca</h2>
         @endforelse
@@ -272,7 +272,7 @@
 </div>
 {{-- fine newsletter --}}
 
-{{-- 
+{{--
 <section class="py-5 py-md-5 bg-light">
     <div class="container">
       <div class="row justify-content-center">
@@ -284,7 +284,7 @@
           </h2>
 
 
-          
+
 
         </div>
       </div>
