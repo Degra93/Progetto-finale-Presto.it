@@ -77,7 +77,7 @@
 
         <div class="col-3 mx-auto text-center margin-count text-black">
             <h3 class="h3 heading-font">{{App\Models\Announcement::daRevisionare()}}</h3>
-            <p class="heading-font">ANNUNCI DA REVISIONARE</p>
+            <p class="heading-font">{{__('ui.da-revi')}}</p>
         </div>
     {{--
             <div class="container">
@@ -133,7 +133,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header ">
                                     <button class="accordion-button rounded p-3 heading-font " type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$key}}" aria-expanded="true" aria-controls="collapseOne">
-                                        <span class="p-2">Pubblicato il: {{$announceToCheck->created_at->format('d/m/Y')}} Autore: {{$announceToCheck->user->name}}</span>
+                                        <span class="p-3">{{__('ui.pubblicato')}}: {{$announceToCheck->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announceToCheck->user->name}}</span>
                                         <i class="fa-solid fa-message p-3"></i>
                                     </button>
                                 </h2>
@@ -181,16 +181,16 @@
 
                                             </div>
                                                 <div class="col-md-7  mx-auto align-self-center ">
-                                                    <h3 class=""><span class=" heading-font">Titolo:</span> {{$announceToCheck->title}}</h3>
-                                                    <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">Descrizione:</span> {{$announceToCheck->body}}</p>
-                                                    <p class=""><span class=" heading-font">PREZZO:</span> {{$announceToCheck->price}}</p>
-                                                    <p class=""><span class=" heading-font">Pubblicato il:</span>{{$announceToCheck->created_at->format('d/m/Y')}} Autore: {{$announceToCheck->user->name}}</p>
+                                                    <h3 class=""><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
+                                                    <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.descrizione')}}:</span> {{$announceToCheck->body}}</p>
+                                                    <p class=""><span class=" heading-font">{{__('ui.prezzo')}}:</span> {{$announceToCheck->price}} €</p>
+                                                    <p class=""><span class=" heading-font ">{{__('ui.pubblicato')}}:</span>{{$announceToCheck->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announceToCheck->user->name}}</p>
                                                     <div class="d-flex justify-content-start mt-5">
                                                         <div class=" mx-2">
                                                             <form id="acetta"   action="{{route('revisore.OkAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                                 @csrf @method('PATCH')
                                                                 <button type="button" class="btn btn-primary btn-hover btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                                                    Accetta
+                                                                    {{__('ui.accetta')}}
                                                                 </button>
                                                             </form>
                                                         </div>
@@ -198,7 +198,7 @@
                                                             <form id="rifuta" action="{{route('revisore.NoAnnuncio',['announcement'=>$announceToCheck])}}" method="POST">
                                                                 @csrf @method('PATCH')
                                                                 <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
-                                                                    Rifiuta
+                                                                    {{__('ui.rifiuta')}}
                                                                 </button>
                                                             </form>
                                                         </div>

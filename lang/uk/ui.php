@@ -120,9 +120,35 @@ return[
 
      // FORM REGISTRAZIONE
 
+     'nome'=>'Ім я',
+
      'form'=>'РЕЄСТРАЦІЙНИЙ ФОРМУЛЯР',
 
      'conferma-pass'=>'Підтвердьте пароль',
+
+     // SEZIONE ANNUNCI 
+
+    'pubblicato'=>'Опубліковано на',
+
+    'autore'=>'Автор',
+
+     // CATEGORY SHOW
+
+     'annunci-presenti'=>'Присутні оголошення для категорії',
+
+     'al-momento'=>'Зараз немає оголошень для цієї категорії...',
+
+     'che-ne-dici'=>'Як щодо створення власного?',
+
+      // ZONA REVISORE 
+
+    'da-revi'=>'ОГОЛОШЕННЯ ДЛЯ ПЕРЕГЛЯДУ',
+
+    'accetta'=>'прийняти',
+
+    'rifiuta'=>'відхилити',
+
+    'descrizione'=>'опис',
 
 
 

@@ -13,7 +13,7 @@
                             <input type="text" name="email" id="email" class="form-control" />
                         </div>
                         <div class="form-outline mb-3">
-                            <label for="name" class="form-label">Nome</label>
+                            <label for="name" class="form-label">{{__('ui.nome')}}</label>
                             @error('name')<span class="small text-danger">{{$message}}</span>@enderror
                             <input type="text" name="name" id="name" class="form-control">
                         </div>

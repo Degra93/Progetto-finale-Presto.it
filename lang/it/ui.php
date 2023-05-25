@@ -120,8 +120,34 @@ return[
 
     // FORM REGISTRAZIONE
 
+    'nome'=>'Nome',
+
     'form'=>'FORM DI REGISTRAZIONE',
 
     'conferma-pass'=>'Conferma Password',
+
+    // SEZIONE ANNUNCI 
+
+    'pubblicato'=>'Pubblicato il',
+
+    'autore'=>'Autore',
+
+    // CATEGORY SHOW
+
+    'annunci-presenti'=>'Annunci presenti per la categoria',
+
+    'al-momento'=>'Al momento non esistono annunci per questa categoria...',
+
+    'che-ne-dici'=>'Che ne dici di crearne uno tu?',
+
+    // ZONA REVISORE 
+
+    'da-revi'=>'ANNUNCI DA REVISIONARE',
+
+    'accetta'=>'Accetta',
+
+    'rifiuta'=>'Rifiuta',
+
+    'descrizione'=>'Descrizione',
 
 ];

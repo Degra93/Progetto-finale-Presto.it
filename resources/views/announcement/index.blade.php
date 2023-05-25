@@ -66,8 +66,8 @@
 
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <h6 class="section-title text-center text-primary text-uppercase pt-3">Nostri Annunci</h6>
-            <h1 class="mb-5">Esplora i nostri  <span class="text-primary text-uppercase ">Annunci</span></h1>
+            <h6 class="section-title text-center text-primary text-uppercase pt-3">{{__('ui.nostri')}}</h6>
+            <h1 class="mb-5">{{__('ui.esplora-i')}}</h1>
         </div>
         <div class="row g-4 ">
             @forelse ($announcements as $announcement)
@@ -82,17 +82,17 @@
                     <div class="postcard__text t-dark">
                         <div class="d-flex justify-content-between">
                             
-                            <a href="" class=" btn-warning rounded py-2 px-4 fw-bold">Prezzo: {{$announcement->price}} €</a>
+                            <a href="" class=" btn-warning rounded py-2 px-4 fw-bold">{{__('ui.prezzo')}}: {{$announcement->price}} €</a>
                         </div>
-                        <h5 class="mb-0">{{$announcement->title}}</h5>
+                        <h5 class="mb-0 p-2">{{$announcement->title}}</h5>
                         <div class="postcard__subtitle small">
-                            <p class="card-footer">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} Autore: {{$announcement->user->name}}</p>
+                            <p class="card-footer p-2">{{__('ui.pubblicato')}}: {{$announcement->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announcement->user->name}}</p>
                         </div>
                         <div class="postcard__bar"></div>
                         <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
                         <div class="d-flex justify-content-between">
-                            <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">View Detail</a>
-                            <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">Categoria: {{$announcement->category->name}}</a>
+                            <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
+                            <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{$announcement->category->name}}</a>
                             
                         </div>
                     </div>

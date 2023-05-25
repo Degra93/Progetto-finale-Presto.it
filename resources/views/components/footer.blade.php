@@ -20,7 +20,7 @@
             <dd>Aulab, Bari, Italia</dd>
           </dl>
           <dl class="contact-list">
-            <dt>E-mail:</dt>
+            <dt>{{__('ui.mail')}}:</dt>
             <dd><a href="mailto:#">presto.it@gmail.com</a></dd>
           </dl>
           <dl class="contact-list">

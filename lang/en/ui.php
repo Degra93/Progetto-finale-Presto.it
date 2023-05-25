@@ -120,9 +120,35 @@ return[
 
      // FORM REGISTRAZIONE
 
+     'nome'=>'Name',
+
      'form'=>'REGISTRATION FORM',
 
      'conferma-pass'=>'Confirm password',
+
+     // SEZIONE ANNUNCI 
+
+    'pubblicato'=>'Posted on',
+
+    'autore'=>'Author',
+
+     // CATEGORY SHOW
+
+     'annunci-presenti'=>'Ads present for the category',
+
+     'al-momento'=>'There are currently no ads for this category...',
+
+     'che-ne-dici'=>'How about making your own?',
+
+      // ZONA REVISORE 
+
+    'da-revi'=>'ADS TO REVIEW',
+
+    'accetta'=>'Accept',
+
+    'rifiuta'=>'Decline',
+
+    'descrizione'=>'Description',
 
     
 
