@@ -220,9 +220,9 @@
             <div class="row">
             <div class="col-6 mx-auto m-5 py-5  bg-light text-center rounded">
                 <i class="fa-sharp fa-solid fa-face-laugh-wink text-warning fa-5x mb-3"></i>
-                <h2 class="text-secondary mb-3">Hai finito di modificare gli annunci. <br/> Grazie!</h2>
-                <a href="{{ route('homepage') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none ">HOME</a>
-                <a href="{{ route('announcement.create') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none">CREA ANNUNCIO</a>
+                <h2 class="text-secondary mb-3">{{__('ui.hai-finito')}}</h2>
+                <a href="{{ route('homepage') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none ">{{__('ui.home')}}</a>
+                <a href="{{ route('announcement.create') }}" class="links-hover m-2 fs-5 link-warning text-decoration-none">{{__('ui.crea')}}</a>
             </div>
             </div>
         </div>
@@ -249,8 +249,8 @@
                         <p class="h2 text-center">Sei sicuro?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="acetta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="acetta()">{{__('ui.accetta')}}</button>
+                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">{{__('ui.rifiuta')}}</button>
                     </div>
                 </div>
             </div>
@@ -267,8 +267,8 @@
                         <p class="h2 text-center">Sei sicuro?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="rifuta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="rifuta()">{{__('ui.accetta')}}</button>
+                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">{{__('ui.rifiuta')}}</button>
                     </div>
                 </div>
             </div>

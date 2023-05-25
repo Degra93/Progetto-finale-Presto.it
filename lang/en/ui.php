@@ -44,6 +44,8 @@ return[
 
     'dettagli'=>'See details',
 
+    'non'=>'There are no ads in the search',
+
     // HEADER
     
     'better'=>'The most visited categories',
@@ -149,6 +151,8 @@ return[
     'rifiuta'=>'Decline',
 
     'descrizione'=>'Description',
+
+    'hai-finito'=>`You're done editing ads`,
 
     
 
