@@ -138,6 +138,19 @@
                     <div class="postcard__text t-dark">
                         <div class="d-flex justify-content-between">
 
+<<<<<<< HEAD
+                      <a href="" class=" btn-warning rounded py-2 px-4 fw-bold">{{__('ui.prezzo')}}:{{$announcement->price}} €</a>
+                  </div>
+                  <h5 class="mb-0">{{$announcement->title}}</h5>
+                  <div class="postcard__subtitle small">
+                      <p class="card-footer">{{__('ui.pubblicato')}}: {{$announcement->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announcement->user->name}}</p>
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
+                  <div class="d-flex justify-content-between">
+                      <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
+                      <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{$announcement->category->name}}</a>
+=======
                             <a href=""
                                 class=" btn-warning rounded py-2 px-4 fw-bold">{{ __('ui.prezzo') }}:{{ $announcement->price }}
                                 €</a>
@@ -155,6 +168,7 @@
                             <a class=" btn-dark rounded py-2 px-4 fw-bold"
                                 href="{{ route('categoryShow', ['category' => $announcement->category]) }}">{{ __('ui.categoria') }}:
                                 {{ $announcement->category->name }}</a>
+>>>>>>> e47290ab42eba01b38222f3352c782b499973bc5
 
                         </div>
                     </div>
@@ -163,7 +177,7 @@
             </div>
 
         @empty
-            <h2>Non ci sono annunci nella Ricerca</h2>
+        <h2>{{__('ui.non')}}</h2>
         @endforelse
     </div>
 </div>

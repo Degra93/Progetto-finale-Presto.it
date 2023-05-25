@@ -43,6 +43,8 @@ return[
     'allAnnoucements'=>'Le nostre Categorie',
 
     'dettagli'=>'Vedi dettagli',
+
+    'non'=>'Non ci sono annunci nella ricerca',
     
     // HEADER
 
@@ -149,5 +151,9 @@ return[
     'rifiuta'=>'Rifiuta',
 
     'descrizione'=>'Descrizione',
+
+    'hai-finito'=>'Hai finito di modificare gli annunci.',
+
+
 
 ];
