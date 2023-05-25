@@ -47,7 +47,7 @@ a:hover{
 }
 /* newsletter */
 .form {
-    background-image: linear-gradient(to right , #8b2828c2, #0c0b0ecc);
+    background-image: linear-gradient(to right , #fbc257, #fbc257d1);
     display: inline-flex;
     flex-direction: column;
     align-items: center;
