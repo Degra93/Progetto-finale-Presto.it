@@ -43,3 +43,38 @@
 .modal-body{
     border:none;
 }
+
+
+/*-----------------------------------------MODAL------------------------------------------*/
+.modal-color{
+    background-color:rgb(230, 230, 230);
+
+}
+
+.modal-dialog {
+    border: none;
+  }
+
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-footer {
+    border-top: none;
+    margin-top: 0 !important;
+  }
+
+  .my-form {
+    aspect-ratio: 2/1 ;
+  }
+  .modal{
+    background-color:rgb(140, 140, 140, 0.5);
+
+  }
+
+
+/*--------------------------------BUTTONS STILE-----------------------------*/
+.btn-danger{
+    background-color:#801a00;
+    border:none;
+}
