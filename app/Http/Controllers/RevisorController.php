@@ -24,24 +24,24 @@ class RevisorController extends Controller
     public function OkAnnuncio(Announcement $announcement)
     {
         $announcement->setAccepted(true);
-        return redirect()->back()->with('message', 'Annuncio accettato');
+        return redirect()->back()->with('success', 'Annuncio accettato');
     }
 
     public function NoAnnuncio(Announcement $announcement)
     {
         $announcement->setAccepted(false);
-        return redirect()->back()->with('message', 'Annuncio rifiutato');
+        return redirect()->back()->with('success', 'Annuncio rifiutato');
     }
 
     public function askRevisor()
     {
         Mail::to('hr@shopypro.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->back()->with('message', 'Hai chiesto di diventare revisori, attendi conferma!');
+        return redirect()->back()->with('success', 'Hai chiesto di diventare revisori, attendi conferma!');
     }
 
     public function makeRevisor(User $user)
     {
         Artisan::call('app:make-user-revisor', ['email' => $user->email]);
-        return redirect('/')->with('message', 'Hai reso un utente revisore:');
+        return redirect('/')->with('success', 'Hai reso un utente revisore:');
     }
 }

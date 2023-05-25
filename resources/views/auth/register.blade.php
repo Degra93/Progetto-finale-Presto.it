@@ -10,12 +10,12 @@
                         <div class="form-outline mb-3">
                             <label class="form-label" for="email">{{__('ui.mail')}}</label>
                             @error('email')<span class="small text-danger">{{$message}}</span>@enderror
-                            <input type="text" name="email" id="email" class="form-control" />
+                            <input type="text" name="email" id="email" class="form-control" value="{{old('email')}}"/>
                         </div>
                         <div class="form-outline mb-3">
                             <label for="name" class="form-label">{{__('ui.nome')}}</label>
                             @error('name')<span class="small text-danger">{{$message}}</span>@enderror
-                            <input type="text" name="name" id="name" class="form-control">
+                            <input type="text" name="name" id="name" class="form-control" value="{{old('name')}}">
                         </div>
                         <div class="form-outline mb-3">
                             <label class="form-label" for="password">{{__('ui.pass')}}</label>

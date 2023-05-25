@@ -365,7 +365,7 @@
                         {{ Auth::user()->name }}
                         <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"
                             alt="icona-utente">
-                            <span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span>
+                            
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><hr class="dropdown-divider"></li>

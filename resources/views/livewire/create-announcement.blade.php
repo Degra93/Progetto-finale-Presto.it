@@ -21,6 +21,9 @@
             <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select>
+        @error('category')
+            <span class="small text-danger">{{$message}}</span>
+            @enderror
       </div>
 
       <div class="mb-2">
