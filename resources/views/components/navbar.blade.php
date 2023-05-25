@@ -48,7 +48,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{__('ui.login')}}</a>
+                        <a class="nav-link" href="{{ route('login') }}">{{__('ui.log-button')}}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register') }}">{{__('ui.registrati')}}</a>
