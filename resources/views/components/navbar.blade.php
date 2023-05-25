@@ -36,7 +36,7 @@
                     <li><a class="nav-link" href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="catDrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">{{__('ui.categoria')}}</a>
                         <ul class="dropdown-menu    " aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li>
@@ -48,10 +48,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}">{{__('ui.login')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Registrati</a>
+                        <a class="nav-link" href="{{ route('register') }}">{{__('ui.registrati')}}</a>
                     </li>
                     <li>
                         <x-locale lang="it" nation="it"/>
@@ -81,7 +81,8 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
+                    {{-- NOTIFICA --}}
+                    <span class="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
 
                     @endif
                 </span>
