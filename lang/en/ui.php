@@ -154,7 +154,7 @@ return[
 
     'descrizione'=>'Description',
 
-    'hai-finito'=>`You're done editing ads`,
+    'hai-finito'=>'You are done editing ads',
 
     
 
