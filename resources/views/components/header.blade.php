@@ -41,16 +41,16 @@
                 <div class="splide__list">
                     @foreach ($categories as $category)
                         <div class="col-sm-4 splide__slide m-2">
-                            <div class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy"
+                            <a href="{{route('categoryShow', $category)}}" class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy"
                                 lc-helper="background"
                                 style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; ">
-                                <div class="lc-block pt-5 mt-5 mb-5  text-center ">
+                                <div class="lc-block pt-5 mt-5 mb-5  text-center overlay">
                                     <div editable="rich">
-                                        <h2 class="display-6 lh-1 fw-bold mb-5">{{ __('ui.' . $category->name) }}</h2>
+                                        <h2 class="lh-1 fw-bold mb-5">{{ __('ui.' . $category->name) }}</h2>
 
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
 
