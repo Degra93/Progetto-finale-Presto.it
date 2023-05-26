@@ -230,16 +230,16 @@ body {
 }
 
 .searchBox:hover>.searchButton {
-    background: #3a3939;
+    border-radius: 15%;
 }
 
 .searchButton {
-    color: white;
+    color: #fbc257;
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #ab7e2b9e;
+    background: #3a3939;
     display: flex;
     justify-content: center;
     align-items: center;

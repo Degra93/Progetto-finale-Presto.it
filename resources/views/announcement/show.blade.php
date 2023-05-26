@@ -56,8 +56,7 @@
                         <div class="col-9">
                             {{-- Titolo --}}
                             <h2>{{ $announcement->title }}</h2>
-                            <span>Scrivi una recensione</span>
-                            <br>
+                            
                             <h6 class="pt-2"><i class="fa-solid fa-truck"></i> Tempi di spedizione: 3-5 giorni </h6>
 
                             <h6 class=><i class="fa-solid fa-truck"></i> Pronta consegna presso: Atrio Cues, Edificio E

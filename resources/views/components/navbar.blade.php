@@ -135,13 +135,13 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             {{-- @if (Auth::user()->is_revisor) --}}
                             <li>
-                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">Zona Revisori @if (App\Models\Announcement::daRevisionare())<span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>@endif
+                                <a href="{{ route('revisore.index') }}" class="dropdown-item fw-bold">{{__('ui.zona')}} @if (App\Models\Announcement::daRevisionare())<span class="badge rounded-pill bg-danger ms-2">{{App\Models\Announcement::daRevisionare()}}</span></a>@endif
                             </li>
                             {{-- @endif --}}
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <a class="dropdown-item fw-bold>" href="/logout"
-                                    onclick="event.preventDefault();getElementById('form-logout').submit();">Logout</a>
+                                    onclick="event.preventDefault();getElementById('form-logout').submit();">{{__('ui.logout')}}</a>
                             </li>
 
 
