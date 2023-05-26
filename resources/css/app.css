@@ -424,7 +424,8 @@ section.hero {
 
 
     &.light {
-        background-color: #e1e5ea;
+        background-color: whitesmoke;
+        border: burlywood;
     }
 
     .t-dark {

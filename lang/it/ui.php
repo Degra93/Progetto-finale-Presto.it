@@ -34,7 +34,7 @@ return[
 
     'cambia'=>'Cambia il tuo business in meglio',
     
-    'futuro'=>'Il futuro e qui',
+    'futuro'=>'Il futuro è qui',
     
     'metodi'=>'Ci sono molti modi di organizzare la propria attività, ShopyPro il metodo più efficace',
     
