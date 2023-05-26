@@ -44,8 +44,8 @@
 
     <!-------------------------- Modal----------------------------------------------->
         <div class="modal fade" id="footerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal-dialog modal-dialog-centered  modal-lg">
+                <div class="modal-content modal-color my-form">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -53,14 +53,19 @@
                     <div class="modal-body d-flex flex-column  align-items-center align-self-center text-black ">
 
                         <i class="fa-solid fa-door-open fa-5x mb-4"></i>
-                        {{-- <p>Ciao {{ Auth::user()->name }}</p> --}}
-                        email:
-                        {{-- {{ Auth::user()->email }} --}}
-                        <p class="h1 text-center ">Sei sicuro?</p>
+                        @if(Auth::check())
+                            <p class="h1">Ciao {{ Auth::user()->name }}</p>
+                            <p class="h3">la tua email è:{{ Auth::user()->email }}</p>
+                            <p class="h3">Vuoi diventare un revisore?</p>
+                        @else
+                            <p class="h1">Ciao Ospite</p>
+                            <p class="h3 text-center">Prima di effettuare la richiesta, è necessario accedere o registrarsi.</p>
+                        @endif
+
                     </div>
                     <div class="modal-footer  d-flex justify-content-center m-5">
-                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
-                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
+                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
