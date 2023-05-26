@@ -283,6 +283,10 @@ body {
     border-radius: 3%;
 
 }
+ul.dropdown-menu{
+    --bs-dropdown-link-active-bg: transparent;
+
+}
 
 
 .navbar-scrolled .nav-link,
@@ -325,6 +329,9 @@ body {
 }
 
 .dropdown-cat {
+    background-color: #fbc257;
+}
+.dropdown-cat:hover {
     background-color: #fbc257;
 }
 
@@ -389,6 +396,17 @@ section.hero {
     }
 
 }
+.card-copy{
+    font-size: xx-small;
+}
+.card-copy:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    transition: all 0.5s;
+  }
+.card-copy:hover .overlay {
+    transform: scale(2) translateZ(0);
+    font-size: 20px;
+  }
 
 
 /* qui parte le classi delle card */

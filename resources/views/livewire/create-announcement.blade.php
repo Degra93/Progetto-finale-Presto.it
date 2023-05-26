@@ -43,12 +43,12 @@
                     <input class="form-control @error('price') is-invalid @enderror" type="number"
                         wire:model.lazy="price" value="{{ old('price') }}" />
                 </div>
-
-
+                {{-- SCEGLI FILE § --}}
                 <div class="d-flex flex-row align-items-center mb-4">
                     <div class="form-outline flex-fill mb-0">
                         <input wire:model="temporary_images" type="file" name="images" multiple
                             class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img" />
+                            <input type="file"   >
                         @error('temporary_images.*')
                             <div class=" text-danger">
                                 {{ $message }}

@@ -20,13 +20,14 @@ const splide = new Splide( '#first-slider', {
   type   : 'loop',
   drag   : 'free',
   focus  : 'center',
-  perPage: 4,
+  perPage: 3,
   autoScroll: {
     speed: 1,
   },
   breakpoints: {
-    1200: { perPage: 2, gap: '1rem' },
-    640 : { gap: 0 },
+    1200: { perPage: 3, gap: '1rem' },
+    640 : { perPage:2, gap: 0 },
+
     390 : {perPage: 1, gap: 0},
   },
 
