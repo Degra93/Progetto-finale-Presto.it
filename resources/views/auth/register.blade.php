@@ -1,6 +1,6 @@
 <x-main>
     <div class="spacer"></div>
-    <section class="my-5">
+    <section class="my-5" data-aos="zoom-in" data-aos-duration="3000">
         <div class="container my-5">
             <div class="row bg-light border border-3 border-dark border-opacity-25 rounded">
                 <div class="col-12 col-md-6 text-black">

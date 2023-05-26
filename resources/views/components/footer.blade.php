@@ -53,9 +53,9 @@
                     <div class="modal-body d-flex flex-column  align-items-center align-self-center text-black ">
 
                         <i class="fa-solid fa-door-open fa-5x mb-4"></i>
-                        <p>Ciao {{ Auth::user()->name }}</p>
+                        {{-- <p>Ciao {{ Auth::user()->name }}</p> --}}
                         email:
-                        {{ Auth::user()->email }}
+                        {{-- {{ Auth::user()->email }} --}}
                         <p class="h1 text-center ">Sei sicuro?</p>
                     </div>
                     <div class="modal-footer  d-flex justify-content-center m-5">
