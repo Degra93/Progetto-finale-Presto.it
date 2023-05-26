@@ -22,7 +22,7 @@
                     <select wire:model.lazy='category' class="form-control">
                         <option value="">{{ __('ui.scegli') }}</option>
                         @foreach ($categories as $category)
-                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            <option value="{{ $category->id }}">{{__("ui.".$category->name)}}</option>
                         @endforeach
                     </select>
                     @error('category')

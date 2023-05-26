@@ -148,7 +148,7 @@
                   <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
                   <div class="d-flex justify-content-between">
                       <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
-                      <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{$announcement->category->name}}</a>
+                      <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{__("ui.".$announcement->category->name)}}</a>
 
                         </div>
                     </div>
