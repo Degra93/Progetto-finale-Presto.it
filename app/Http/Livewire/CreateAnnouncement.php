@@ -96,7 +96,7 @@ class CreateAnnouncement extends Component
 
         //     ]);
         $this->cleanForm();
-        session()->flash('success', 'Articolo creato con successo');
+        session()->flash('success');
     }
 
 

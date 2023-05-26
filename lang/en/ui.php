@@ -88,6 +88,8 @@ return[
 
     // CREA ANNUNCIO
 
+    'successo'=>'Ad created successfully',
+
     'crea-ann'=>'CREATE A NEW ANNUNCE',
 
     'titolo'=>'Title',

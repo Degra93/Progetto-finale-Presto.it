@@ -88,6 +88,8 @@ return[
 
     // CREA ANNUNCIO
 
+    'successo'=>'Annuncio creato con successo',
+
     'crea-ann'=>'CREA UN NUOVO ANNUNCIO',
     
     'titolo'=>'Titolo',
