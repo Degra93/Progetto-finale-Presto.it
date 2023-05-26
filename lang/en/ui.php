@@ -29,6 +29,10 @@ return[
     'Animali'=>'Pets',
 
     'Game'=>'Game',
+
+    'zona'=>'Reviewer area',
+
+    'logout'=>'Logout',
     
     // SECTION
 
@@ -87,6 +91,8 @@ return[
     'telefono'=>'Telephone',
 
     // CREA ANNUNCIO
+
+    'preview'=>'Preview',
 
     'successo'=>'Ad created successfully',
 
