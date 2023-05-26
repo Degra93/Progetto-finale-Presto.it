@@ -426,6 +426,11 @@ section.hero {
     &.light {
         background-color: whitesmoke;
         border: burlywood;
+        box-shadow:  10px  10px 5px #dedede,
+        -10px -10px 5px #dedede,
+         10px -10px 5px #dedede,
+        -10px  10px 5px #dedede;
+
     }
 
     .t-dark {
