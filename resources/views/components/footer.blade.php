@@ -8,7 +8,7 @@
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
 
             <h5>{{__('ui.vuoi')}}</h5>
-            <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#rifiuta">
+            <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#footerModal">
               {{__('ui.diventa')}}
             </button>
           </div>
@@ -43,17 +43,22 @@
     </div>
 
     <!-------------------------- Modal----------------------------------------------->
-        <div class="modal fade" id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="footerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <p class="h2 text-center text-black">Sei sicuro?</p>
+                    <div class="modal-body d-flex flex-column  align-items-center align-self-center text-black ">
+
+                        <i class="fa-solid fa-door-open fa-5x mb-4"></i>
+                        <p>Ciao {{ Auth::user()->name }}</p>
+                        email:
+                        {{ Auth::user()->email }}
+                        <p class="h1 text-center ">Sei sicuro?</p>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer  d-flex justify-content-center m-5">
                         <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
                         <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
                     </div>

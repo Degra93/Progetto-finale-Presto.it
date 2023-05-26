@@ -249,9 +249,9 @@
                         <i class="fa-regular fa-face-grin-beam-sweat d-block fa-5x mb-4 "></i>
                         <p class="h1 text-center">Sei sicuro?</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="acetta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                    <div class="modal-footer d-flex justify-content-center m-5">
+                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="acetta()">Si</button>
+                        <button type="button" class="btn-hover btn btn-warning " data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
@@ -267,13 +267,14 @@
                             <i class="fa-regular fa-face-grin-beam-sweat d-block fa-5x mb-4 "></i>
                         <p class="h1 text-center">Sei sicuro?</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-hover btn btn-danger" data-bs-dismiss="modal" onclick="rifuta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning" data-bs-dismiss="modal">No</button>
+                    <div class="modal-footer d-flex justify-content-center m-5">
+                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="rifuta()">Si</button>
+                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
         </div>
+
 </section>
 </x-main>
 
