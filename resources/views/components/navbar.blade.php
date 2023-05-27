@@ -15,7 +15,7 @@
                 <ul class="navbar-nav ms-3 ms-lg-auto ms-md-3 ms-xs-3 mb-2 mb-lg-0">
                     <li>
                         {{-- search --}}
-                        <form class="" action="{{ route('announcement.search') }}" method="GET" class="d-flex">
+                        <form action="{{ route('announcement.search') }}" method="GET" class="d-flex">
                             <div class="searchBox">
 
                                 <input class="searchInput form-control "type="text" name="searched" placeholder="{{__('ui.ricerca')}}"
@@ -82,7 +82,7 @@
                 <span class="navbar-toggler-icon">
                     @if (App\Models\Announcement::daRevisionare())
                     {{-- NOTIFICA --}}
-                    <span class="position-absolute top-10 start-90 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
+                    <span class="position-absolute top-0 start-95 ms-2 badge rounded-pill bg-danger">{{App\Models\Announcement::daRevisionare()}}</span>
 
                     @endif
                 </span>
@@ -128,7 +128,7 @@
                             <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle position-relative" height="22"
                                 alt="icona-utente">
                                 @if (App\Models\Announcement::daRevisionare())
-                                <span class="position-absolute top-40 start-100 translate-middle badge rounded-pill bg-danger ">{{App\Models\Announcement::daRevisionare()}}</span>
+                                <span class="position-absolute top-0 start-80 badge rounded-pill bg-danger ">{{App\Models\Announcement::daRevisionare()}}</span>
 
                                 @endif
                         </a>
@@ -163,7 +163,7 @@
 
                 @else
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                    <a class="nav-link dropdown-toggle fw-semi  bold" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         {{ Auth::user()->name }}
                         <img src="{{ URL::asset('img/iconaUtente.png') }}" class="rounded-circle" height="22"

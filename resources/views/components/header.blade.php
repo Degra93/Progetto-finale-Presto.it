@@ -18,7 +18,7 @@
                     </div><br>
                     <div class="cta mb-sm-2">
                         <a href="{{ route('announcement.create') }}"
-                            class="btn btn-warning shadow-none">{{ __('ui.crea') }}</a>
+                            class="btn btn-warning shadow-none ">{{ __('ui.crea') }}</a>
 
                     </div>
                 </div>

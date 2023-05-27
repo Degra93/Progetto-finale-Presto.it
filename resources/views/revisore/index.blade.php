@@ -72,11 +72,13 @@
     <!-- Button trigger modal -->
 
 
+    <h1 class="text-center animated bounce ">{{__('ui.zona')}}</h1>
+
 
     @if(count($announceToCheck))
 
         <div class="col-3 mx-auto text-center margin-count text-black">
-            <h3 class="h3 heading-font">{{App\Models\Announcement::daRevisionare()}}</h3>
+            <h3 class="h3 heading-font animated infinite rubberBand">{{App\Models\Announcement::daRevisionare()}}</h3>
             <p class="heading-font">{{__('ui.da-revi')}}</p>
         </div>
     {{--
@@ -124,10 +126,9 @@
                 </div>
             </div>
     --}}
-
-        <div class="container mb-5 main-font d-flex align-items-stretch" style="height:100%">
-            <div class="row"></div>
-                <div class="col-md-8 mx-auto">
+    <div class="container mb-5 main-font d-flex align-items-stretch text-center" style="height:100%">
+        <div class="row"></div>
+        <div class="col-md-8 mx-auto">
                     @foreach ($announceToCheck as $key => $announceToCheck)
                         <div class="accordion accordion-flush" id="accordionExample">
                             <div class="accordion-item">
