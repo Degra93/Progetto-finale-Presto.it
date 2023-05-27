@@ -45,8 +45,8 @@
                                 lc-helper="background"
                                 style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; ">
                                 <div class="lc-block pt-5 mt-5 mb-5  text-center overlay">
-                                    <div editable="rich">
-                                        <h2 class="lh-1 fw-bold mb-5">{{ __('ui.' . $category->name) }}</h2>
+                                    <div>
+                                        <h2 class="mb-5 fw-bolder">{{ __('ui.' . $category->name) }}</h2>
 
                                     </div>
                                 </div>

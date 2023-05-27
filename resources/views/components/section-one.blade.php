@@ -70,8 +70,8 @@
                 <div class="card mb-7 mb-md-0 text-body rounded-5" style="min-height: 400px; ">
 
 
-                    <div class="card-body my-auto px-md-10 text-center text-md-start"
-                        style="background-image: url(https://m.media-amazon.com/images/I/71OLLyge2kL._AC_SX679_.jpg); background-position: center center; background-repeat: no-repeat;">
+                    <div class="card-body my-auto px-md-10 text-center text-md-start rounded-5"
+                        style="background-image: url(https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/eaf79d29-0625-4e6f-83eb-5206c4fc1df3._CR0,0,1200,628_SX796_QL70_.jpg); background-position: center center; background-repeat: no-repeat;">
 
 
                         <h4 class="mb-0 display-5 text-warning fw-bold">{{ __('ui.Telefonia') }}</h4>
