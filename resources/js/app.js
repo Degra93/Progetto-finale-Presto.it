@@ -22,7 +22,7 @@ const splide = new Splide( '#first-slider', {
   focus  : 'center',
   perPage: 3,
   autoScroll: {
-    speed: 1,
+    speed: 1.5,
   },
   breakpoints: {
     1200: { perPage: 3, gap: '1rem' },
