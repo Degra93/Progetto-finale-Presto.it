@@ -71,3 +71,8 @@ class RemoveFaces implements ShouldQueue
         $imageAnnotator->close();
     }
 }
+
+
+
+
+    
