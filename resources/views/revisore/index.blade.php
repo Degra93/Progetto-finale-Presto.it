@@ -153,6 +153,7 @@
                                                         </div>
                                                     @endforeach
                                                 </div>
+
                                                 @else
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
@@ -205,6 +206,29 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-6">
+                                                <h3>Tags</h3>
+                                                <div class="p-2">
+                                                    @if ($image->labels)
+                                                        @foreach ($image->labels as $label)
+                                                            <p class="d-inline">{{$label}}</p>
+                                                        @endforeach
+                                                    @endif
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <h3>Revisione immagini</h3>
+                                                <div class="card-body">
+                                                    <p>Adulti: <span class="{{$image->adult}}"></span></p>
+                                                    <p>Satira: <span class="{{$image->spoof}}"></span></p>
+                                                    <p>Medicina: <span class="{{$image->medical}}"></span></p>
+                                                    <p>Violenza: <span class="{{$image->violence}}"></span></p>
+                                                    <p>Contenuto offensivo: <span class="{{$image->racy}}"></span></p>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

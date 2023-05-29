@@ -11,6 +11,10 @@ class Image extends Model
 {
     use HasFactory;
 
+
+    protected $casts = [
+        'labels' => 'array'
+    ];
     protected $fillable = ['path'];
 
     public function announcement()
@@ -30,7 +34,8 @@ class Image extends Model
         return Storage::url($file);
     }
 
-    public function getUrl($w = null , $h = null){
-        return Image::getUrlByFilePath($this->path, $w ,$h);
+    public function getUrl($w = null, $h = null)
+    {
+        return Image::getUrlByFilePath($this->path, $w, $h);
     }
 }
