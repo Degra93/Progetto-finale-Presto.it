@@ -34,7 +34,7 @@ return [
 
     'logout'=>'Logout',
 
-    // SECTION 
+    // SECTION
 
     'cambia' => 'Cambia il tuo business in meglio',
 
@@ -136,7 +136,7 @@ return [
 
     'conferma-pass' => 'Conferma Password',
 
-    // SEZIONE ANNUNCI 
+    // SEZIONE ANNUNCI
 
     'pubblicato' => 'Pubblicato il',
 
@@ -150,7 +150,7 @@ return [
 
     'che-ne-dici' => 'Che ne dici di crearne uno tu?',
 
-    // ZONA REVISORE 
+    // ZONA REVISORE
 
     'da-revi' => 'ANNUNCI DA REVISIONARE',
 
@@ -161,8 +161,10 @@ return [
     'descrizione' => 'Descrizione',
 
     'hai-finito' => 'Hai finito di modificare gli annunci.',
+    'techiche'=>'techiche',
+    'extra'=>'Extra'
 
-    // ANNOUNCEMENT SHOW 
+    // ANNOUNCEMENT SHOW
 
 
 

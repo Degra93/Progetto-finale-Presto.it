@@ -1,31 +1,31 @@
 <?php
 return[
     // NAVBAR
-    
+
     'ricerca'=>'Search here',
-    
+
     'cerca'=>'Search',
-    
+
     'annunci'=>'Announcements',
-    
+
     'categorie'=>'Categories',
-    
+
     'Informatica'=>'Informatics',
-    
+
     'Telefonia'=>'Telephony',
-    
+
     'Casa'=>'Home',
-    
+
     'Auto'=>'Car',
-    
+
     'Moto'=>'Motorcycle',
 
     'Sport'=>'sport',
-    
+
     'Libri'=>'Bookshelf',
-    
+
     'Salute'=>'Health',
-    
+
     'Animali'=>'Pets',
 
     'Game'=>'Game',
@@ -33,17 +33,17 @@ return[
     'zona'=>'Reviewer area',
 
     'logout'=>'Logout',
-    
+
     // SECTION
 
     'cambia'=>'Change your business for the better',
-    
+
     'futuro'=>'The Future is here',
-    
+
     'metodi'=>'There are many ways to organize your business, ShopyPro is the most effective method',
-    
+
     'crea'=>'Create ad',
-    
+
     'allAnnoucements'=>'Here our Categories',
 
     'dettagli'=>'See details',
@@ -51,7 +51,7 @@ return[
     'non'=>'There are no ads in the search',
 
     // HEADER
-    
+
     'better'=>'The most visited categories',
 
     'vieni'=>'Come and discover many products',
@@ -136,7 +136,7 @@ return[
 
      'conferma-pass'=>'Confirm password',
 
-     // SEZIONE ANNUNCI 
+     // SEZIONE ANNUNCI
 
     'pubblicato'=>'Posted on',
 
@@ -150,7 +150,7 @@ return[
 
      'che-ne-dici'=>'How about making your own?',
 
-      // ZONA REVISORE 
+      // ZONA REVISORE
 
     'da-revi'=>'ADS TO REVIEW',
 
@@ -161,8 +161,9 @@ return[
     'descrizione'=>'Description',
 
     'hai-finito'=>'You are done editing ads',
+    'techiche'=>'Techniques',
+    'extra'=>'Extra'
 
-    
 
 
 ];

@@ -3,7 +3,7 @@
         <div class="container py-4">
             <x-success />
             @if(session()->has('success'))
-           
+
             @endif
             <h3 class="fw-normal text-center mt-5 ">{{ __('ui.crea-ann') }}</h3>
             <form wire:submit.prevent="store" enctype="multipart/form-data">
@@ -16,6 +16,7 @@
                     <input class="form-control @error('title') is-invalid @enderror" type="text"
                         wire:model.lazy="title" value="{{ old('title') }}" />
                 </div>
+
 
                 <div class="mb-2">
                     <label for="category" class="my-1 me-3">{{ __('ui.categoria') }}</label>
@@ -36,6 +37,20 @@
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
                     <textarea class="form-control @error('body') is-invalid @enderror" wire:model.lazy="body" rows="2">{{ old('body') }}</textarea>
+                </div>
+                <div class="mb-2">
+                    <label class="my-1 me-3" for="techiche">{{ __('ui.testo') }}</label>
+                    @error('techiche')
+                        <span class="small text-danger">{{ $message }}</span>
+                    @enderror
+                    <textarea class="form-control @error('techiche') is-invalid @enderror" wire:model.lazy="techiche" rows="2">{{ old('techiche') }}</textarea>
+                </div>
+                <div class="mb-2">
+                    <label class="my-1 me-3" for="extra">{{ __('ui.testo') }}</label>
+                    @error('extra')
+                        <span class="small text-danger">{{ $message }}</span>
+                    @enderror
+                    <textarea class="form-control @error('extra') is-invalid @enderror" wire:model.lazy="extra" rows="2">{{ old('extra') }}</textarea>
                 </div>
 
                 <div class="mb-2">

@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('body');
             $table->decimal('price', 8, 2);
+            $table->text('techiche');
+            $table->text('extra');
             $table->timestamps();
         });
     }

@@ -11,7 +11,7 @@ class Announcement extends Model
 {
     use HasFactory, Searchable;
 
-    protected $fillable =['title','body','price'];
+    protected $fillable =['title','body','price','techiche','extra'];
 
     public function toSearchableArray()
     {
@@ -20,6 +20,8 @@ class Announcement extends Model
             'id'=>$this->id,
             'title'=>$this->title,
             'body'=>$this->body,
+            'techiche'=>$this->techiche,
+            'extra'=>$this->extra,
             'category'=>$category,
         ];
         return $array;
@@ -44,7 +46,7 @@ class Announcement extends Model
     public static function daRevisionare(){
         return Announcement::where('is_accepted',null)->count();
 
-        
+
     }
 
     public function images(){

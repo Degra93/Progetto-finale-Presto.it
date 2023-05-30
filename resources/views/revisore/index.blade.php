@@ -186,6 +186,11 @@
                                                     <h3 class=""><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
                                                     <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.descrizione')}}:</span> {{$announceToCheck->body}}</p>
                                                     <p class=""><span class=" heading-font">{{__('ui.prezzo')}}:</span> {{$announceToCheck->price}} €</p>
+                                                    <p class=""><span class=" heading-font">{{__('ui.techiche')}}:</span> {{$announceToCheck->techiche}}</p>
+                                                    <p class=""><span class=" heading-font">{{__('ui.extra')}}:</span> {{$announceToCheck->extra}}</p>
+
+
+
                                                     <p class=""><span class=" heading-font ">{{__('ui.pubblicato')}}:</span>{{$announceToCheck->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announceToCheck->user->name}}</p>
                                                     <div class="d-flex justify-content-start mt-5">
                                                         <div class=" mx-2">

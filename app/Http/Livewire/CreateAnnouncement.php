@@ -20,6 +20,8 @@ class CreateAnnouncement extends Component
     use WithFileUploads;
 
     public $title;
+    public $extra;
+    public $techiche;
     public $body;
     public $price;
     public $category;
@@ -71,6 +73,8 @@ class CreateAnnouncement extends Component
             'title' => $this->title,
             'body' => $this->body,
             'price' => $this->price,
+            'techiche'=>$this->techiche,
+            'extra'=> $this->extra,
         ]);
 
         if (count($this->images)) {

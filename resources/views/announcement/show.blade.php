@@ -56,7 +56,7 @@
                         <div class="col-9">
                             {{-- Titolo --}}
                             <h2>{{ $announcement->title }}</h2>
-                            
+
                             <h6 class="pt-2"><i class="fa-solid fa-truck"></i> Tempi di spedizione: 3-5 giorni </h6>
 
                             <h6 class=><i class="fa-solid fa-truck"></i> Pronta consegna presso: Atrio Cues, Edificio E
@@ -110,7 +110,7 @@
                         <div class="col-12 bgw pt-5">
                             <ul>
                                 <h2>Caratteristiche Tecniche:</h2>
-                                <span>{{ $announcement->body }}</span>
+                                <span>{{ $announcement->techiche }}</span>
 
 
                             </ul>
@@ -134,23 +134,8 @@
                             <ul>
                                 <h2>Caratteristiche EXTRA:</h2>
                                 <li>
-                                    <span> Perfetta per bevande sia calde sia fredde </span>
+                                    <span> {{ $announcement->extra}} </span>
                                 </li>
-
-                                <li>
-                                    <span> Non rilascia alcun odore o sapore </span>
-                                </li>
-                                <li>
-                                    <span> Resistenza termica +160° ~ -20° </span>
-                                </li>
-                                <li>
-                                    <span> Lavabile anche in lavastoviglie </span>
-                                </li>
-                                <li>
-                                    <span> 100% Design Italiano </span>
-                                </li>
-
-
 
                             </ul>
 
