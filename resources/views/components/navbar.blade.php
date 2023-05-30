@@ -53,16 +53,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register') }}">{{__('ui.registrati')}}</a>
                     </li>
-                    <li>
-                        <x-locale lang="it" nation="it"/>
-                    </li>
-                    <li>
-                        <x-locale lang="en" nation="en"/>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Lingue
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-center">
 
-                    <li>
-                        <x-locale lang="uk" nation="uk"/>
-                    </li>
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="it" nation="it"/></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="en" nation="en"/></a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="uk" nation="uk"/></a>
+                            </li>
+
+                        </ul>
+                      </li>
                 </ul>
 
 
@@ -115,7 +124,7 @@
                         <ul class="dropdown-menu" aria-labelledby="catDrop">
                             @foreach ($categories as $category)
                                 <li >
-                                    <a class="fw-bold text-black dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{__('ui.'.$category->name)}}</a>
+                                    <a class="dropdown-item" href="{{ route('categoryShow', compact('category')) }}">{{__('ui.'.$category->name)}}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -150,16 +159,25 @@
                             </form>
                         </ul>
                     </li>
-                    <li>
-                        <x-locale lang="it" nation="it"/>
-                    </li>
-                    <li>
-                        <x-locale lang="en" nation="en"/>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Lingue
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-center">
 
-                    <li>
-                        <x-locale lang="uk" nation="uk"/>
-                    </li>
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="it" nation="it"/></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="en" nation="en"/></a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"><x-locale lang="uk" nation="uk"/></a>
+                            </li>
+
+                        </ul>
+                      </li>
 
                 @else
                 <li class="nav-item dropdown">

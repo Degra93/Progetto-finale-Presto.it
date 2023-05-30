@@ -295,7 +295,9 @@ ul.dropdown-menu{
     color: black;
 
 }
-
+.navbar-scroll .nav-link:hover {
+    color: #fbc257;
+}
 .navbar-scrolled .nav-link:hover {
     color: whitesmoke;
 }
