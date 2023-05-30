@@ -21,7 +21,7 @@
           </dl>
           <dl class="contact-list">
             <dt>{{__('ui.mail')}}:</dt>
-            <dd><a href="mailto:#">presto.it@gmail.com</a></dd>
+            <dd><a href="mailto:#">shopy-pro.it@gmail.com</a></dd>
           </dl>
           <dl class="contact-list">
             <dt>{{__('ui.telefono')}}</dt>
@@ -34,9 +34,6 @@
          <ul> {{-- class="nav-list"> --}}
             <li class="mt-2"><a href="{{ route('homepage') }}">Home</a></li>
             <li class="mt-2"><a href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
-            <li class="mt-2"><a href="#">{{__('ui.footer-chi')}}</a></li>
-            <li class="mt-2"><a href="#">{{__('ui.contatti')}}</a></li>
-
           </ul>
         </div>
       </div>

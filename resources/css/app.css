@@ -226,12 +226,12 @@ body {
 .searchBox:hover>.searchInput {
     width: 220px;
     padding: 0 4px;
-    border-radius: 50px;
+    border-radius: 40px;
     background-color: #ab7e2b9e;
 }
 
 .searchBox:hover>.searchButton {
-    border-radius: 15%;
+    border-radius: 50%;
 }
 
 .searchButton {
