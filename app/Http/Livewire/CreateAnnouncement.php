@@ -12,8 +12,8 @@ use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\Rules\File;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class CreateAnnouncement extends Component
 {
@@ -32,7 +32,7 @@ class CreateAnnouncement extends Component
     protected $rules = [
         'title' => 'required|min:4',
         'body' => 'required|min:8',
-        'price' => 'required|numeric',
+        'price' => 'required|numeric|max:30000',
         'category' => 'required',
         'images.*' => 'image|max:1024',
         'temporary_images.*' => 'image|max:2048',
@@ -102,7 +102,8 @@ class CreateAnnouncement extends Component
                 // ])->dispatch($newImage->id);
             }
 
-            // File::deleteDirectory(storage_path('/app/livewire-tmp'));
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
+            
             // Storage::deleteDirectory(storage_path('/app/livewire-tmp'));
 
         }

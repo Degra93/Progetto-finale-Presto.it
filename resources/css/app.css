@@ -23,7 +23,7 @@ p,
 input,
 button,
 label {
-    font-family: 'Merriweather', serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 a {
@@ -226,12 +226,12 @@ body {
 .searchBox:hover>.searchInput {
     width: 220px;
     padding: 0 4px;
-    border-radius: 50px;
+    border-radius: 40px;
     background-color: #ab7e2b9e;
 }
 
 .searchBox:hover>.searchButton {
-    border-radius: 15%;
+    border-radius: 50%;
 }
 
 .searchButton {
@@ -295,7 +295,9 @@ ul.dropdown-menu{
     color: black;
 
 }
-
+.navbar-scroll .nav-link:hover {
+    color: #fbc257;
+}
 .navbar-scrolled .nav-link:hover {
     color: whitesmoke;
 }

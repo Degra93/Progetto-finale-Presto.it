@@ -143,7 +143,7 @@
                                         <div class="row">
                                             <div class="col-md-5">
 
-                                            <div id="carouselExample" class="carousel slide">
+                                            <div id="carousel{{$announceToCheck->id}}" class="carousel slide">
                                                  @if ($announceToCheck->images)
                                                 <div class="carousel-inner">
 
@@ -169,11 +169,11 @@
 
                                                 @endif
 
-                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{$announceToCheck->id}}" data-bs-slide="prev">
                                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                   <span class="visually-hidden">Previous</span>
                                                 </button>
-                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                <button class="carousel-control-next" type="button" data-bs-target="#carousel{{$announceToCheck->id}}" data-bs-slide="next">
                                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                   <span class="visually-hidden">Next</span>
                                                 </button>
