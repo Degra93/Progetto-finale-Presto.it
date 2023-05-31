@@ -162,14 +162,13 @@ return [
 
     'hai-finito' => 'Hai finito di modificare gli annunci.',
     'techiche'=>'Techiche',
-    'extra'=>'Extra'
+    'extra'=>'Extra',
 
     // ANNOUNCEMENT SHOW
 
     // Richiesta di essere Revisore
 
     'messages'=> 'Hai chiesto di diventare revisori, attendi conferma!',
-
 
 
 ];
