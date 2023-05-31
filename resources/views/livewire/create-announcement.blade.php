@@ -2,6 +2,7 @@
     <div class="col-12 col-md-6">
         <div class="container py-4">
             <x-success />
+            <x-messages/>
             @if(session()->has('success'))
 
             @endif
@@ -39,14 +40,14 @@
                     <textarea class="form-control @error('body') is-invalid @enderror" wire:model.lazy="body" rows="2">{{ old('body') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="techiche">{{ __('ui.testo') }}</label>
+                    <label class="my-1 me-3" for="techiche">Caratteristiche Tecniche</label>
                     @error('techiche')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
                     <textarea class="form-control @error('techiche') is-invalid @enderror" wire:model.lazy="techiche" rows="2">{{ old('techiche') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="extra">{{ __('ui.testo') }}</label>
+                    <label class="my-1 me-3" for="extra">Caratteristiche Extra</label>
                     @error('extra')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
@@ -112,7 +113,7 @@
                 </div>
             </div>
         @else
-            <img src="https://picsum.photos/900/700" alt="Login image" class="w-100 h-100 d-none d-sm-block">
+            <img src="https://picsum.photos/900/1200" alt="Login image" class="w-100 h-100 d-none d-sm-block">
         @endif
 
     </div>

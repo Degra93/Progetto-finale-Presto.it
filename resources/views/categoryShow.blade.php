@@ -1,4 +1,5 @@
 <x-main>
+    <x-messages/>
     <div class="spacer"></div>
     <h1 class="text-center">{{ __('ui.annunci-presenti') }}: {{__("ui.".$category->name)}}</h1>
 
