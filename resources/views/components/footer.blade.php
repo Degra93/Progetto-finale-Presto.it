@@ -73,13 +73,13 @@
                               <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
                               <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
                           </div>
-                        @else
+                        {{-- @else
                             <p class="h1">Ciao Ospite</p>
                             <p class="h3 text-center">Prima di effettuare la richiesta, è necessario accedere o registrarsi.</p>
                             <div class="modal-footer  d-flex justify-content-center m-5">
                               <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
                               <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
-                          </div>
+                          </div> --}}
                         @endif
 
                     </div>

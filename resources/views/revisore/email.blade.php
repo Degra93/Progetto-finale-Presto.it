@@ -18,10 +18,13 @@
     </head>
     <body>
        
-        <p>
-            l'utente {{$user['name']}} ti ha contattato per diventare revisore: Email: {{$user['email']}}
-
-        </p>
+       <h1>
+         l'utente {{$user['name']}} ti ha contattato per diventare revisore: Email: {{$user['email']}}
+       </h1>
+           
+<br>
+<br>
+        
     <h2>Se vuoi renderlo Revisore clicca sotto:</h2>
     <a href="{{route('make.revisor',compact('user'))}}" class="btn btn-danger">Rendi revisore</a>
    
