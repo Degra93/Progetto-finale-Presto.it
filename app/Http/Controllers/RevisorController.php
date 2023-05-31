@@ -36,12 +36,12 @@ class RevisorController extends Controller
     public function askRevisor()
     {
         Mail::to('hr@shopypro.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->back()->with('success', 'Hai chiesto di diventare revisori, attendi conferma!');
+        return redirect()->back()->with('messages', 'Hai chiesto di diventare revisori, attendi conferma!');
     }
 
     public function makeRevisor(User $user)
     {
         Artisan::call('app:make-user-revisor', ['email' => $user->email]);
-        return redirect('/')->with('success', 'Hai reso un utente revisore:');
+        return redirect('/')->with('messages', 'Hai reso un utente revisore:');
     }
 }

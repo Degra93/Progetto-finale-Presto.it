@@ -150,7 +150,7 @@
                         </div>
                         <div class="col-12 pb-2 bgw">
                             <button type="button" class="btn btn-warning rounded-pill">
-                                <h5> {{ $announcement->title }} Makes The Differences </h5>
+                                <span> {{ $announcement->title }} Makes The Differences </span>
                             </button>
                         </div>
 

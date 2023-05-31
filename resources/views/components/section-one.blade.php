@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4" data-aos="fade-right" data-aos-duration="2000">
+            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4">
 
 
                 <div class="card mb-7 rounded-5"
@@ -38,8 +38,7 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 " data-aos="fade-up-right"
-                data-aos-duration="2000">
+            <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
 
 
 
@@ -63,8 +62,7 @@
 
             </div>
 
-            <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" data-aos="flip-right"
-                data-aos-duration="2000">
+            <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4">
 
 
                 <div class="card mb-7 mb-md-0 text-body rounded-5" style="min-height: 400px; ">
@@ -86,8 +84,7 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" data-aos="fade-up-right"
-                data-aos-duration="2000">
+            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column  pt-4" >
 
 
 
@@ -127,9 +124,9 @@
     </div>
     <div class="row g-4">
         @forelse ($announcements as $announcement)
-            <div class="col-lg-12 col-12 " data-aos="fade-down-right" data-aos-duration="2000">
+            <div class="col-lg-12 col-12  "  data-aos="fade-down-right" data-aos-duration="2000" >
 
-                <article class="postcard light yellow text-center bg-annunci-home">
+                <article class="postcard light yellow text-center bg-annunci-home" >
                     <a class="postcard__img_link position-relative" href="#">
                         <img class="postcard__img "
                             src="{{ !$announcement->images()->get()->isEmpty()? $announcement->images()->first()->getUrl(1000, 600): 'https://picsum.photos/600' }}"
@@ -140,15 +137,16 @@
 
                       <a href="" class=" btn-warning rounded py-2 px-4 fw-bold">{{__('ui.prezzo')}}:{{$announcement->price}} €</a>
                   </div>
-                  <h5 class="mb-0">{{$announcement->title}}</h5>
+                  <h5 class="mb-0 py-2">{{$announcement->title}}</h5>
                   <div class="postcard__subtitle small">
                       <p class="card-footer">{{__('ui.pubblicato')}}: {{$announcement->created_at->format('d/m/Y')}} {{__('ui.autore')}}: {{$announcement->user->name}}</p>
                   </div>
-                  <div class="postcard__bar"></div>
-                  <p class="text-body mb-3 overflow-y-hidden">{{$announcement->body}}</p>
-                  <div class="d-flex justify-content-between">
-                      <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center" href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
-                      <a class=" btn-dark rounded py-2 px-4 fw-bold" href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{__("ui.".$announcement->category->name)}}</a>
+                  <div class="grande pb-5">
+                  <p class="text-body mb-3 roll">{{$announcement->body}}</p>
+                </div>
+                  <div class="d-flex justify-content-between pt-3">
+                      <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center " href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
+                      <a class=" btn-dark rounded py-2 px-4 fw-bold " href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{__("ui.".$announcement->category->name)}}</a>
 
                         </div>
                     </div>

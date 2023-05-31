@@ -6,12 +6,26 @@
             <p>{{__('ui.chi-siamo')}}</p>
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
-
+            @if (Auth::check() && Auth::user()->is_revisor)
+            
+            <h2>Ciao {{ Auth::user()->name }}</h2>
+            @elseif (Auth::check())
             <h5>{{__('ui.vuoi')}}</h5>
             <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#footerModal">
               {{__('ui.diventa')}}
             </button>
+
+            @else
+
+            <h2>Registrati o Effettua il Login</h2>
+            <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2"><a class="nav-link" href="{{ route('register') }}">{{__('ui.registrati')}}</a></button>
+            <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2"><a class="nav-link" href="{{ route('login') }}">{{__('ui.log-button')}}</a></button>
+          
+            @endif
+
           </div>
+
+          
         </div>
         <div class="col-md-4 mt-2 text-center">
           <h5>{{__('ui.contatti')}}</h5>
@@ -50,20 +64,26 @@
                     <div class="modal-body d-flex flex-column  align-items-center align-self-center text-black ">
 
                         <i class="fa-solid fa-door-open fa-5x mb-4"></i>
+                        
                         @if(Auth::check())
                             <p class="h1">Ciao {{ Auth::user()->name }}</p>
                             <p class="h3">la tua email è:{{ Auth::user()->email }}</p>
                             <p class="h3">Vuoi diventare un revisore?</p>
-                        @else
+                            <div class="modal-footer  d-flex justify-content-center m-5">
+                              <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
+                              <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                          </div>
+                        {{-- @else
                             <p class="h1">Ciao Ospite</p>
                             <p class="h3 text-center">Prima di effettuare la richiesta, è necessario accedere o registrarsi.</p>
+                            <div class="modal-footer  d-flex justify-content-center m-5">
+                              <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
+                              <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                          </div> --}}
                         @endif
 
                     </div>
-                    <div class="modal-footer  d-flex justify-content-center m-5">
-                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
-                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
-                    </div>
+                    
                 </div>
             </div>
         </div>

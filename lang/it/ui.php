@@ -166,7 +166,9 @@ return [
 
     // ANNOUNCEMENT SHOW
 
+    // Richiesta di essere Revisore
 
+    'messages'=> 'Hai chiesto di diventare revisori, attendi conferma!',
 
 
 
