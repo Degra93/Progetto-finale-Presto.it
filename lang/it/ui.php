@@ -161,7 +161,7 @@ return [
     'descrizione' => 'Descrizione',
 
     'hai-finito' => 'Hai finito di modificare gli annunci.',
-    'techiche'=>'techiche',
+    'techiche'=>'Techiche',
     'extra'=>'Extra'
 
     // ANNOUNCEMENT SHOW

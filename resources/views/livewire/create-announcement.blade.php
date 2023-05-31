@@ -39,14 +39,14 @@
                     <textarea class="form-control @error('body') is-invalid @enderror" wire:model.lazy="body" rows="2">{{ old('body') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="techiche">{{ __('ui.testo') }}</label>
+                    <label class="my-1 me-3" for="techiche">{{ __('ui.techiche') }}</label>
                     @error('techiche')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
                     <textarea class="form-control @error('techiche') is-invalid @enderror" wire:model.lazy="techiche" rows="2">{{ old('techiche') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="extra">{{ __('ui.testo') }}</label>
+                    <label class="my-1 me-3" for="extra">{{ __('ui.extra') }}</label>
                     @error('extra')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
@@ -77,13 +77,13 @@
 
 
 
-                <div class="pt-1  text-center">
+                <div class="pt-1  text-center d-flex justify-content-center">
                     <div class="d-flex justify-content-center">
-                        <button class="btn-hover btn btn-warning btn-sm py-2 px-2 d-block mb-3"
+                        <button class="btn-hover btn btn-warning btn-sm py-2 px-2 mx-2 d-block "
                             type="submit">{{ __('ui.crea') }}</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button class="btn-hover btn btn-danger btn-sm py-2 px-3 d-block"
+                        <button class="btn-hover btn btn-danger btn-sm  py-2 px-2 d-block mx-2"
                             type="reset">{{ __('ui.azzera') }}</button>
                     </div>
                 </div>

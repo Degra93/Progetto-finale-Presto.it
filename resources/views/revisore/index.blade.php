@@ -183,11 +183,11 @@
 
                                             </div>
                                                 <div class="col-md-7  mx-auto align-self-center ">
-                                                    <h3 class=""><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
+                                                    <h3 class="class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
                                                     <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.descrizione')}}:</span> {{$announceToCheck->body}}</p>
                                                     <p class=""><span class=" heading-font">{{__('ui.prezzo')}}:</span> {{$announceToCheck->price}} €</p>
-                                                    <p class=""><span class=" heading-font">{{__('ui.techiche')}}:</span> {{$announceToCheck->techiche}}</p>
-                                                    <p class=""><span class=" heading-font">{{__('ui.extra')}}:</span> {{$announceToCheck->extra}}</p>
+                                                    <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.techiche')}}:</span> {{$announceToCheck->techiche}}</p>
+                                                    <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.extra')}}:</span> {{$announceToCheck->extra}}</p>
 
 
 
