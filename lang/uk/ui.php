@@ -161,10 +161,43 @@ return[
     'descrizione'=>'опис',
 
     'hai-finito'=>'Ви закінчили редагувати оголошення',
+
     'techiche'=>'Технічні харакетеристики',
-    'extra'=>'Екстра'
 
+    'extra'=>'Екстра',
 
+    // ANNOUNCEMENT SHOW
+
+    // Richiesta di essere Revisore
+
+    'messages'=> 'Ви попросили стати рецензентом, чекайте підтвердження!',
+
+     // DETTAGLI ANNUNCIO 
+
+    'tempi'=>'Термін доставки: 3-5 днів',
+
+    'pronta'=>'Швидка доставка за адресою: адресою,  доставка  E',
+
+    'iva'=>'З ПДВ',
+
+    'disponibilita'=>'Доступність',
+
+    'blu'=>'блакитний',
+
+    'grigio'=>'сірий',
+
+    'giallo'=>'жовтий',
+
+    'azzurro'=>'блакитне небо',
+
+    'inserisci-quanti'=>'Вставте скільки частин ви хочете:',
+
+    'aggiungi-al-carrello'=>'Додати в кошик',
+
+    'carat-tecniche'=>'Технічні особливості',
+
+    'carat-extra'=>'Додаткові функції',
+    
 
 
 

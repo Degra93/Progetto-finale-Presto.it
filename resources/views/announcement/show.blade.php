@@ -57,36 +57,35 @@
                             {{-- Titolo --}}
                             <h2>{{ $announcement->title }}</h2>
 
-                            <h6 class="pt-2"><i class="fa-solid fa-truck"></i> Tempi di spedizione: 3-5 giorni </h6>
+                            <h6 class="pt-2"><i class="fa-solid fa-truck"></i> {{__('ui.tempi')}} </h6>
 
-                            <h6 class=><i class="fa-solid fa-truck"></i> Pronta consegna presso: Atrio Cues, Edificio E
-                            </h6>
+                            <h6 class=><i class="fa-solid fa-truck"></i>{{__('ui.pronta')}}</h6>
 
                         </div>
                         <div class="col-3">
-                            <h1>{{ $announcement->price }}</h1>
-                            <span>Iva inclusa</span>
+                            <h1>{{ $announcement->price }}€</h1>
+                            <span>{{__('ui.iva')}}</span>
                         </div>
                         <div class="col-12">
                             <div class="handle_options__u6xgU">
                                 <hr>
-                                <p>disponibile in
+                                <p>{{__('ui.disponibilita')}}
                                     <!-- -->:
                                 </p>
                             </div>
                         </div>
                         <div class="col-12 p-2">
                             <button type="button" class="btn btn-primary rounded-pill">
-                                <h5>Blue</h5>
+                                <h5>{{__('ui.blu')}}</h5>
                             </button>
                             <button type="button" class="btn btn-secondary rounded-pill">
-                                <h5>Grigio</h5>
+                                <h5>{{__('ui.grigio')}}</h5>
                             </button>
                             <button type="button" class="btn btn-warning rounded-pill">
-                                <h5>Giallo</h5>
+                                <h5>{{__('ui.giallo')}}</h5>
                             </button>
                             <button type="button" class="btn btn-info rounded-pill">
-                                <h5>Blue</h5>
+                                <h5>{{__('ui.azzurro')}}</h5>
                             </button>
 
                         </div>
@@ -94,13 +93,13 @@
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="quantita">Inserisci quanti pezzi vorresti</label>
+                                    <label for="quantita">{{__('ui.inserisci-quanti')}}</label>
                                     <input type="number" name="quantita" placeholder="1"
                                         class="form-control form-control-lg">
                                 </div>
                                 <div class="col-12 py-3">
                                     <button type="button" class="btn btn-secondary rounded-pill">
-                                        <h5> Aggiungi al carrello </h5>
+                                        <h5> {{__('ui.aggiungi-al-carrello')}} </h5>
                                     </button>
                                 </div>
                             </div>
@@ -109,7 +108,7 @@
 
                         <div class="col-12 bgw pt-5">
                             <ul>
-                                <h2>Caratteristiche Tecniche:</h2>
+                                <h2>{{__('ui.carat-tecniche')}}:</h2>
                                 <span>{{ $announcement->techiche }}</span>
 
 
@@ -132,7 +131,7 @@
                         </div>
                         <div class="col-12 bgw pt-5">
                             <ul>
-                                <h2>Caratteristiche EXTRA:</h2>
+                                <h2>{{__('ui.carat-extra')}}:</h2>
                                 <li>
                                     <span> {{ $announcement->extra}} </span>
                                 </li>
@@ -143,16 +142,16 @@
                         <div class="pt-5">
                             <a href="{{ route('categoryShow', ['category' => $announcement->category]) }}"
                                 class=" btn btn-warning rounded-pill my-2 " type="button">
-                                <h5>Categoria: {{ $announcement->category->name }}</h5>
+                                <h5>{{__('ui.categoria')}}: {{ __('ui.' . $announcement->category->name) }}</h5>
                             </a><br>
-                            <p class="card-footer">Pubblicato il: {{ $announcement->created_at->format('d/m/Y') }}
-                                Autore: {{ $announcement->user->name }}</p>
+                            <p class="card-footer">{{__('ui.pubblicato')}}: {{ $announcement->created_at->format('d/m/Y') }}
+                                {{__('ui.autore')}}: {{ $announcement->user->name }}</p>
                         </div>
-                        <div class="col-12 pb-2 bgw">
+                        {{-- <div class="col-12 pb-2 bgw">
                             <button type="button" class="btn btn-warning rounded-pill">
                                 <span> {{ $announcement->title }} Makes The Differences </span>
                             </button>
-                        </div>
+                        </div> --}}
 
 
                     </div>

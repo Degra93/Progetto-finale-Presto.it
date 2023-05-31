@@ -161,7 +161,9 @@ return [
     'descrizione' => 'Descrizione',
 
     'hai-finito' => 'Hai finito di modificare gli annunci.',
+
     'techiche'=>'techiche',
+
     'extra'=>'Extra',
 
     // ANNOUNCEMENT SHOW
@@ -169,6 +171,34 @@ return [
     // Richiesta di essere Revisore
 
     'messages'=> 'Hai chiesto di diventare revisori, attendi conferma!',
+
+    // DETTAGLI ANNUNCIO 
+
+    'tempi'=>'Tempi di spedizione: 3-5 giorni',
+
+    'pronta'=>'Pronta consegna presso: Atrio Cues, Edificio E',
+
+    'iva'=>'IVA INCLUSA',
+
+    'disponibilita'=>'Disponibilità',
+
+    'blu'=>'blu',
+
+    'grigio'=>'grigio',
+
+    'giallo'=>'giallo',
+
+    'azzurro'=>'azzurro',
+
+    'inserisci-quanti'=>'Inserisci quanti pezzi vorresti:',
+    
+    'aggiungi-al-carrello'=>'Aggiungi al carrello',
+
+    'carat-tecniche'=>'Caratteristiche Tecniche',
+
+    'carat-extra'=>'Caratteristiche Extra',
+
+
 
 
 

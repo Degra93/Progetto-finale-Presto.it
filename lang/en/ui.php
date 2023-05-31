@@ -161,9 +161,42 @@ return[
     'descrizione'=>'Description',
 
     'hai-finito'=>'You are done editing ads',
-    'techiche'=>'Techniques',
-    'extra'=>'Extra'
 
+    'techiche'=>'Techniques',
+
+    'extra'=>'Extra',
+
+     // ANNOUNCEMENT SHOW
+
+     // Richiesta di essere Revisore
+
+     'messages'=> 'You have asked to become a reviewer, wait for confirmation!',
+
+     // DETTAGLI ANNUNCIO 
+
+     'tempi'=>'Shipping time: 3-5 days',
+
+     'pronta'=>'Prompt delivery at: Atrio Cues, Building E',
+
+     'iva'=>'VAT INCLUDED',
+
+     'disponibilita'=>'Availability',
+
+     'blu'=>'blue',
+
+     'grigio'=>'grey',
+
+     'giallo'=>'yellow',
+
+     'azzurro'=>'sky blue',
+
+     'inserisci-quanti'=>'Insert how many pieces you would like:',
+
+     'aggiungi-al-carrello'=>'Add to Cart',
+
+     'carat-tecniche'=>'Technical Features',
+
+    'carat-extra'=>'Extra Features',
 
 
 ];
