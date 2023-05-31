@@ -568,3 +568,14 @@ section.hero {
     background-position: center center;
     background-size: cover;
 }
+
+.roll{
+    max-height: 100px;
+    overflow-y: auto;
+    
+}
+
+.grande{
+    height: 90px;
+    
+}
