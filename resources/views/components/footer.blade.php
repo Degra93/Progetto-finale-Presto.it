@@ -5,10 +5,10 @@
           <div class="pr-xl-4 text-center">
             <p>{{__('ui.chi-siamo')}}</p>
             <!-- Rights-->
-            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>ShopyPro - </span><span>{{__('ui.diritti')}}</span></p>
             @if (Auth::check() && Auth::user()->is_revisor)
             
-            <h2>Ciao {{ Auth::user()->name }}</h2>
+            <h2>{{__('ui.ciao')}} {{ Auth::user()->name }}</h2>
             @elseif (Auth::check())
             <h5>{{__('ui.vuoi')}}</h5>
             <button type="button" class="btn btn-primary btn-hover btn btn-danger" data-bs-toggle="modal" data-bs-target="#footerModal">
@@ -39,7 +39,7 @@
           </dl>
           <dl class="contact-list">
             <dt>{{__('ui.telefono')}}</dt>
-            <dd><a href="tel:#">3312349806</a> <span>or</span> <a href="tel:#">08711009876</a>
+            <dd><a href="tel:#">3312349806</a> <span>-</span> <a href="tel:#">08711009876</a>
             </dd>
           </dl>
         </div>
@@ -66,12 +66,12 @@
                         <i class="fa-solid fa-door-open fa-5x mb-4"></i>
                         
                         @if(Auth::check())
-                            <p class="h1">Ciao {{ Auth::user()->name }}</p>
-                            <p class="h3">la tua email è:{{ Auth::user()->email }}</p>
-                            <p class="h3">Vuoi diventare un revisore?</p>
+                            <p class="h1">{{__('ui.ciao')}} {{ Auth::user()->name }}</p>
+                            <p class="h3">{{__('ui.la-tua')}} {{ Auth::user()->email }}</p>
+                            <p class="h3">{{__('ui.vuoi')}}</p>
                             <div class="modal-footer  d-flex justify-content-center m-5">
-                              <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">Si</a></button>
-                              <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                              <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal"><a href="{{route('ask.revisor')}}">{{__('ui.si')}}</a></button>
+                              <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.no')}}</button>
                           </div>
                         {{-- @else
                             <p class="h1">Ciao Ospite</p>

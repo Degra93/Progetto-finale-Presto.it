@@ -38,14 +38,14 @@
                     <textarea class="form-control @error('body') is-invalid @enderror" wire:model.lazy="body" rows="2">{{ old('body') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="techiche">{{ __('ui.techiche') }}</label>
+                    <label class="my-1 me-3" for="techiche">{{ __('ui.carat-tecniche') }}</label>
                     @error('techiche')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror
                     <textarea class="form-control @error('techiche') is-invalid @enderror" wire:model.lazy="techiche" rows="2">{{ old('techiche') }}</textarea>
                 </div>
                 <div class="mb-2">
-                    <label class="my-1 me-3" for="extra">{{ __('ui.extra') }}</label>
+                    <label class="my-1 me-3" for="extra">{{ __('ui.carat-extra') }}</label>
                     @error('extra')
                         <span class="small text-danger">{{ $message }}</span>
                     @enderror

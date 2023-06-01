@@ -76,7 +76,7 @@
                                 @if (Auth::check() && Auth::user()->is_revisor)
                                 <div class="d-flex justify-content-end pt-3">
                                     
-                                    <button class="btn btn-sm btn-danger ms-2" data-bs-toggle="modal" data-bs-target="#deletaModal">Deleta</button>
+                                    <button class="btn btn-sm btn-danger ms-2" data-bs-toggle="modal" data-bs-target="#deletaModal">{{__('ui.cancella')}}</button>
                                     
                                 </div>
                                 
@@ -97,13 +97,13 @@
                                     
                                     <i class="fa-solid fa-door-open fa-5x mb-4"></i>
                                     
-                                    <div class="modal-footer  d-flex justify-content-center m-5">
+                                    <div class="modal-footer text-center  d-flex justify-content-center m-5">
                                         <form action="{{ route('delete', $announcement) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')
-                                            <p class="h3">Sicuro?</p>
-                                            <button type="submit" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal">Si</button>
-                                            <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                                            <p class="h3">{{__('ui.sicuro')}}</p>
+                                            <button type="submit" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.si')}}</button>
+                                            <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.no')}}</button>
                                         </form> 
                                     </div>
                                     

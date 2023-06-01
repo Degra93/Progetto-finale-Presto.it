@@ -34,6 +34,8 @@ return [
 
     'logout'=>'Logout',
 
+    'lingue'=>'Lingue',
+
     // SECTION
 
     'cambia' => 'Cambia il tuo business in meglio',
@@ -74,7 +76,9 @@ return [
 
     // FOOTER
 
-   'regi-o-log'=> 'Зареєструватися або увійти',
+    'diritti'=>'Tutti i diritti riservati',
+
+   'regi-o-log'=> 'Registrati o effettua il Login',
 
     'chi-siamo' => 'Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!',
 
@@ -96,7 +100,7 @@ return [
 
     'preview'=>'Anteprima',
 
-    'successo' => 'Annuncio creato con successo',
+    'successo' => 'Annuncio creato con successo, in attesa di revisione',
 
     'successo2'=>'Annuncio Deletato',
 
@@ -165,14 +169,20 @@ return [
     'descrizione' => 'Descrizione',
 
     'hai-finito' => 'Hai finito di modificare gli annunci.',
-    'techiche'=>'Techiche',
+
+    'techiche'=>'Tecniche',
+
     'extra'=>'Extra',
+
+    'ciao'=>'Ciao',
+
+    'la-tua'=>'la tua e-mail e:',
 
     // ANNOUNCEMENT SHOW
 
     // Richiesta di essere Revisore
 
-    'messages'=> 'Hai chiesto di diventare revisori, attendi conferma!',
+    'messages'=> 'Hai chiesto di diventare revisore, attendi conferma!',
 
     // DETTAGLI ANNUNCIO 
 
@@ -199,6 +209,18 @@ return [
     'carat-tecniche'=>'Caratteristiche Tecniche',
 
     'carat-extra'=>'Caratteristiche Extra',
+
+    'cancella'=>'Cancella',
+
+    'sicuro'=>'Sicuro di voler eliminare questo annuncio?',
+
+    'si'=>'Si',
+
+    'no'=>'No',
+
+    // ANNOUNCEMENT INDEX 
+
+    'non-ci-sono'=>'Non ci sono annunci nella ricerca',
 
 
 

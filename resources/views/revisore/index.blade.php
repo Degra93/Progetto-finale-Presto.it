@@ -183,7 +183,7 @@
 
                                             </div>
                                                 <div class="col-md-7  mx-auto align-self-center ">
-                                                    <h3 class="class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
+                                                    <h3 class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.titolo')}}:</span> {{$announceToCheck->title}}</h3>
                                                     <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.descrizione')}}:</span> {{$announceToCheck->body}}</p>
                                                     <p class=""><span class=" heading-font">{{__('ui.prezzo')}}:</span> {{$announceToCheck->price}} €</p>
                                                     <p class="custom-paragraph" style="overflow-wrap: break-word;"><span class=" heading-font">{{__('ui.techiche')}}:</span> {{$announceToCheck->techiche}}</p>
@@ -287,7 +287,7 @@
             </div>
         </div>
         <!-------------------------- Modals rifuta ----------------------------------------------->
-        <div class="modal " fade" id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal " id="rifiuta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content modal-color my-form">
                     <div class="modal-header">
@@ -298,8 +298,8 @@
                         <p class="h1 text-center">Sei sicuro?</p>
                     </div>
                     <div class="modal-footer d-flex justify-content-center m-5">
-                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="rifuta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="rifuta()">{{__('ui.si')}}</button>
+                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.no')}}</button>
                     </div>
                 </div>
             </div>

@@ -55,7 +55,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Lingue
+                            {{__('ui.lingue')}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-center">
 
@@ -161,7 +161,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Lingue
+                            {{__('ui.lingue')}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end text-center">
 
@@ -203,7 +203,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Lingue
+                        {{__('ui.lingue')}}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end text-center">
 

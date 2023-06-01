@@ -34,6 +34,8 @@ return[
 
     'logout'=>'Logout',
 
+    'lingue'=>'Languages',
+
     // SECTION
 
     'cambia'=>'Change your business for the better',
@@ -74,6 +76,8 @@ return[
 
     // FOOTER
 
+    'diritti'=>'All Rights Reserved',
+
     'regi-o-log'=> 'Register or Login',
 
     'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
@@ -96,7 +100,7 @@ return[
 
     'preview'=>'Preview',
 
-    'successo'=>'Ad created successfully',
+    'successo'=>'Ad created successfully, awaiting review',
 
     'successo2'=>'Ad Deleted',
 
@@ -170,6 +174,10 @@ return[
 
     'extra'=>'Extra',
 
+    'ciao'=>'Hello',
+
+    'la-tua'=>'your email is:',
+
      // ANNOUNCEMENT SHOW
 
      // Richiesta di essere Revisore
@@ -201,6 +209,18 @@ return[
      'carat-tecniche'=>'Technical Features',
 
     'carat-extra'=>'Extra Features',
+
+    'cancella'=>'Delete',
+
+    'sicuro'=>'Are you sure you want to delete this ad?',
+
+    'si'=>'Yes',
+
+    'no'=>'No',
+
+    // ANNOUNCEMENT INDEX 
+
+    'non-ci-sono'=>'There are no ads in the search',
 
 
 ];
