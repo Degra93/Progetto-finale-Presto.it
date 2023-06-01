@@ -17,7 +17,7 @@
 
             @else
 
-            <h2>Registrati o Effettua il Login</h2>
+            <h2>{{__('ui.regi-o-log')}}</h2>
             <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2"><a class="nav-link" href="{{ route('register') }}">{{__('ui.registrati')}}</a></button>
             <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2"><a class="nav-link" href="{{ route('login') }}">{{__('ui.log-button')}}</a></button>
           
@@ -46,7 +46,7 @@
         <div class="col-md-4 col-xl-3 mt-2 text-center">
           <h5>Links</h5>
          <ul> {{-- class="nav-list"> --}}
-            <li class="mt-2"><a href="{{ route('homepage') }}">Home</a></li>
+            <li class="mt-2"><a href="{{ route('homepage') }}">{{__('ui.home')}}</a></li>
             <li class="mt-2"><a href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>
           </ul>
         </div>

@@ -74,6 +74,8 @@ return[
 
     // FOOTER
 
+    'regi-o-log'=> 'Register or Login',
+
     'chi-siamo'=>'We are an agency that will solve all your problems with a simple click!!',
 
     'vuoi'=>'Do you want to work with us?',

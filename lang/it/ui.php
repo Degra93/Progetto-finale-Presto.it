@@ -74,6 +74,8 @@ return [
 
     // FOOTER
 
+   'regi-o-log'=> 'Зареєструватися або увійти',
+
     'chi-siamo' => 'Siamo un agenzia che risolverà ogni tuo problema con un semplice click!!',
 
     'vuoi' => 'Vuoi lavorare con noi?',
