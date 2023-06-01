@@ -96,6 +96,8 @@ return[
 
     'telefono'=>'Телефон',
 
+    'links'=>'посилання',
+
     // CREA ANNUNCIO
 
     'preview'=>'Попередній перегляд',
@@ -177,6 +179,20 @@ return[
     'ciao'=>'ПРИВІТ',
 
     'la-tua'=>'ваша електронна адреса:',
+
+    'adulti'=>'дорослі',
+
+   'satira'=>'Сатира', 
+
+    'medicina'=>'Ліки',
+
+    'violenza'=>'Насильство',
+
+    'contenuto-offensivo'=>'Образливий вміст' ,
+
+    'revisione-imm'=>'Огляд зображення',
+
+    'tags'=>'Теги',
 
 
     // ANNOUNCEMENT SHOW

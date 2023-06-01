@@ -20,7 +20,7 @@ return[
 
     'Moto'=>'Motorcycle',
 
-    'Sport'=>'sport',
+    'Sport'=>'Sport',
 
     'Libri'=>'Bookshelf',
 
@@ -95,6 +95,8 @@ return[
     'indirizzo'=>'Address',
 
     'telefono'=>'Telephone',
+
+    'links'=>'Links',
 
     // CREA ANNUNCIO
 
@@ -177,6 +179,20 @@ return[
     'ciao'=>'Hello',
 
     'la-tua'=>'your email is:',
+
+    'adulti'=>'Adults',
+
+   'satira'=>'Satire', 
+
+    'medicina'=>'Medicine',
+
+    'violenza'=>'Violence',
+
+    'contenuto-offensivo'=>'Offensive content' ,
+
+    'revisione-imm'=>'Image review',
+
+    'tags'=>'Tags',
 
      // ANNOUNCEMENT SHOW
 

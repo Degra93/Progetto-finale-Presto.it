@@ -44,7 +44,7 @@
           </dl>
         </div>
         <div class="col-md-4 col-xl-3 mt-2 text-center">
-          <h5>Links</h5>
+          <h5>{{__('ui.links')}}</h5>
          <ul> {{-- class="nav-list"> --}}
             <li class="mt-2"><a href="{{ route('homepage') }}">{{__('ui.home')}}</a></li>
             <li class="mt-2"><a href="{{ route('announcement.index') }}">{{__('ui.annunci')}}</a></li>

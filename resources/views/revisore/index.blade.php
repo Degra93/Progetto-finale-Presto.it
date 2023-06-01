@@ -214,7 +214,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-6">
-                                                <h3>Tags</h3>
+                                                <h3>{{__('ui.tags')}}</h3>
                                                 <div class="p-2">
                                                     @if ($image->labels)
                                                         @foreach ($image->labels as $label)
@@ -224,13 +224,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-6 col-md-6">
-                                                <h3>Revisione immagini</h3>
+                                                <h3>{{__('ui.revisione-imm')}}</h3>
                                                 <div class="card-body">
-                                                    <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                                                    <p>Satira: <span class="{{$image->spoof}}"></span></p>
-                                                    <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                                                    <p>Violenza: <span class="{{$image->violence}}"></span></p>
-                                                    <p>Contenuto offensivo: <span class="{{$image->racy}}"></span></p>
+                                                    <p>{{__('ui.adulti')}}: <span class="{{$image->adult}}"></span></p>
+                                                    <p>{{__('ui.satira')}}: <span class="{{$image->spoof}}"></span></p>
+                                                    <p>{{__('ui.medicina')}}: <span class="{{$image->medical}}"></span></p>
+                                                    <p>{{__('ui.violenza')}}: <span class="{{$image->violence}}"></span></p>
+                                                    <p>{{__('ui.contenuto-offensivo')}}: <span class="{{$image->racy}}"></span></p>
                                                 </div>
                                             </div>
 

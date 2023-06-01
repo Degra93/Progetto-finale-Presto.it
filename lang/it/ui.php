@@ -96,6 +96,8 @@ return [
 
     'telefono' => 'telefono',
 
+    'links'=>'Links',
+
     // CREA ANNUNCIO
 
     'preview'=>'Anteprima',
@@ -177,6 +179,20 @@ return [
     'ciao'=>'Ciao',
 
     'la-tua'=>'la tua e-mail e:',
+
+    'adulti'=>'Adulti',
+
+   'satira'=>'Satira', 
+
+    'medicina'=>'Medicina',
+
+    'violenza'=>'Violenza',
+
+    'contenuto-offensivo'=>'Contenuto offensivo' ,
+
+    'revisione-imm'=>'Revisione immagini',
+
+    'tags'=>'Tags',
 
     // ANNOUNCEMENT SHOW
 
