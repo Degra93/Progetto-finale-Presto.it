@@ -96,6 +96,8 @@ return [
 
     'successo' => 'Annuncio creato con successo',
 
+    'successo2'=>'Annuncio Deletato',
+
     'crea-ann' => 'CREA UN NUOVO ANNUNCIO',
 
     'titolo' => 'Titolo',

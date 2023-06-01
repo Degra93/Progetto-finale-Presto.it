@@ -96,6 +96,8 @@ return[
 
     'successo'=>'Ad created successfully',
 
+    'successo2'=>'Ad Deleted',
+
     'crea-ann'=>'CREATE A NEW ANNUNCE',
 
     'titolo'=>'Title',
