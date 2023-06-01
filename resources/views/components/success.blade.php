@@ -10,4 +10,12 @@
         {{ __('ui.successo') }}
         {{-- {{ session('success') }} --}}
     </div>
+
+    @elseif (session()->has('success2'))
+    <div class="spacer"></div>
+    <div class="alert alert-success ">
+        {{ __('ui.successo2') }}
+        {{-- {{ session('success') }} --}}
+    </div>
+
 @endif

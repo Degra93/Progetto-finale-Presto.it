@@ -35,4 +35,12 @@ class PageController extends Controller
         session()->put('locale',$lang);
         return redirect()->back();
     }
+
+    public function destroy(Announcement $announcement)
+    {
+        
+        $announcement->delete();
+        
+        return redirect('/')->with(['success2'=>'Annuncio ELIMINATA correttamente']);
+    }
 }

@@ -200,6 +200,22 @@ ol {
     background-size: auto;
     opacity: 0.8;
 }
+.card-copy{
+    font-size: 0.5rem;
+    font-weight: lighter;
+}
+.card-copy:hover {
+
+    transform: translateY(0px) scale(0.9) translateZ(0);
+    transition: all 0.7s;
+  }
+.card-copy:hover .overlay {
+
+
+    transform: scale(1.5) translateZ(0);
+    transition: all 0.7s;
+
+}
 
 /* navbar */
 a {
@@ -368,21 +384,21 @@ section.hero {
 .text-label {
     color: var(--primary-light);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 31px;
 }
 
 .text-hero-bold {
     color: var(--dark-brown);
-    font-size: 64px;
-    font-weight: 900;
+    font-size: 80px;
+    font-weight: 700;
     line-height: 74px;
 }
 
 .text-hero-regular {
     color: var(--gray-1);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
@@ -399,23 +415,7 @@ section.hero {
     }
 
 }
-.card-copy{
 
-
-    font-size: xx-small;
-}
-.card-copy:hover {
-
-    transform: translateY(-5px) scale(0.9) translateZ(0);
-    transition: all 0.7s;
-  }
-.card-copy:hover .overlay {
-
-
-    transform: scale(2) translateZ(0);
-    transition: all 0.7s;
-
-  }
 
 
 /* qui parte le classi delle card */

@@ -42,6 +42,6 @@ class RevisorController extends Controller
     public function makeRevisor(User $user)
     {
         Artisan::call('app:make-user-revisor', ['email' => $user->email]);
-        return redirect('/')->with('messages', 'Hai reso un utente revisore:');
+        // return redirect('/')->with('messages', 'Hai reso un utente revisore:');
     }
 }

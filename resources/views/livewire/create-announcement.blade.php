@@ -2,9 +2,8 @@
     <div class="col-12 col-md-6">
         <div class="container py-4">
             <x-success />
-            @if(session()->has('success'))
-
-            @endif
+            <x-messages/>
+            
             <h3 class="fw-normal text-center mt-5 ">{{ __('ui.crea-ann') }}</h3>
             <form wire:submit.prevent="store" enctype="multipart/form-data">
                 @csrf

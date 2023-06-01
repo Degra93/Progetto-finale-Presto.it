@@ -152,8 +152,41 @@
                                 <span> {{ $announcement->title }} Makes The Differences </span>
                             </button>
                         </div> --}}
-
-
+                        @if (Auth::check() && Auth::user()->is_revisor)
+                        <div class="d-flex justify-content-end pb-3">
+                            
+                            <button class="btn btn-sm btn-danger ms-2" data-bs-toggle="modal" data-bs-target="#deletaModal">Deleta</button>
+                            
+                        </div>
+                        
+                        @endif
+{{-- Modale --}}
+<div class="modal fade" id="deletaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content modal-color my-form">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column  align-items-center align-self-center text-black ">
+                
+                <i class="fa-solid fa-door-open fa-5x mb-4"></i>
+                
+                <div class="modal-footer  d-flex justify-content-center m-5">
+                    <form action="{{ route('delete', $announcement) }}" method="POST" class="d-inline">
+                        @csrf
+                        @method('DELETE')
+                        <p class="h3">Sicuro?</p>
+                        <button type="submit" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal">Si</button>
+                        <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">No</button>
+                    </form> 
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
                     </div>
                 </div>
             </div>

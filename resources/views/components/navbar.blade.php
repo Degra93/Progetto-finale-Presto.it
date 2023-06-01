@@ -71,7 +71,7 @@
                             </li>
 
                         </ul>
-                      </li>
+                    </li>
                 </ul>
 
 
@@ -201,16 +201,26 @@
                         </form>
                     </ul>
                 </li>
-                <li>
-                    <x-locale lang="it" nation="it"/>
-                </li>
-                <li>
-                    <x-locale lang="en" nation="en"/>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lingue
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-center">
 
-                <li>
-                    <x-locale lang="uk" nation="uk"/>
+                        <li>
+                            <a class="dropdown-item"><x-locale lang="it" nation="it"/></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"><x-locale lang="en" nation="en"/></a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"><x-locale lang="uk" nation="uk"/></a>
+                        </li>
+
+                    </ul>
                 </li>
+            </ul>
             </ul>
             @endguest
             @endif

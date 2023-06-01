@@ -48,3 +48,6 @@ Route::get('/search/annuncio',[PageController::class, 'searchAnnounces'])->name(
 
 //Set linguaggio
 Route::post('/lingua/{lang}',[PageController::class, 'setLocale'])->name('setLocale');
+
+//Delete announce
+Route::delete('/delete/{announcement}',[PageController::class, 'destroy'])->name('delete')->middleware('auth');
