@@ -193,27 +193,36 @@ ol {
 }
 
 /* slider */
-.card-body-bg-img {
-    background-image: url('https://picsum.photos/1000/1100');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    opacity: 0.8;
-}
+
 .card-copy{
-    font-size: 0.5rem;
-    font-weight: lighter;
+    background: linear-gradient(135deg, #fce38a, #f38181);
+    opacity: 0.9;
+    backdrop-filter: blur(30px);
+    border: 3px solid rgba(255, 255, 255, 0.399);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
 }
-.card-copy:hover {
+.neon-text{
+    color: rgb(172, 19, 19);
+    transform: translateZ(20px);
+}
+
+/* .card-copy:hover {
 
     transform: translateY(0px) scale(0.9) translateZ(0);
     transition: all 0.7s;
-  }
+  } */
 .card-copy:hover .overlay {
 
-
-    transform: scale(1.5) translateZ(0);
-    transition: all 0.7s;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff, 0 0 15px #fff,
+    0 0 20px #fff, 0 0 25px #fff,
+    0 0 30px #ff852e, 0 0 35px #ff852e, 0 0 40px #ff852e
+     ;
+    /* transform: scale(1.5) translateZ(0);
+    transition: all 0.7s; */
 
 }
 
@@ -572,10 +581,11 @@ section.hero {
 .roll{
     max-height: 100px;
     overflow-y: auto;
-    
+
 }
 
 .grande{
     height: 90px;
-    
+
 }
+

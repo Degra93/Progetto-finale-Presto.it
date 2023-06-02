@@ -4,7 +4,7 @@
         <div class="container-fluid ">
             <a class="navbar-brand ms-2" href="{{ route('homepage') }}">
                 <img class="bg-warning" src="{{ URL::asset('img/icons8-cash-app-150.png') }}" alt="" height="40">
-                <a class="nav-link fw-bold fs-4" href="#">ShopyPro</a>
+                <a class="nav-link fw-bold fs-4 text-black" href="#">ShopyPro</a>
             </a>
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -19,6 +19,7 @@ lang="{{ str_replace('_', '-', app()->getLocale()) }}">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
@@ -40,5 +41,6 @@ lang="{{ str_replace('_', '-', app()->getLocale()) }}">
             </div>
         <x-footer/>
     @livewireScripts
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
     </body>
 </html>

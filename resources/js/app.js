@@ -1,6 +1,7 @@
 import 'bootstrap';
 import 'animate.css';
 AOS.init();
+import 'vanilla-tilt';
 
 
 //   navbar
@@ -35,7 +36,7 @@ const splide = new Splide( '#first-slider', {
 splide.mount( { AutoScroll } );
 //             new Splide("#second-slider").mount();
 var splide2 = new Splide( '#second-slider' );
-var bar    = splide2.root.querySelector( '.my-carousel-progress-bar' );
+
 
 
 // Updates the bar width whenever the carousel moves:
@@ -67,3 +68,8 @@ splide2.mount();
             //     perPage: 3,
             //     rewind: true,
             //     } ).mount());
+
+            VanillaTilt.init(document.querySelectorAll(".tilt"), {
+                max: 25,
+                speed: 400
+            });

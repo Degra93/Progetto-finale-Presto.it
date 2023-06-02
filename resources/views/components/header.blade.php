@@ -33,20 +33,20 @@
 {{-- categories slider --}}
 <div class="container">
     <div class="row mt-3">
-        <h2 class="display-6 lh-1 fw-bold pt-3 text-center mt-3">{{ __('ui.allAnnoucements') }}</h2>
+        <h3 class="display-5 pt-3 text-center mt-3">{{ __('ui.allAnnoucements') }}</h3>
 
         <div class="splide pt-5" id="first-slider">
-            <div class="splide__track">
+            <div class="splide__track py-5"
+            style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-position: center center; background-repeat: no-repeat;">
 
                 <div class="splide__list">
                     @foreach ($categories as $category)
                         <div class="col-sm-4 splide__slide m-2">
-                            <a href="{{route('categoryShow', $category)}}" class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy"
-                                lc-helper="background"
-                                style="background-image: url('https://themewagon.github.io/caraft/images/img-1.png'); background-size:cover; ">
-                                <div class="lc-block pt-5 mt-5 mb-5  text-center overlay">
+                            <a href="{{route('categoryShow', $category)}}" class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1"
+                                lc-helper="background">
+                                <div class="lc-block pt-5 mt-5 mb-5  neon-text text-center overlay">
                                     <div>
-                                        <h2 class="mb-5 fw-bolder">{{ __('ui.' . $category->name) }}</h2>
+                                        <h3 class="mb-5">{{ __('ui.' . $category->name) }}</h3>
 
                                     </div>
                                 </div>

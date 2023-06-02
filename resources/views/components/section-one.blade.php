@@ -4,7 +4,7 @@
             <div class="col-12 col-md-10 col-lg-8 col-xl-6 text-center">
 
 
-                <h2 class="mb-4 fw-bold display-6">{{ __('ui.better') }}</h2>
+                <h2 class="mb-4 display-5">{{ __('ui.better') }}</h2>
 
 
                 <p class="mb-10 text-gray-500">
@@ -17,7 +17,7 @@
             <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4">
 
 
-                <div class="card mb-7 rounded-5"
+                <div class="card mb-7 rounded-5 tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                 style="min-height: 400px; background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80); background-position: center center;">
 
 
@@ -26,9 +26,7 @@
                 <div class="card-body my-auto">
 
 
-                    <h4 class="mb-0 display-5 text-warning fw-bold">{{ __('ui.Informatica') }}</h4>
-
-
+                    <h4 class="mb-0 display-5 text-warning fw-bold ">{{ __('ui.Informatica') }}</h4>
                     <a class=" text-white" href="http://127.0.0.1:8000/categoria/1">
                         {{ __('ui.esplora') }}
                     </a>
@@ -38,12 +36,12 @@
             </div>
 
         </div>
-        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4 ">
+        <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4" >
 
 
 
 
-            <div class="card card-body mb-7 my-auto px-md-10 text-center text-md-start rounded-5"
+            <div class="card card-body mb-7 my-auto px-md-10 text-center text-md-start rounded-5 tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
             style="min-height: 400px; background-image: url(https://blogautomobilenew.mediamatik.com/wp-content/uploads/2019/07/Peugeot-3008-1.jpg); background-position: center center;">
 
 
@@ -65,7 +63,7 @@
     <div class="col-12 col-md-7 col-lg-8 d-flex flex-column pt-4">
 
 
-        <div class="card mb-7 mb-md-0 text-body rounded-5" style="min-height: 400px; ">
+        <div class="card mb-7 mb-md-0 text-body rounded-5 tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8" style="min-height: 400px; ">
 
 
             <div class="card-body my-auto px-md-10 text-center text-md-start rounded-5"
@@ -91,7 +89,7 @@
 
 
 
-    <div class="card card-body my-auto px-md-10 text-center text-white text-md-start rounded-5"
+    <div class="card card-body my-auto px-md-10 text-center text-white text-md-start rounded-5 tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
     style="min-height: 400px; background-image: url(https://contents.mediadecathlon.com/p2158873/k$a6fe3d09bd90786e1c7ab0ea110c915b/ROCKRIDER%20VTT%20ST%20530%20MDB%20TUR%2027%205%20%20F.jpg?f=600x600); background-position: center center;">
 
 
@@ -119,8 +117,8 @@
 <div class="container pt-5 ">
     <div class="text-center wow fadeInUp " data-wow-delay="0.1s"
     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-    <h4 class="section-title text-center text-primary text-uppercase ">{{ __('ui.nostri') }}</h4>
-    <h2 class="mb-5 fw-bold">{{ __('ui.esplora-i') }} <span class="text-primary text-uppercase"></span></h2>
+    <h4 class="section-title text-center text-warning text-uppercase ">{{ __('ui.nostri') }}</h4>
+    <h2 class="mb-5 fw-bold display-5">{{ __('ui.esplora-i') }} <span class="text-primary text-uppercase display-5"></span></h2>
 </div>
 <div class="row g-4">
     @forelse ($announcements as $announcement)
