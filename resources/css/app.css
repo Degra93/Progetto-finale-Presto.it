@@ -177,7 +177,9 @@ ol {
     opacity: 0.55 !important;
     text-decoration: underline !important;
 }
-
+.carica-img-hover {
+background-color:#44484a;
+}
 
 /*-------button pagina login--------*/
 .btn-hover {

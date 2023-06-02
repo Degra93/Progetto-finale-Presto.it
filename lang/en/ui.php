@@ -122,6 +122,8 @@ return[
 
     'cancella'=>'Clear',
 
+    'carica'=>'Upload image',
+
      // LOGIN FORM
 
     'entra'=>'User Login',
@@ -228,7 +230,9 @@ return[
 
     'cancella'=>'Delete',
 
-    'sicuro'=>'Are you sure you want to delete this ad?',
+    'sicuro-rifiuta'=>'Are you sure you want to delete this ad?',
+
+    'sicuro-accetta'=>'Are you sure you want to accept this ad?',
 
     'si'=>'Yes',
 

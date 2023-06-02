@@ -4,7 +4,7 @@
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
         style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
         <h6 class="section-title text-center text-primary text-uppercase pt-3">{{ __('ui.nostri') }}</h6>
-        <h1 class="mb-5">{{ __('ui.esplora-i') }}</h1>
+        <h1 class="mb-5 ">{{ __('ui.esplora-i') }}</h1>
     </div>
     <div class="row g-4 ">
         {{-- @forelse ($announcements as $announcement)
@@ -67,7 +67,7 @@
                                     <p class="text-body mb-3 roll">{{$announcement->body}}</p>
                                 </div>
                                 <div class="d-flex justify-content-between pt-3">
-                                    <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center " href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
+                                    <a class=" btn-primary rounded pt-2 px-4 fw-bold text-center animated infinite pulse " href="{{route('announcement.show', compact('announcement'))}}">{{__('ui.dettagli')}}</a>
                                     <a class=" btn-dark rounded py-2 px-4 fw-bold " href="{{route('categoryShow',['category'=>$announcement->category])}}">{{__('ui.categoria')}}: {{__("ui.".$announcement->category->name)}}</a>
                                 </div>
                                 @if (Auth::check() && Auth::user()->is_revisor)

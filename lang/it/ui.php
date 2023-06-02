@@ -122,6 +122,8 @@ return [
 
     'cancella' => 'Cancella',
 
+    'carica'=>'Carica immagine',
+
     // LOGIN FORM
 
     'entra' => 'Login Utente',
@@ -228,7 +230,9 @@ return [
 
     'cancella'=>'Cancella',
 
-    'sicuro'=>'Sicuro di voler eliminare questo annuncio?',
+    'sicuro-rifiuta'=>'Sicuro di voler eliminare questo annuncio?',
+
+    'sicuro-accetta'=>'Sicuro di voler acettare questo annuncio?',
 
     'si'=>'Si',
 

@@ -277,11 +277,11 @@
                     </div>
                     <div class="modal-body d-flex flex-column  align-items-center align-self-center ">
                         <i class="fa-regular fa-face-grin-beam-sweat d-block fa-5x mb-4 "></i>
-                        <p class="h1 text-center">Sei sicuro?</p>
+                        <p class="h1 text-center">{{__('ui.sicuro-accetta')}}</p>
                     </div>
                     <div class="modal-footer d-flex justify-content-center m-5">
-                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="acetta()">Si</button>
-                        <button type="button" class="btn-hover btn btn-warning " data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="acetta()">{{__('ui.si')}}</button>
+                        <button type="button" class="btn-hover btn btn-warning " data-bs-dismiss="modal">{{__('ui.no')}}</button>
                     </div>
                 </div>
             </div>
@@ -295,7 +295,7 @@
                     </div>
                     <div class="modal-body d-flex flex-column  align-items-center align-self-center ">
                             <i class="fa-regular fa-face-grin-beam-sweat d-block fa-5x mb-4 "></i>
-                        <p class="h1 text-center">Sei sicuro?</p>
+                        <p class="h1 text-center">{{__('ui.sicuro-rifiuta')}}</p>
                     </div>
                     <div class="modal-footer d-flex justify-content-center m-5">
                         <button type="button" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal" onclick="rifuta()">{{__('ui.si')}}</button>

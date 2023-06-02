@@ -62,9 +62,18 @@
                 </div>
                 {{-- SCEGLI FILE § --}}
                 <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                        <input wire:model="temporary_images" type="file" name="images" multiple
+                    <div class="form-outline text-center mb-0 ">
+                        <label for="name" class="btn bg-light border border-radius  " placeholder="Carica qui le tue immagini">{{ __('ui.carica') }} </label>
+                        <input wire:model="temporary_images" type="file" id="name" name="images" multiple style="display:none;"
+
+                        
+
+
+                        
+                        
                             class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img" />
+
+                            {{-- <button onclick="document.getElementById('myfile').click()">Scegli qui</button> --}}
                         @error('temporary_images.*')
                             <div class=" text-danger">
                                 {{ $message }}
