@@ -42,10 +42,10 @@
                 <div class="splide__list">
                     @foreach ($categories as $category)
                         <div class="col-sm-4 splide__slide m-2">
-                            <a href="{{route('categoryShow', $category)}}" class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1"
+                            <a href="{{route('categoryShow', $category)}}" class="lc-block card card-cover h-100 overflow-hidden text-black rounded-5 shadow-lg card-copy tilt-custom" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1"
                                 lc-helper="background">
                                 <div class="lc-block pt-5 mt-5 mb-5  neon-text text-center overlay">
-                                    <div>
+                                    <div class="inner">
                                         <h3 class="mb-5">{{ __('ui.' . $category->name) }}</h3>
 
                                     </div>
