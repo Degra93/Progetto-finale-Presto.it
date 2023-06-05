@@ -104,7 +104,7 @@ return [
 
     'successo' => 'Annuncio creato con successo, in attesa di revisione',
 
-    'successo2'=>'Annuncio Deletato',
+    'successo2'=>'Annuncio cancellato',
 
     'crea-ann' => 'CREA UN NUOVO ANNUNCIO',
 

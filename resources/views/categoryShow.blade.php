@@ -101,7 +101,7 @@
                                         <form action="{{ route('delete', $announcement) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')
-                                            <p class="h3">{{__('ui.sicuro')}}</p>
+                                            <p class="h3">{{__('ui.sicuro-rifiuta')}}</p>
                                             <button type="submit" class="btn-hover btn btn-danger py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.si')}}</button>
                                             <button type="button" class="btn-hover btn btn-warning py-2 px-4 m-2" data-bs-dismiss="modal">{{__('ui.no')}}</button>
                                         </form> 
